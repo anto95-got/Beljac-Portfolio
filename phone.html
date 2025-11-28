@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iphone 16 </title>
+    <link rel="stylesheet" href="Css/phone.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="navbar/navbar.css">
+    <link rel="stylesheet" href="Css/chargement.css">
+    <script defer src="js/chargement.js"></script>
+    <script defer src="navbar/nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="footer/footer.js"></script>
+    <link rel="stylesheet" href="footer/footer.css">
+
+
+</head>
+<body>
+    <video autoplay loop muted playsinline class="bg-video">
+        <source src="video/fond.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+    </video>
+    <div class="loading-container">
+        <img src="navbar/logo_ajf_cup-removebg-preview_copie.webp" alt="">
+        <img src="photo/ballon.png" alt="Ballon de football" class="ballon">
+    </div>
+
+    <div id="navbar"></div>
+
+    <section class="home">
+        <div class="home-content">
+            <h1> <span>Iphone</span> </h1>
+            <p>Voiçi une animation d'un iphone avec un changement de couleurs et un dynamic island </p>
+            <h2>Langague Utiliser</h2>
+            <div class="carte">
+
+            <div class="card">
+                <div class="content-card">
+                    <img src="icon-img/icon-html.png" alt="">
+                    <h1>HTML</h1>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content-card">
+                    <img src="icon-img/icon-css.png" alt="">
+                    <h1>CSS</h1>
+                </div>
+            </div>
+          
+            </div>
+           
+        </div>
+        <div class="next">
+            <button onclick="start()" >Commencer</button>
+        </div>
+
+
+    </section>
+
+
+
+    <section class="pho" id="phone">
+
+    <input type="radio" name="theme" id="deep-purple" checked="checked">
+    <input type="radio" name="theme" id="gold" >
+    <input type="radio" name="theme" id="space-black" >
+    <input type="radio" name="theme" id="silver" >
+    <div class="phone">
+        <div class="buttons">
+            <div class="left">
+                <div class="button"></div>
+                <div class="button"></div>
+                <div class="button"></div>
+            </div>
+        
+            <div class="right">
+                <div class="button"></div>
+            </div>              
+        </div>
+    <div class="camera"></div>
+        <div class="screen-container">
+            <div class="bg">
+                <div class="deep-purple">
+                    <div class="section">
+                        <div class="glow"></div>
+                    </div>
+                    <div class="section">
+                        <div class="glow"></div>
+                    </div>
+                </div>
+            <div class="gold">
+                <div class="section">
+                    <div class="glow"></div>
+                </div>
+                <div class="section">
+                    <div class="glow"></div>
+                </div>
+            </div>
+            <div class="space-black">
+                <div class="section">
+                    <div class="glow"></div>
+                </div>
+                <div class="section">
+                    <div class="glow"></div>
+                </div>
+            </div>
+            <div class="silver">
+                <div class="section">
+                    <div class="glow"></div>
+                </div>
+                <div class="section">
+                    <div class="glow"></div>
+                </div>
+            </div>
+           
+               
+        </div>
+        <div class="notch-container" tabindex="0">
+            <div class="notch">
+                <div class="content">
+                    <div class="left">
+                        <div class="title"></div>
+                        <div class="text"></div>
+                    </div>
+                <div class="right">
+                        <div class="bar">  
+                            <div class="duration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notch-blur"></div>
+        </div>
+        
+        </div>
+   
+
+    </div>
+
+    <div class="pallette">  
+        <label for="deep-purple" class="swatch"></label>
+        <label for="gold" class="swatch"></label>
+        <label for="space-black" class="swatch"></label>
+        <label for="silver" class="swatch"></label>
+    </div>
+
+</section>
+
+<script src="js/phone.js"></script>
+</body>
+
+<div id="footer"></div>
+</html>

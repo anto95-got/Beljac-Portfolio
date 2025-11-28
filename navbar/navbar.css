@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, header, .nav, .nav__list, .nav__list a, .nav__link, .projet, .dropdown__link {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-color);
+}
+
+:root {
+    --main-color: #e0af0f; 
+    --text-color: white;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    z-index: 10000;
+    background: transparent;
+    transition: 0.6s, padding 0.6s;
+    font-family: 'Lora', serif;
+}
+
+header.sticky {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 100px;
+}
+
+/* Logo */
+.nav__logo img {
+    height: 60px;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    transition: color 0.6s;
+}
+
+header.sticky .logo {
+    color: white;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Style des liens */
+.nav__list li a.active,
+.nav__list li a:hover {
+    color: #f1ce09;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.nav__list li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav__link, .projet {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.nav__link:hover, .projet:hover {
+    color: #e0af0f;
+}
+
+/* Dropdown */
+.navprojet {
+    display: none;
+    background: rgba(0, 0, 0, 1);
+    padding: 1rem;
+    border-radius: 8px;
+    position: absolute;
+    top: 100%;
+    width: max-content;
+}
+
+.navprojet ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navprojet.active {
+    display: block;
+}
+
+/* Rotation de la flèche */
+.dropdown__arrow {
+    transition: transform 0.3s;
+}
+
+.dropdown__arrow.active {
+    transform: rotate(180deg);
+}
+
+/* Lien du dropdown */
+.dropdown__link {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.dropdown__link:hover {
+    color: #e0af0f;
+}
+
+/* Mobile Navigation */
+.nav__toggle {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    .nav__menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%; /* Caché à droite */
+        width: 60%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.4s ease-in-out; /* Animation */
+  
+    }
+
+    /* Quand le menu est ouvert */
+    .nav__menu.show-menu {
+        right: 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    /* ✅ Dropdown en mobile : Apparaît sous le parent */
+    .dropdown__item {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navprojet {
+        position: relative; /* Plus absolute */
+        display: none;
+        background: rgba(0, 0, 0, 0);
+        width: 100%;
+        padding: 1rem;
+        border-radius: 8px;
+        top: 1rem;
+    }
+
+    .navprojet.active {
+        display: block;
+
+    }
+
+    .navprojet ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+     
+    }
+
+    .navprojet li {
+        text-align: center;
+    }
+}

@@ -1,0 +1,28 @@
+.loading-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999; /* Toujours au-dessus */
+    margin-top: 0%;
+}
+
+body.loading {
+    overflow: hidden; /* Bloque le scroll */
+    pointer-events: none; /* Désactive les interactions */
+}
+
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #000, #f1ce09);
+    overflow: hidden;
+}
+
+.ballon {
+    width: 80px;
+    position: absolute;
+    bottom: 50px;
+}

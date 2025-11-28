@@ -1,0 +1,458 @@
+/* 🎨 Variables CSS */
+:root {
+    --main-color: white;
+    --bg-color: #cd1385;
+    --text-color: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+#navbar {
+    display: none; /* Cache la navbar pendant le chargement */
+}
+span {
+    color: var(--main-color);
+}
+/* 📌 Ajout de la vidéo en arrière-plan */
+.bg-video {
+    position: fixed;  /* Fixe la vidéo en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Couvre toute la page */
+    z-index: -1; /* Derrière tout le contenu */
+    
+}
+
+/* 🌟 Contenu principal */
+body {
+    color: var(--text-color);
+    position: relative;
+    background: none;
+}
+
+/* ✅ Appliquer un effet flou/translucide pour lisibilité */
+section {
+    min-height: 100vh;
+    padding: 10rem 12%;
+  
+    border-radius: 10px;
+}
+
+.cv {
+    display: flex;
+    flex-direction: column; /* Met le texte en haut et le CV en dessous */
+    align-items: center; /* Aligne à gauche */
+    justify-content: flex-start; /* Place les éléments en haut */
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 5rem 10%; /* Ajuste l'espacement */
+    text-align: left;
+    color: white;
+}
+
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligné à gauche */
+    text-align: left; /* Texte aligné à gauche */
+    gap: 2rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+.cv-container h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cv-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.cv-preview {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+    margin-top: 2rem; /* Espacement entre le texte et le CV */
+}
+
+.cv-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start; /* Alignement à gauche */
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.cv .titre {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+.cv-buttons .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgb(0, 0, 0);
+    color: #f1ce09;
+    border: 2px solid white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.cv-buttons .btn a {
+    text-decoration: none;
+}
+
+.cv-buttons .btn:hover {
+    background: transparent;
+    color: #f1ce09;
+    border-color: #f1ce09;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+    .home-content {
+        align-items: center;
+    }
+    .home-img img {
+        max-width: 250px;
+    }
+    
+        .video {
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+            height: auto;
+            padding: 3rem 5%;
+        }
+    
+        .video video {
+            width: 90%; /* Prend presque toute la largeur */
+            max-width: 100%; /* Assurez-vous qu'elle ne dépasse pas */
+            height: auto; /* Maintient le ratio */
+            border-radius: 10px;
+        }
+        .home{
+            height: 125vh;
+        }
+        .timeline-container::after{
+            display: none;
+        }
+    }
+
+    .card {
+        width: 150px;
+        height: 150px; /* Légèrement plus haute pour meilleure disposition */
+        perspective: 1000px;
+        
+    }
+    
+    .content-card {
+        
+        background-color: rgb(219, 219, 219);
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 15px; /* Bordure arrondie */
+        transition: all 0.15s ease-out;
+        display: flex;
+        flex-direction: column; /* Pour placer image en haut et texte en bas */
+        align-items: center;
+        justify-content: space-between; /* Espacement entre image et texte */
+        padding: 10px 0; /* Ajout d’un peu d’espace intérieur */
+        position: relative;
+    }
+    
+    .content-card img {
+        width: 60%; /* Taille adaptée */
+        height: auto;
+        object-fit: contain;
+        margin-top: 10px; /* Espace pour éviter d’être trop collé en haut */
+    }
+    
+    .content-card h1 {
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        position: absolute;
+        bottom: 10px; /* Aligné en bas */
+        text-align: center;
+        width: 100%;
+    }
+    
+.Langague{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+
+}
+.Langague h3{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: white;
+    width: 100%;
+    padding-top: 0%;
+
+}
+.carte{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    
+    gap: 3rem;
+    
+
+}
+
+.left , .right , .center{
+    display: table-column;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 15px;
+
+}
+.left h2, .right h2, .center h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column; /* Assure que .haut et .bas sont empilés verticalement */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem; /* Ajoute de l’espace entre .haut et .bas */
+    padding-top: 3rem;
+}
+
+.haut, .bas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 3rem;
+}
+
+
+.haut{
+    gap: 3rem;
+    margin-top: 30px;
+    display: flex;
+}
+
+.bas{
+    gap: 3rem;
+    display: flex;
+}
+
+.timeline-container{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    background-color: transparent;
+    border-radius: 15px;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown {
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    
+}
+.text-box{
+    padding: 20px 30px;
+    background: rgba(150, 150, 150, 0.2);
+    position: relative;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+.left-container{
+    left: 0;
+}
+
+.right-container{
+    left: 50%;
+}
+
+
+
+.timeline-container::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: var(--main-color) ;
+   top: 0;
+    left: 50%;
+    margin-left:-3px ;
+    z-index: -1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    animation: moveline 6s linear forwards;
+    
+}
+
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+    
+}
+
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+.container:nth-child(4){
+    animation-delay: 3s;
+}
+.container:nth-child(5){
+    animation-delay: 4s;
+}
+
+
+
+.text-box h2{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.text-box p , .text-box small{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+@media  screen and (max-width: 768px) {
+    .timeline-container{
+        margin: 50px auto;
+    }
+    .timeline-container ::after{
+        left: 31px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 80px ;
+        padding-right: 25px;
+    }
+
+    .text-box{
+        font-size: 13px;
+    }
+
+    .right-container{
+        left: 0;
+    }
+    
+   
+   
+}
+@media screen and (max-width: 768px) {
+    .Langague {
+        height: auto;
+        padding: 2rem 5%;
+        text-align: center;
+    }
+
+    .Langague h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .carte {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .left, .right, .center {
+        width: 90%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .card-item {
+        gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    .haut, .bas {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+

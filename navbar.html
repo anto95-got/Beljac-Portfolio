@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="navbar/navbar.css">
+    <title>Navbar</title>
+    
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__data">
+                <a href="acceuil.html" class="nav__logo">
+                    <img src="navbar/logo_ajf_cup-removebg-preview_copie.webp" alt="logo">
+                </a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="parcours.html" class="nav__link">Parcours</a></li>
+                    <li><a href="activité.html" class="nav__link">Activité personnel</a></li>
+                    <li><a href="veille.html" class="nav__link">Veille Technologique</a></li>
+                    <li class="dropdown__item">
+                       
+                        <div class="projet" id="projet">
+                            Projets <i class="ri-arrow-down-line dropdown__arrow"></i>
+                        </div>
+                        <div class="navprojet" id="navprojet">
+                            <ul>
+                                <li><a href="meteo.html" class="dropdown__link">Météo</a></li>
+                                <li><a href="sudoku.php" class="dropdown__link">Sudoku</a></li>
+                                <li><a href="phone.html" class="dropdown__link">iPhone</a></li>
+                                <li><a href="site.html" class="dropdown__link">Pacman</a></li>
+                                <li><a href="Flappy-Bird.html" class="dropdown__link">Flappy Bird</a></li>
+                                <li><a href="site.html" class="dropdown__link">Site e-commerce</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <script src="navbar/nav.js"></script>
+    
+</body>
+</html>

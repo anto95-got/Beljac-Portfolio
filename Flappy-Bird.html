@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/flappy.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Flappy-Bird</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="navbar/navbar.css">
+    <link rel="stylesheet" href="Css/chargement.css">
+    <script defer src="js/chargement.js"></script>
+    <script defer src="navbar/nav.js"></script>
+    <script defer src="footer/footer.js"></script>
+    <link rel="stylesheet" href="footer/footer.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <video autoplay loop muted playsinline class="bg-video">
+        <source src="video/fond.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+    </video>
+    <div class="loading-container">
+        <img src="navbar/logo_ajf_cup-removebg-preview_copie.webp" alt="">
+        <img src="photo/ballon.png" alt="Ballon de football" class="ballon">
+    </div>
+    <div id="navbar"></div>
+
+    <section class="home">
+        <div class="home-content">
+            <h1> <span>Flappy-Bird</span> </h1>
+            <p>Joue a Flappy-Bird juste en bas clique sur Commencer </p>
+            <h2>Langague Utiliser</h2>
+            <div class="carte">
+
+            <div class="card">
+                <div class="content-card">
+                    <img src="icon-img/icon-html.png" alt="">
+                    <h1>HTML</h1>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content-card">
+                    <img src="icon-img/icon-css.png" alt="">
+                    <h1>CSS</h1>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content-card">
+                    <img src="icon-img/icon-javascript.png" alt="">
+                    <h1>JAVA-SCRIPTS</h1>
+                </div>
+            </div>
+            </div>
+           
+        </div>
+        <div class="next">
+            <button onclick="start()" >Commencer</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="flappy" id="fla">
+       
+    
+        <canvas id="canvas" width="431" height="768">
+
+            <div class="content">
+                <h3>Flappy Bird</h3>
+                <div class="score-container">
+                    <div id="bestScore"></div>
+                    <div id="currentScore" ></div>
+                </div>            
+            </div>
+        </canva>
+    
+    
+        <br><br>
+        <a style="text-decoration: none " href="#">Retour </a>
+   
+</section>
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="js/flappy.js"></script>
+    
+<div id="footer"></div>
+</body>
+</html>

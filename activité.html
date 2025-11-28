@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activité personnelles</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="Css/activité.css">
+    <link rel="stylesheet" href="navbar/navbar.css">
+    <script defer src="navbar/nav.js"></script>
+    <script defer src="js/activité.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="js/chargement.js"></script>
+    <link rel="stylesheet" href="Css/chargement.css">
+    <script defer src="footer/footer.js"></script>
+    <link rel="stylesheet" href="footer/footer.css">
+
+
+</head>
+<body>
+    <div class="loading-container">
+        <img src="navbar/logo_ajf_cup-removebg-preview_copie.webp" alt="">
+        <img src="photo/ballon.png" alt="Ballon de football" class="ballon">
+    </div>
+    <video autoplay loop muted playsinline class="bg-video">
+        <source src="video/fond.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+    </video>
+    <div id="navbar"></div>
+    <section class="home">
+
+        <div class="carousel ">
+            <div class="list">
+                <div class="item">
+                    <img src="projet-photo/belgique-photo.JPG" alt="">
+                    <div class="content">
+                        <div class="author">Antony</div>
+                        <div class="title">Transmetre mon football </div>
+                        <div class="topic">Éducateur</div>
+                        <div class="des">l'une de mes principal activité est de éductqué et entrainer des jeunes </div>
+                        <div class="buttons">
+                            <button onclick="voir1()">Voir plus</button>
+                            <button onclick="rediriger()">Contact </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="projet-photo/ajf-banniere.png" alt="">
+                    <div class="content">
+                        <div class="author">Antony et Junior</div>
+                        <div class="title">Tournoi de football</div>
+                        <div class="topic">Projet en duo</div>
+                        <div class="des">Nous avons un projet très ambitieux et en cours de processure </div>
+                        <div class="buttons">
+                            <button onclick="voir3()">Voir plus</button>
+                            <button onclick="rediriger()">Contact </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="projet-photo/photo-foot.JPG" alt="">
+                    <div class="content">
+                        <div class="author">Antony</div>
+                        <div class="title">Joueurs de Football </div>
+                        <div class="topic">Joueur </div>
+                        <div class="des">Depuis petit je suis footballeur avec l'ambtions de atteindre le monde semi-pro activité principal</div>
+                        <div class="buttons">
+                            <button onclick="voir2()">Voir plus</button>
+                            <button onclick="rediriger()">Contact </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail">
+
+               
+                <div class="item">
+                    <img src="projet-photo/futsal-photo.jpg" alt="">
+                    <div class="content">
+                        <div class="title">
+                            Éducateur
+                        </div>
+                        <div class="des">
+                            Transmetre 
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="projet-photo/ajf-affiche.JPG" alt="">
+                    <div class="content">
+                        <div class="title">
+                            Projet
+                        </div>
+                        <div class="des">
+                            Projet en duo 
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="projet-photo/tir-photo.JPG" alt="">
+                    <div class="content">
+                        <div class="title">
+                            Joueur
+                        </div>
+                        <div class="des">
+                            discipline
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <div class="time"></div>
+
+        </div>
+
+
+
+
+    </section>
+
+    <section class="video" id="coach">
+       
+        <div class="text">
+            <h2 class="titre1">Mes experienece en tant que <span>Coach</span> </h2>
+            <p>Le rôle de coach me tien à coeur je transmet mon experienece de coach depuis longtemps et le meilleur souvenir été celui de mon tournoi en belgique avec mes u10</p>
+            
+        </div>
+        <div class="video">
+            <video src="projet-photo/videocoach.mp4" id="videoprojet" class="videoprojet" width="600" muted>
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+        </div>
+    </section>
+
+
+
+    <section class="video" id="foot">
+       
+        <div class="text">
+            <h2 class="titre1">Plus qu'un <span>sport</span>  </h2>
+            <p> Tout ma vie j'ai jouer au football et j'ai pu faire les meilleur rencontre et experienece de ma vie grace a ce sport et surtout les personne qui le partique </p>
+            
+        </div>
+        <div class="video">
+            <video src="projet-photo/video-footut.mp4" id="videoprojet" class="videoprojet" width="600" muted>
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+        </div>
+    </section>
+
+
+
+
+    <section class="video" id="ajf">
+       
+        <div class="text">
+            <h2 class="titre1">Projet en  <span>Duo</span>  </h2>
+            <p> Projet en cours et top secret Désolé </p>
+            
+        </div>
+        <div class="video">
+           <img src="projet-photo/top-secret.jpg" alt="">
+        </div>
+    </section>
+
+<script src="js/activité.js"></script>
+
+<div id="footer"></div>
+
+</body>
+</html>

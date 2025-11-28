@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="veille/veille.css">
+    <link rel="stylesheet" href="navbar/navbar.css">
+    <script defer src="navbar/nav.js"></script>
+    <script defer src="js/veille.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="js/chargement.js"></script>
+    <link rel="stylesheet" href="Css/chargement.css">
+    <script defer src="footer/footer.js"></script>
+    <link rel="stylesheet" href="footer/footer.css">
+
+    <title>Veille Technologique</title>
+</head>
+<body>
+    <video autoplay loop muted playsinline class="bg-video">
+        <source src="video/fond.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+    </video>
+    <div class="loading-container">
+        <img src="navbar/logo_ajf_cup-removebg-preview_copie.webp" alt="">
+        <img src="photo/ballon.png" alt="Ballon de football" class="ballon">
+    </div>
+    <div id="navbar"></div>
+
+    <section class="home">
+        <div class="home-content">
+        <div class="text-home">
+            <h1>Ma <span>Veille Technologique</span></h1>
+        </div>
+        <div class="btn">
+            <button onclick="start()">Commencer</button>
+        </div>
+        </div>
+    </section>
+
+    <section class="sommaire" id="som">
+        <h1>Sommaire</h1>
+        <div class="sommaire-content">
+            
+            <div class="left">
+                <h2>01</h2>
+                <h2>02</h2>
+                <h2>03</h2>
+
+            </div>
+            <div class="center">
+                <ul>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#alt">Alternace</a></li>
+                    <li><a href="#Aladdin">Sujet</a></li>
+                </ul>
+            </div>
+           
+           
+        </div>
+        <div class="next">
+            <button onclick="next1()"><p>></p></button>
+        </div>
+    </section>
+
+    <section class="presentation" id="presentation">
+        <h1>Présentation</h1>
+        <div class="presentation-content">
+
+            <div class="text" id="text">
+                <h2>Alternace en <span>bts sio</span> </h2>
+                <p>Beljac Antony alternant chez ineo , en bts SIO option SLAM chez insta , footballeur en parralèlle et éducateur de football .</p>
+                <div class="cv-buttons">
+                    <a href="Antonybeljaccv.pdf" download class="btn">Télécharger <i class="ri-download-line"></i></a>
+                    <a href="Antonybeljaccv.pdf" target="_blank" class="btn">Voir en ligne<i class="ri-file-pdf-2-line"></i></a>
+                </div>
+
+            </div>
+
+            <div class="perso" id="perso ">
+                <img src="photo/Sujet.png" alt="Image de présentation">
+            </div>
+        </div>
+        <div class="next">
+            <button onclick="next2()"><p>></p></button>
+        </div>
+    </section>
+
+    
+    <section class="alt" id="alt">
+        <h2>Alternace</h2>
+        <div class="wrapper">
+            <div class="container">
+                <input type="radio" name="slide" id="c1" >
+                <label for="c1" class="card">
+                    <div class="row">
+                        <div class="icon">1</div>
+                        <div class="description">
+                            <h1>Organigrame</h1>
+                            
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2" >
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="icon">2</div>
+                        <div class="description">
+                            <h1>Mes mission</h1>
+                        </div>
+                    </div>
+                </label>
+            </div>
+           
+        </div>
+        <div class="next">
+            <button onclick="next3()"><p>></p></button>
+        </div>
+    </section>
+
+    <section class="Aladdin" id="Aladdin">
+        <h2>Aladdin</h2>
+        <div class="wrapper2">
+            <div class="container">
+                <input type="radio" name="slide" id="c3" >
+                <label for="c3" class="card2">
+                    <div class="row">
+                        <div class="icon">1</div>
+                        <div class="description">
+                            <h1>Introduction</h1>
+                            
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c4" >
+                <label for="c4" class="card2">
+                    <div class="row">
+                        <div class="icon">2</div>
+                        <div class="description">
+                            <h1>BlackRock</h1>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c5" >
+                <label for="c5" class="card2">
+                    <div class="row">
+                        <div class="icon">3</div>
+                        <div class="description">
+                            <h1>Larry Fink</h1>
+                            
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c6" >
+                <label for="c6" class="card2">
+                    <div class="row">
+                        <div class="icon">4</div>
+                        <div class="description">
+                            <h1>Influence</h1>
+                            
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c7" >
+                <label for="c7" class="card2">
+                    <div class="row">
+                        <div class="icon">5</div>
+                        <div class="description">
+                            <h1>Création</h1>
+                            
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c8" >
+                <label for="c8" class="card2">
+                    <div class="row">
+                        <div class="icon">6</div>
+                        <div class="description">
+                            <h1>L'AI au control</h1>
+                            
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c9" >
+                <label for="c9" class="card2">
+                    <div class="row">
+                        <div class="icon">7</div>
+                        <div class="description">
+                            <h1>Conclusion </h1>
+                            
+                        </div>
+                    </div>
+                </label>
+            </div>
+           
+        </div>
+        
+    </section>
+    
+<div id="footer"></div>
+</body>
+</html>
