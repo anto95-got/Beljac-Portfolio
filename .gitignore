@@ -3,3 +3,10 @@ firebase-debug.log
 .firebase/
 .env
 projet-photo/video-coahc2.mp4
+*.mp4
+*.mov
+*.MP4
+projet-photo/*.mp4
+projet-photo/*.MOV
+projet-photo/*.MP4
+!videos/fond.mp4
