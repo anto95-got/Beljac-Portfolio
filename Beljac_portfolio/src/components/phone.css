@@ -1,0 +1,688 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Container de la démo iPhone */
+.pho {
+    --size: max(5px, 1vmin);
+    --height: 80em;
+    --pad: 1.25em;
+    --border-radius: 6.666em;
+    --gutter: calc(var(--pad) * 2);
+    --button-width: 0.333em;
+    --notch-height: 3.33em;
+    --notch-width: 33.3%;
+    --notch-radius: calc(var(--border-radius) - calc(var(--pad) * 2));
+    --notch-duration: 0.333s;
+    --ease: cubic-bezier(.666, 0, .4, 1);
+    --ease-spring: cubic-bezier(.666, 0, .4, 1.2);
+    --ease-out: cubic-bezier(.15, 0, .333, 1);
+    --border-width: 0.4em;
+    --deep-purple: 284;
+    --gold: 30;
+    --space-black: 215;
+    --silver: 254;
+    --c-h: var(--deep-purple);
+    --c-s: 100%;
+    --c-1: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--size);
+}
+
+/* Animations */
+@keyframes appear {
+    to {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+
+@keyframes test {
+    from {
+        transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+    to {
+        transform: scale3d(2, 2, 2) translate3d(50px, 50px, 50px);
+    }
+}
+
+/* TELEPHONE */
+
+.pho .phone {
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 37 / 76;
+    background: black;
+    height: var(--height);
+    border-radius: var(--border-radius);
+    box-shadow:
+        0 0 0.1em 0.25em hsl(var(--c-h), 20%, 25%),
+        0 0 0 var(--border-width) hsl(var(--c-h), 30%, 85%);
+    box-sizing: border-box;
+    opacity: 0;
+    transform: scale3d(1.1, 1.1, 1);
+    animation: appear 1s var(--ease-out) forwards;
+    backface-visibility: hidden;
+}
+
+.pho .phone::before {
+    content: "";
+    position: absolute;
+    top: var(--border-radius);
+    right: calc(var(--border-width) * -1);
+    bottom: calc(var(--border-radius));
+    left: calc(var(--border-width) * -1);
+    border: 0.5em solid hsl(var(--c-h), 20%, 30%);
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+/* BOUTONS LATERAUX */
+
+.pho .buttons {
+    position: absolute;
+    inset: calc(var(--border-width) * -1);
+    pointer-events: none;
+}
+
+.pho .buttons .left,
+.pho .buttons .right {
+    position: absolute;
+    width: var(--button-width);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5em;
+}
+
+.pho .buttons .left {
+    right: 100%;
+    top: calc(var(--border-radius) * 2);
+}
+
+.pho .buttons .left .button:nth-child(1) {
+    height: 3em;
+    margin-bottom: 0.5em;
+}
+
+.pho .buttons .right {
+    left: 100%;
+    transform: scale3d(-1, 1, 1);
+    top: calc(var(--border-radius) * 3);
+}
+
+.pho .buttons .right .button {
+    height: 9.5em;
+}
+
+.pho .buttons .button {
+    background: hsl(var(--c-h), 20%, 95%);
+    height: 6em;
+    box-shadow:
+        inset -0.15em 0 0.1em black,
+        inset 0 0 0.1em hsl(var(--c-h), 30%, 90%),
+        inset 0 0.2em 0.1em hsl(var(--c-h), 30%, 90%),
+        inset 0 -0.2em 0.1em hsl(var(--c-h), 30%, 90%),
+        inset -0.1em 0.333em 0.1em rgba(0, 0, 0, 0.5),
+        inset -0.1em -0.333em 0.1em rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 0.2em;
+    border-bottom-left-radius: 0.2em;
+}
+
+/* ECRAN / BG */
+
+.pho .screen-container {
+    position: absolute;
+    inset: 0;
+    border-radius: var(--border-radius);
+    border: var(--pad) solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--pad) * 2);
+}
+
+.pho .screen-container::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    background: white;
+    width: 36.6%;
+    bottom: calc(var(--pad) * 0.75);
+    height: calc(var(--pad) * 0.5);
+    border-radius: calc(var(--pad) * 0.25);
+    filter: drop-shadow(0 0.1em 0.25em rgba(0, 0, 0, 0.1));
+}
+
+.pho .bg {
+    position: absolute;
+    inset: 0;
+    background: black;
+    border-radius: calc(var(--border-radius) - var(--pad));
+    overflow: hidden;
+}
+
+.pho .bg > * {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 1s var(--ease-out) 0.5s;
+}
+
+.pho .bg .section {
+    --g-h: var(--c-h);
+    --g-s: var(--c-s);
+    --g-1: var(--c-1);
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: calc(var(--border-radius) - var(--pad));
+    border-bottom-left-radius: 20em;
+    border-bottom-right-radius: 20em;
+}
+
+.pho .bg .section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background:
+        radial-gradient(85% 125% at 50% 140%, black 66.6%, transparent),
+        radial-gradient(120% 120% at 50% 145%, hsl(calc(var(--g-h) - 45), 100%, 50%) 50%, transparent),
+        radial-gradient(150% 100% at 50% 80%, transparent 35%, hsl(calc(var(--g-h) + 50), 100%, 99%));
+    background-color: hsl(var(--g-h), var(--g-s), var(--g-1));
+    transform: scale3d(1.1, 1.25, 1);
+    transform-origin: bottom;
+    transition: transform 1s var(--ease-out) 0.5s;
+}
+
+.pho .bg .section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: var(--border-width) solid rgba(255, 255, 255, 0.8);
+    border-radius: inherit;
+    filter: blur(0.05em);
+    -webkit-mask-image: radial-gradient(100% 100% at 50% 70%, black 30%, transparent 50%);
+    mask-image: radial-gradient(100% 100% at 50% 70%, black 30%, transparent 50%);
+}
+
+.pho .bg .section .glow {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    mix-blend-mode: overlay;
+    z-index: 1;
+    background: radial-gradient(
+        80% 150% at 50% 100%,
+        hsl(var(--g-h), 100%, var(--g-1)),
+        transparent 70%
+    );
+}
+
+.pho .bg .section:last-of-type {
+    --g-h: calc(var(--c-h) - var(--g-hue-adjust, 0));
+    --g-s: calc(var(--c-s) - 25%);
+    --g-1: calc(var(--c-1) + 20%);
+    transform: scale3d(1, -1, 1) translateZ(1px);
+}
+
+.pho .bg .section:last-of-type::before {
+    background:
+        radial-gradient(85% 125% at 50% 140%, black 66.6%, transparent),
+        radial-gradient(
+            120% 120% at 50% 145%,
+            hsl(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust, 0))), 100%, 50%) 50%,
+            transparent
+        ),
+        radial-gradient(150% 100% at 50% 95%, transparent 15%, hsl(calc(var(--g-h) + 5), 100%, var(--g-lightness, 100%)));
+    background-color: hsl(var(--g-h), var(--g-s), var(--g-1));
+}
+
+/* NOTCH / DYNAMIC ISLAND */
+
+.pho .notch-container {
+    position: absolute;
+    z-index: 3;
+    top: var(--pad);
+    right: var(--pad);
+    left: var(--pad);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-height: calc(var(--notch-radius) * 2);
+    pointer-events: none;
+    outline: none;
+    transition: var(--notch-duration) var(--ease);
+    transition-property: max-height, max-width, filter, transform;
+    will-change: max-width, max-height, filter;
+}
+
+.pho .notch-container:hover,
+.pho .notch-container:focus-within {
+    --shadow-opacity: 0.5s;
+    transition-timing-function: var(--ease-spring);
+}
+
+.pho .notch-container:hover .content,
+.pho .notch-container:focus-within .content {
+    --content-padding: 2em;
+}
+
+.pho .notch-container:hover .content .text,
+.pho .notch-container:focus-within .content .text {
+    opacity: 1;
+}
+
+.pho .notch-container:hover .notch,
+.pho .notch-container:focus-within .notch {
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: all;
+    transform: scale3d(1, 1, 1);
+}
+
+.pho .notch-container:hover ~ .notch-blur,
+.pho .notch-container:focus-within ~ .notch-blur {
+    opacity: 1;
+    max-height: calc(var(--notch-radius) * 2.75 + var(--pad));
+}
+
+.pho .notch-container:focus-within {
+    max-height: calc(var(--notch-radius) * 3);
+    --bar-height: 1em;
+    --bar-opacity: 1;
+}
+
+.pho .notch-container:focus-within .left,
+.pho .notch-container:focus-within .right {
+    max-height: calc(100% - var(--bar-height, 0%) - var(--content-gap));
+}
+
+.pho .notch-container:focus-within ~ .notch-blur {
+    max-height: calc(var(--notch-radius) * 5);
+    opacity: 1;
+}
+
+.pho .notch-blur {
+    position: absolute;
+    z-index: 2;
+    top: calc(var(--pad) - 3px);
+    right: calc(var(--pad) - 3px);
+    left: calc(var(--pad) - 3px);
+    height: 100%;
+    max-height: calc(var(--notch-radius) * 1.5);
+    -webkit-backdrop-filter: blur(0.2em);
+    backdrop-filter: blur(0.2em);
+    -webkit-mask-image: linear-gradient(to bottom, black calc(100% - var(--notch-radius)), transparent);
+    mask-image: linear-gradient(to bottom, black calc(100% - var(--notch-radius)), transparent);
+    opacity: 0;
+    border-radius: calc(var(--border-radius) - var(--pad));
+    transition: var(--notch-duration) var(--ease);
+    transition-property: max-height, max-width, filter, transform;
+    will-change: max-width, max-height, filter;
+}
+
+.pho .notch {
+    position: relative;
+    background: black;
+    border-radius: var(--notch-radius);
+    pointer-events: all;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    transition: inherit;
+    transition-property: inherit;
+    will-change: inherit;
+    filter: drop-shadow(0 1em 2em hsla(0 0% 0% / var(--shadow-opacity, 0)));
+    transform: scale3d(0.375, 0.4, 1);
+    transform-origin: top;
+}
+
+/* CONTENU NOTCH */
+
+.pho .content {
+    --content-padding: 1.75em;
+    --duration-height: 0.5em;
+    --content-gap: 1em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: stretch;
+    padding: var(--content-padding);
+    gap: var(--content-gap);
+    font-size: 125%;
+    transition-property: padding;
+    will-change: padding;
+}
+
+.pho .content .left,
+.pho .content .right {
+    height: 100%;
+    max-height: calc(100% - var(--bar-height, 0%));
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.pho .content,
+.pho .content .left,
+.pho .content .right,
+.pho .content .bar,
+.pho .content .text {
+    transition: var(--notch-duration) var(--ease-out);
+}
+
+.pho .content .left,
+.pho .content .right,
+.pho .content .bar {
+    transition-property: max-height, opacity;
+    will-change: max-height;
+}
+
+.pho .content .left {
+    flex-grow: 2;
+}
+
+.pho .content .text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.333em;
+    transition-property: opacity;
+    opacity: var(--bar-opacity, 0);
+}
+
+.pho .content .text::before {
+    content: "Antony";
+    order: 1;
+    text-transform: uppercase;
+}
+
+.pho .content .text::after {
+    order: 2;
+    content: "phone";
+    opacity: 0.5;
+}
+
+.pho .content .right {
+    flex-grow: 1;
+}
+
+.pho .content .title {
+    background: #1a1ab3;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 33.3%;
+    position: relative;
+}
+
+.pho .content .title::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background:
+        radial-gradient(50% 50% at 55% 40%, #131386, #cd1385 75%, transparent) center / 133.3% 133.3%;
+    background-color: yellow;
+    filter: blur(0.05em);
+}
+
+.pho .content .bar {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-basis: 100%;
+    max-height: var(--bar-height, 0%);
+    color: rgba(255, 255, 255, 0.5);
+    opacity: var(--bar-opacity, 0);
+}
+
+.pho .content .bar .duration {
+    position: relative;
+    height: var(--duration-height);
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: calc(var(--duration-height) * 0.5);
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.pho .content .bar .duration::before {
+    content: "";
+    height: 100%;
+    background: white;
+    width: 25%;
+    position: absolute;
+}
+
+.pho .content .bar::before {
+    content: "1:20";
+}
+
+.pho .content .bar::after {
+    content: "-1.48";
+}
+
+/* CAMERA */
+
+.pho .camera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--notch-height);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    pointer-events: none;
+    position: absolute;
+    z-index: 4;
+    top: calc(var(--pad) * 2);
+    right: calc(50% - calc(var(--notch-width) * 0.5));
+    margin-right: calc(var(--pad) * 0.333);
+}
+
+.pho .camera::before {
+    content: "";
+    height: 33.3%;
+    aspect-ratio: 1;
+    border-radius: inherit;
+    box-shadow: inset 0 0 0.25em #4c4da3;
+    background:
+        radial-gradient(#6667ac, transparent 50%) no-repeat 33.3% 10% / 75% 50%,
+        radial-gradient(#454680, transparent 50%) no-repeat 60% 85% / 50% 50%;
+    background-color: #080928;
+}
+
+/* PALETTE DE COULEURS */
+
+.pho .pallette {
+    display: flex;
+    gap: 2em;
+    margin-bottom: -0.25em;
+}
+
+.pho input[type=radio] {
+    display: none;
+}
+
+.pho .swatch {
+    --swatch-size: 5em;
+    background: white;
+    width: var(--swatch-size);
+    height: var(--swatch-size);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    border: var(--border-width) solid black;
+    box-sizing: border-box;
+    transition: 0.333s var(--ease-out);
+    transition-property: border-color, transform;
+    background: radial-gradient(100% 100% at 50% 30%, var(--swatch-s1), var(--swatch-s2));
+    opacity: 0;
+    transform: translate3d(0, 20%, 0) scale3d(0.75, 0.75, 1);
+    animation: appear 0.333s var(--ease-out) forwards 0.75s;
+}
+
+.pho .swatch:nth-child(1) {
+    transform-origin: 80% 200%;
+}
+
+.pho .swatch:nth-child(2) {
+    animation-delay: 0.8s;
+    transform-origin: 60% 200%;
+}
+
+.pho .swatch:nth-child(3) {
+    animation-delay: 0.85s;
+    transform-origin: 40% 200%;
+}
+
+.pho .swatch:nth-child(4) {
+    animation-delay: 0.9s;
+    transform-origin: 20% 200%;
+}
+
+.pho .swatch::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    border: var(--border-width) solid black;
+    background-image: radial-gradient(400% 300% at 50% 225%, transparent 20%, white);
+}
+
+.pho .swatch[for=deep-purple] {
+    --swatch-s1: hsl(var(--deep-purple), 100%, 50%);
+    --swatch-s2: hsl(calc(var(--deep-purple) - 60), 100%, 20%);
+}
+
+.pho .swatch[for=deep-purple]::before {
+    opacity: 0.5;
+}
+
+.pho .swatch[for=gold] {
+    --swatch-s1: hsl(var(--gold), 100%, 50%);
+    --swatch-s2: hsl(var(--gold), 100%, 50%);
+}
+
+.pho .swatch[for=space-black] {
+    --swatch-s1: hsl(var(--space-black), 50%, 20%);
+    --swatch-s2: hsl(var(--space-black), 50%, 10%);
+}
+
+.pho .swatch[for=space-black]::before {
+    opacity: 0.5;
+}
+
+.pho .swatch[for=silver] {
+    --swatch-s1: hsl(var(--silver), 50%, 80%);
+    --swatch-s2: hsl(var(--silver), 50%, 40%);
+}
+
+.pho .swatch[for=silver]::before {
+    opacity: 0.75;
+}
+
+/* COULEURS THEMES */
+
+.pho .deep-purple {
+    --c-h: var(--deep-purple);
+    --g-hue-adjust: 60;
+}
+
+.pho .gold {
+    --c-h: var(--gold);
+    --g--hue-adjust-2: -100;
+}
+
+.pho .space-black {
+    --c-h: var(--space-black);
+    --g-hue-adjust: 190;
+    --g-hue-adjust-2: 145;
+    --g-lightness: 95%;
+}
+
+.pho .silver {
+    --c-h: var(--silver);
+    --c-s: 10%;
+    --g-hue-adjust: 30;
+    --g-lightness: 95%;
+}
+
+.pho .silver .glow {
+    opacity: 0.25;
+}
+
+/* LOGIQUE RADIO -> BG */
+
+.pho #deep-purple:checked ~ .phone .bg .deep-purple {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0s;
+}
+
+.pho #deep-purple:checked ~ .phone .bg .deep-purple .section::before {
+    transition-delay: 0s;
+    animation: test 1s infinite alternate-reverse;
+}
+
+.pho #deep-purple:checked ~ .pallette label[for=deep-purple] {
+    border-color: hsl(var(--deep-purple), 50%, 75%);
+}
+
+.pho #gold:checked ~ .phone .bg .gold {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0s;
+}
+
+.pho #gold:checked ~ .phone .bg .gold .section::before {
+    transition-delay: 0s;
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    animation: test 1s infinite alternate-reverse;
+}
+
+.pho #gold:checked ~ .pallette label[for=gold] {
+    border-color: hsl(var(--gold), 50%, 75%);
+}
+
+.pho #space-black:checked ~ .phone .bg .space-black {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0s;
+}
+
+.pho #space-black:checked ~ .phone .bg .space-black .section::before {
+    transition-delay: 0s;
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    animation: test 1s infinite alternate-reverse;
+}
+
+.pho #space-black:checked ~ .pallette label[for=space-black] {
+    border-color: hsl(var(--space-black), 50%, 75%);
+}
+
+.pho #silver:checked ~ .phone .bg .silver {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0s;
+}
+
+.pho #silver:checked ~ .phone .bg .silver .section::before {
+    transition-delay: 0s;
+    transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    animation: test 1s infinite alternate-reverse;
+}
+
+.pho #silver:checked ~ .pallette label[for=silver] {
+    border-color: hsl(var(--silver), 50%, 75%);
+}

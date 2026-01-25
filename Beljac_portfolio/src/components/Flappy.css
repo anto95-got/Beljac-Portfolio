@@ -1,0 +1,106 @@
+/* src/components/Flappy.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Wrapper pour isoler le style */
+.flappy-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --- PRESENTATION (CARTES) --- */
+.flappy-intro {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.flappy-cards {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+/* Réutilisation du style de cartes existant mais scopé */
+.f-card {
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.f-content-card {
+    background-color: rgb(173, 173, 173);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: transform 0.15s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.f-content-card img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.f-content-card h1 {
+    color: black;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+/* --- LE JEU (CANVAS) --- */
+.flappy-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive; /* Police Pixel */
+}
+
+canvas#flappy-canvas {
+    background-color: #70c5ce; /* Couleur du ciel Flappy Bird */
+    border: 4px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    width: 431px;
+    max-width: 100%;
+    background-color: #5EE270;
+    padding: 10px;
+    border: 2px solid white;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: black;
+    font-size: 12px;
+}
+
+.flappy-title {
+    font-family: 'Press Start 2P', cursive;
+    color: #f1ce09;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 0 #000;
+}

@@ -1,0 +1,335 @@
+/* --- PAGE ACTIVITÉS --- */
+
+.activities-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000; /* Fond noir à la place de la vidéo */
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden; /* Bloque le scroll */
+    position: relative;
+}
+
+/* Conteneur qui glisse (Slide 0 = Carrousel, Slide 1 = Coach, etc.) */
+.activities-slider {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.activity-section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- CAROUSEL (Code Original Adapté) --- */
+.activities-wrapper .carousel {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.activities-wrapper .carousel .list .item {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.activities-wrapper .carousel .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6); /* Un peu plus sombre pour lire le texte */
+}
+
+.activities-wrapper .carousel .list .item .content {
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+}
+
+.activities-wrapper .author {
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.activities-wrapper .topic, 
+.activities-wrapper .title {
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 1.3em;
+}
+
+.activities-wrapper .topic {
+    color: #f1ce09;
+}
+
+/* --- CORRECTION DES BOUTONS --- */
+
+.activities-wrapper .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 140px); /* Un peu plus large pour être sûr */
+    grid-template-rows: 50px; /* Hauteur fixe */
+    gap: 20px; /* Espace entre les deux boutons */
+    margin-top: 25px;
+    justify-content: start; /* Force l'alignement à gauche */
+}
+
+.activities-wrapper .buttons button {
+    border: none;
+    background-color: #eee;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    
+    /* Force la taille */
+    width: 100%;
+    height: 100%;
+    
+    /* Centrage du texte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 5px; /* Petit arrondi pour le style moderne */
+    transition: all 0.3s ease;
+}
+
+/* Le 2ème bouton (Transparent) */
+.activities-wrapper .buttons button:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+    border: 2px solid #eee; /* Bordure plus visible */
+}
+
+/* Effet au survol */
+.activities-wrapper .buttons button:hover {
+    background-color: #f1ce09; /* Jaune doré au survol */
+    color: black;
+    border-color: #f1ce09;
+    transform: scale(1.05);
+}
+
+.activities-wrapper .buttons button:nth-child(2):hover {
+    background-color: #f1ce09;
+    color: black;
+    border-color: #f1ce09;
+}
+
+/* THUMBNAIL */
+.activities-wrapper .thumbnail {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.activities-wrapper .thumbnail .item {
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.activities-wrapper .thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activities-wrapper .thumbnail .item .content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.activities-wrapper .thumbnail .title {
+    font-weight: bold;
+    color: black;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+
+/* ARROWS */
+.activities-wrapper .arrows {
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    z-index: 100;
+}
+
+.activities-wrapper .arrows button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(238, 238, 238, 0.8);
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+    transition: .5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activities-wrapper .arrows button:hover {
+    background-color: #f1ce09;
+    color: #000;
+}
+
+/* ANIMATIONS CAROUSEL (Copiées et adaptées) */
+.activities-wrapper .carousel .list .item:nth-child(1) { z-index: 1; }
+
+.activities-wrapper .carousel .list .item:nth-child(1) .author,
+.activities-wrapper .carousel .list .item:nth-child(1) .title,
+.activities-wrapper .carousel .list .item:nth-child(1) .topic,
+.activities-wrapper .carousel .list .item:nth-child(1) .des,
+.activities-wrapper .carousel .list .item:nth-child(1) .buttons {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+@keyframes showContent {
+    to { opacity: 1; filter: blur(0); transform: translateY(0); }
+}
+
+.activities-wrapper .carousel .list .item:nth-child(1) .title { animation-delay: 1.3s; }
+.activities-wrapper .carousel .list .item:nth-child(1) .topic { animation-delay: 1.4s; }
+.activities-wrapper .carousel .list .item:nth-child(1) .des { animation-delay: 1.6s; }
+.activities-wrapper .carousel .list .item:nth-child(1) .buttons { animation-delay: 1.8s; }
+
+.activities-wrapper .carousel.next .list .item:nth-child(1) img {
+    width: 150px; height: 220px; position: absolute; left: 50%; bottom: 50px; border-radius: 20px;
+    animation: showImage 0.5s linear 1 forwards;
+}
+@keyframes showImage {
+    to { width: 100%; height: 100%; left: 0; bottom: 0; border-radius: 0; }
+}
+
+.activities-wrapper .carousel.next .thumbnail .item:nth-last-child(1) {
+    width: 0; overflow: hidden; animation: showThumbnail .5s linear 1 forwards;
+}
+@keyframes showThumbnail { to { width: 150px; } }
+
+.activities-wrapper .carousel.next .thumbnail {
+    transform: translateX(150px); animation: transformThumbnail .5s linear 1 forwards;
+}
+@keyframes transformThumbnail { to { transform: translateX(0); } }
+
+.activities-wrapper .carousel.prev .list .item:nth-child(2) { z-index: 2; }
+.activities-wrapper .carousel.prev .list .item:nth-child(2) img {
+    position: absolute; bottom: 0; left: 0; animation: outImage 0.5s linear 1 forwards;
+}
+@keyframes outImage {
+    to { width: 150px; height: 220px; border-radius: 20px; left: 50%; bottom: 50px; }
+}
+
+.activities-wrapper .carousel.prev .thumbnail .item:nth-child(1) {
+    width: 0; overflow: hidden; opacity: 0; animation: showThumbnail 0.5s linear 1 forwards;
+}
+
+.activities-wrapper .carousel.prev .list .item:nth-child(2) .author,
+.activities-wrapper .carousel.prev .list .item:nth-child(2) .title,
+.activities-wrapper .carousel.prev .list .item:nth-child(2) .topic,
+.activities-wrapper .carousel.prev .list .item:nth-child(2) .des,
+.activities-wrapper .carousel.prev .list .item:nth-child(2) .buttons {
+    animation: contentOut 1.5s linear 1 forwards;
+}
+@keyframes contentOut {
+    to { transform: translateX(-150px); filter: blur(20px); opacity: 0; }
+}
+
+/* --- SECTIONS DÉTAILS (VIDEO/TEXTE) --- */
+.detail-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    height: 100%;
+    padding: 0 10%;
+    background: radial-gradient(circle at center, #222, black);
+}
+
+.detail-text {
+    width: 40%;
+}
+.detail-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.detail-text span {
+    color: #f1ce09;
+}
+.detail-media {
+    width: 50%;
+    max-width: 600px;
+}
+.detail-media video, .detail-media img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(241, 206, 9, 0.2);
+    border: 2px solid #333;
+}
+
+.btn-back {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    z-index: 1000;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .activities-wrapper .carousel .list .item .content {
+        padding-right: 0;
+    }
+    .activities-wrapper .carousel .list .item .content .title {
+        font-size: 2.5rem;
+    }
+    .detail-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding-top: 80px;
+    }
+    .detail-text, .detail-media {
+        width: 100%;
+    }
+    .activities-wrapper .thumbnail {
+        bottom: 10px;
+    }
+    .activities-wrapper .thumbnail .item {
+        width: 100px;
+        height: 150px;
+    }
+}

@@ -1,42 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --primary-gold: #f1ce09;
+  --bg-black: #000000;
+  --text-white: #ffffff;
+}
+
+/* RESET TOTAL */
+body, html {
+  background-color: var(--bg-black) !important;
+  color: var(--text-white);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* LE CONTENEUR PRINCIPAL QUI CENTRE TOUT */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1400px; /* Limite la largeur sur les grands écrans */
+  margin: 0 auto;    /* Centre le bloc au milieu */
+  padding: 0 20px;
+}
+
+/* TITRES */
+h2.section-title {
+  font-size: 3rem;
   text-align: center;
+  margin: 4rem 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+}
+h2.section-title span {
+  color: var(--primary-gold);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* NAVBAR */
+.navbar {
+  background-color: #000 !important;
+  border-bottom: 1px solid #333;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* --- STYLE DES CARTES 3D (Adapté de votre code) --- */
+.card-3d-container {
+  width: 200px; /* Taille fixe comme demandé */
+  height: 200px;
+  perspective: 1000px;
+  margin: 0 auto; /* Centrage de la carte */
+  cursor: pointer;
+}
+
+.card-3d-content {
+  background-color: rgb(219, 219, 219);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  transition: transform 0.1s ease-out; /* Transition rapide pour l'effet */
+  transform-style: preserve-3d;
+  box-shadow: 0 0 15px var(--primary-gold);
+}
+
+.card-3d-content img {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-3d-content h5 {
+  color: black;
+  font-weight: 800;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+/* TIMELINE CENTRAGE */
+.timeline-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+/* Ligne verticale */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  background: var(--primary-gold);
+  height: 100%;
+  transform: translateX(-50%);
+}
+.timeline-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.timeline-content {
+  width: 45%;
+  background: #111;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: var(--primary-gold);
+  border-radius: 50%;
+}
+
+/* CSS SPECIFIQUE POUR ALIGNER LE TEXTE DU PARCOURS */
+.left .timeline-content { text-align: right; margin-right: auto; }
+.right .timeline-content { text-align: left; margin-left: auto; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content { text-align: center; }
+  .timeline-row { flex-direction: column; position: relative; }
+  .timeline-line { left: 20px; }
+  .timeline-dot { left: 20px; }
+  .timeline-content { width: 100%; margin-left: 40px !important; text-align: left !important; }
+}
+
+/* --- VEILLE TECHNOLOGIQUE : STYLE DIAPORAMA & CARTES --- */
+
+/* Bloque le scroll global */
+.veille-window {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+/* Le slider qui bouge de haut en bas */
+.veille-slider {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Chaque écran (slide) */
+.veille-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* --- CARTES ACCORDÉON (IMAGES) --- */
+.accordion-container {
+  display: flex;
+  width: 90%; /* Largeur adaptée */
+  max-width: 1200px;
+  height: 50vh; /* Hauteur des cartes */
+  gap: 15px;
+  padding: 0 10px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.accordion-card {
+  position: relative;
+  height: 100%;
+  border-radius: 25px; /* Bordure arrondie comme demandé */
+  background-size: cover !important; /* L'image couvre tout */
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  cursor: pointer;
+  flex: 0.6; /* Taille fermée */
+  transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  overflow: hidden;
+  border: 2px solid #333;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+  display: flex;
+  align-items: flex-end; /* Texte en bas */
+}
+
+/* Quand la carte est active (cliquée) */
+.accordion-card.active {
+  flex: 5; /* Elle s'agrandit */
+  border: 2px solid var(--primary-gold);
+}
+
+/* Ombre pour lire le texte sur l'image */
+.accordion-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.95), transparent 60%);
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.accordion-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Texte en colonne */
+  justify-content: flex-end;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease 0.2s; /* Petit délai pour l'apparition */
+}
+
+/* Le contenu apparait seulement si la carte est active */
+.accordion-card.active .accordion-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--primary-gold);
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+/* BOUTONS NAVIGATION (Flèches) */
+.nav-controls {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 100;
+}
+
+.nav-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-btn:hover {
+  background: var(--primary-gold);
+  border-color: var(--primary-gold);
+  color: black;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .accordion-container { flex-direction: column; height: 70vh; }
+  .accordion-card { width: 100%; flex: 1; }
+  .accordion-card.active { flex: 2; }
+}
+
+/* --- STYLE DU SOMMAIRE (Modifié) --- */
+
+/* La liste globale */
+.summary-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Espace entre les lignes */
+  align-items: center; /* Centre le texte */
+}
+
+/* Chaque ligne du sommaire */
+.summary-list li {
+  font-size: 4rem; /* BEAUCOUP PLUS GROS */
+  font-weight: 800; /* Plus gras */
+  color: white !important; /* FORCÉ EN BLANC */
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.5); /* Ombre pour lisibilité */
+}
+
+/* Effet au survol */
+.summary-list li:hover {
+  color: var(--primary-gold) !important; /* Devient doré au survol */
+  transform: scale(1.1); /* Grossit un peu */
+}
+
+/* Les numéros (01, 02, 03) */
+.summary-number {
+  font-size: 4rem;
+  color: var(--primary-gold); /* Le numéro reste doré pour le style */
+  margin-right: 30px;
+  font-weight: 900;
+}
+
+/* Responsive pour mobile (pour pas que ça dépasse) */
+@media (max-width: 768px) {
+  .summary-list li {
+    font-size: 2.5rem; /* Un peu plus petit sur téléphone */
   }
-  to {
-    transform: rotate(360deg);
+  .summary-number {
+    font-size: 2.5rem;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

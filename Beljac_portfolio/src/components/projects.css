@@ -1,0 +1,145 @@
+/* --- PAGE PROJETS GÉNÉRAL --- */
+.projects-window {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  padding-top: 80px;
+}
+
+/* --- MENU DE SÉLECTION --- */
+.project-selector {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.project-card-choice {
+  width: 300px;
+  height: 400px;
+  background: #111;
+  border: 2px solid #333;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-card-choice:hover {
+  transform: translateY(-10px);
+  border-color: #f1ce09;
+  box-shadow: 0 0 30px rgba(241, 206, 9, 0.2);
+}
+
+.project-card-choice i {
+  font-size: 5rem;
+  color: #f1ce09;
+  margin-bottom: 20px;
+}
+
+/* --- PROJET MÉTÉO --- */
+.meteo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.meteo-box {
+  position: relative;
+  width: 400px;
+  height: 100px; /* Taille fermée par défaut */
+  background-color: #fff;
+  padding: 28px 32px;
+  border-radius: 18px;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.6s ease-out;
+  overflow: hidden;
+  color: #06283d;
+}
+
+.meteo-box.active {
+  height: 590px;
+}
+
+.meteo-box.error {
+  height: 400px;
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-box input {
+  color: #06283d;
+  width: 80%;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 32px;
+  border: none;
+  background: transparent;
+}
+
+.search-box button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  color: #06283d;
+  background: #dff6ff;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: 0.4s ease;
+  border: none;
+}
+
+.search-box button:hover {
+  color: #fff;
+  background: #06283d;
+}
+
+.weather-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.weather-box img {
+  width: 60%;
+}
+
+.weather-box .temperature {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.weather-details .detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.not-found {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.not-found img {
+  width: 70%;
+}
+
