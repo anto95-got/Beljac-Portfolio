@@ -6,26 +6,17 @@ html body{
 
 }
 
-#navbar {
-    display: none; /* Cache la navbar pendant le chargement */
-}
 
-.bg-video {
-    position: fixed;  /* Fixe la vidéo en arrière-plan */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* Couvre toute la page */
-    z-index: -1; /* Derrière tout le contenu */
-    
+
+.veille-section{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
 
 section{
     width: 100vw;
     min-height: 100vh;
-
-    
 }
 span{
     color: #e0af0f;

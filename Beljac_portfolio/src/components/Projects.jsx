@@ -9,7 +9,7 @@ import htmlIcon from '/icon-img/icon-html.png';
 import cssIcon from '/icon-img/icon-css.png';
 import jsIcon from '/icon-img/icon-javascript.png';
 
-const Projects = ({ onBack }) => {
+const Projects = () => {
   const [currentProject, setCurrentProject] = useState('menu');
 
   // --- LOGIQUE METEO ---
@@ -208,24 +208,6 @@ const Projects = ({ onBack }) => {
 
   return (
     <div className="projects-window">
-      {/* NAVBAR */}
-      <nav
-        className="navbar navbar-expand-lg navbar-dark fixed-top"
-        style={{ backgroundColor: '#000', borderBottom: '1px solid #333' }}
-      >
-        <div className="container">
-          <a className="navbar-brand text-warning fw-bold" href="#">
-            MES PROJETS
-          </a>
-          <button
-            className="btn btn-outline-warning btn-sm fw-bold ms-auto rounded-pill"
-            onClick={onBack}
-          >
-            RETOUR PORTFOLIO
-          </button>
-        </div>
-      </nav>
-
       {/* --- MENU SELECTION --- */}
       {currentProject === 'menu' && (
         <div className="container text-center" style={{ marginTop: '100px' }}>
@@ -255,12 +237,6 @@ const Projects = ({ onBack }) => {
       {currentProject === 'meteo' && (
         <div className="meteo-section">
           <div className="text-center w-100">
-            <button
-              className="btn btn-outline-light mb-4"
-              onClick={() => setCurrentProject('menu')}
-            >
-               Retour Menu
-            </button>
             <div className="mb-4">
               <h2>Météo App</h2>
               <div className="d-flex justify-content-center gap-3 mt-2">
@@ -370,14 +346,6 @@ const Projects = ({ onBack }) => {
           )}
           {startPhone && (
             <div className="phone-project-wrapper">
-              <button
-                className="btn btn-outline-light mb-4 position-absolute start-0 m-4"
-                style={{ top: '4.25rem', zIndex: 999 }}
-                onClick={() => setStartPhone(false)}
-              >
-                 Retour
-              </button>
-
               {/* SECTION IPHONE SCOPÉE */}
               <section className="pho" id="phone">
                 {/* Radios pour les thèmes */}
@@ -525,14 +493,6 @@ const Projects = ({ onBack }) => {
 
           {startFlappy && (
             <div className="flappy-game-container" style={{ position: 'relative' }}>
-              <button
-                className="btn btn-outline-light mb-3 m-4"
-                style={{ position: 'fixed', top: '4rem', left: '1.5rem', zIndex: 1100 }}
-                onClick={() => setStartFlappy(false)}
-              >
-                 Retour Présentation
-              </button>
-
               <h2 className="flappy-title">FLAPPY BIRD</h2>
 
               <canvas id="flappy-canvas" ref={canvasRef} width="431" height="768"></canvas>

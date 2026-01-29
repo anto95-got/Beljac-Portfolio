@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Activities.css';
 
-const Activities = ({ onBack, onContact }) => {
+const Activities = ({ onContact }) => {
   const [currentSlide, setCurrentSlide] = useState(0); // 0 = Carousel, 1=Coach, 2=Foot, 3=Projet
   
   // Refs pour le DOM du carousel
@@ -47,23 +47,6 @@ const Activities = ({ onBack, onContact }) => {
 
   return (
     <div className="activities-wrapper">
-      
-      {/* NAVBAR */}
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{backgroundColor: '#000', borderBottom: '1px solid #333', zIndex: 999}}>
-        <div className="container">
-          <a className="navbar-brand text-warning fw-bold" href="#">ACTIVITÉS</a>
-          <button className="btn btn-outline-warning btn-sm fw-bold ms-auto rounded-pill" onClick={onBack}>
-             RETOUR PORTFOLIO
-          </button>
-        </div>
-      </nav>
-
-      {/* BOUTON RETOUR (visible seulement si on est dans un détail) */}
-      {currentSlide > 0 && (
-        <button className="btn btn-outline-light rounded-pill px-4 btn-back" onClick={() => setCurrentSlide(0)}>
-          ⬅ Retour Carrousel
-        </button>
-      )}
 
       {/* SLIDER VERTICAL (Transition fluide entre carousel et détails) */}
       <div className="activities-slider" style={{ transform: `translateY(-${currentSlide * 100}vh)` }}>

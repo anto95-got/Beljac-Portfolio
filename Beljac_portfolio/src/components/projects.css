@@ -1,7 +1,7 @@
 /* --- PAGE PROJETS GÉNÉRAL --- */
 .projects-window {
   min-height: 100vh;
-  background-color: black;
+  background-color: rgba(0,0,0,0.80.755);
   color: white;
   padding-top: 80px;
 }

@@ -9,13 +9,16 @@
 
 /* RESET TOTAL */
 body, html {
-  background-color: var(--bg-black) !important;
+  background-color: rgba(0,0,0,0.78) !important;
   color: var(--text-white);
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+}
+h1{
+  color: var(--text-white)!important;
 }
 
 /* LE CONTENEUR PRINCIPAL QUI CENTRE TOUT */
@@ -48,8 +51,15 @@ h2.section-title span {
 
 /* NAVBAR */
 .navbar {
-  background-color: #000 !important;
+  background-color: transparent !important;
   border-bottom: 1px solid #333;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #f8f9fa !important;
 }
 
 /* --- STYLE DES CARTES 3D (Adapté de votre code) --- */
