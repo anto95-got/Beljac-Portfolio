@@ -1,49 +1,158 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import lionImg from '../assets/lion_ajana_fond.png';
 import './Veille.css';
-import robot from '../../dist/veille/ameca.jpg';
-import { collection, getDocs, query, orderBy, limit } from 'firebase/firestore';
-import { db } from '../firebase';
+import robot from '../assets/Ameca-Full-figure-Social-Humanoid-Robot-Realistic-Facial-Expression-Heinz-Nixdorf-Museumsforum-Engineered-Arts.jpg';
+
+const formatDate = (value) => {
+  if (!value) return 'Date inconnue';
+  const parsedDate = new Date(value);
+  if (Number.isNaN(parsedDate.getTime())) return value;
+  return parsedDate.toLocaleDateString('fr-FR');
+};
+
+const toTimestamp = (value) => {
+  const parsedDate = new Date(value);
+  const timestamp = parsedDate.getTime();
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+};
+
+const VEILLE_API_URL = import.meta.env.VITE_VEILLE_API_URL || '/api/veille';
+
+const decodeEntities = (rawText) => {
+  if (!rawText) return '';
+  if (typeof window === 'undefined' || typeof DOMParser === 'undefined') {
+    return String(rawText);
+  }
+  const parser = new DOMParser();
+  const parsed = parser.parseFromString(String(rawText), 'text/html');
+  return parsed.documentElement.textContent || '';
+};
+
+const cleanText = (rawText) => {
+  const decoded = decodeEntities(rawText || '');
+  return decoded
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\u00a0/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+};
+
+const toNewsKey = (item) => `${item?.link || ''}|${item?.title || ''}`.trim().toLowerCase();
+
+const normalizeNews = (item) => ({
+  title: cleanText(item?.title || 'Titre inconnu'),
+  summary: cleanText(item?.summary || 'Pas de résumé disponible.'),
+  content: cleanText(item?.content || item?.summary || 'Voir l’article source.'),
+  source: cleanText(item?.source || 'Source inconnue'),
+  link: cleanText(item?.link || '#'),
+  date: cleanText(item?.date || ''),
+});
+
+const normalizeEntry = (entry) => ({
+  weekId: cleanText(entry?.weekId || ''),
+  week: cleanText(entry?.week || ''),
+  news: Array.isArray(entry?.news) ? entry.news.map((item) => normalizeNews(item)) : [],
+});
+
+const normalizeApiData = (payload) => {
+  // Compat legacy: ancien format [ { week, news }... ]
+  if (Array.isArray(payload)) {
+    const historyBlocks = payload
+      .map((entry) => normalizeEntry(entry))
+      .filter((entry) => entry.news.length > 0)
+      .sort((a, b) => {
+        const maxA = Math.max(...a.news.map((item) => toTimestamp(item.date)), 0);
+        const maxB = Math.max(...b.news.map((item) => toTimestamp(item.date)), 0);
+        return maxB - maxA;
+      });
+
+    return {
+      latest: historyBlocks[0] || { weekId: '', week: '', news: [] },
+      history: historyBlocks.slice(1),
+      updatedAt: '',
+    };
+  }
+
+  const latest = normalizeEntry(payload?.latest || {});
+  const history = Array.isArray(payload?.history)
+    ? payload.history.map((entry) => normalizeEntry(entry)).filter((entry) => entry.news.length > 0)
+    : [];
+
+  return {
+    latest,
+    history,
+    updatedAt: cleanText(payload?.updatedAt || ''),
+  };
+};
 
 const Veille = () => {
   const [currentSection, setCurrentSection] = useState(0);
   const [activeAlt, setActiveAlt] = useState(1);
   const [activeAladdin, setActiveAladdin] = useState(1);
-  const [news, setNews] = useState([
-    { id: 'sample-1', title: "OpenAI présente GPT-o3", date: "24 jan 2026", summary: "Modèle multimodal orienté agents, plans plus longs et sûreté renforcée.", link: "#" },
-    { id: 'sample-2', title: "Boston Dynamics dévoile Atlas NG", date: "21 jan 2026", summary: "Nouvelle génération du robot humanoïde avec IA embarquée pour la manutention.", link: "#" },
-    { id: 'sample-3', title: "UE : cadre IA pour robots industriels", date: "18 jan 2026", summary: "Lignes directrices sur traçabilité et sécurité des systèmes robotiques.", link: "#" },
-    { id: 'sample-4', title: "Nvidia lance Jetson Orion", date: "15 jan 2026", summary: "Plateforme edge pour robots autonomes optimisée RL + vision temps réel.", link: "#" },
-  ]);
-  const [loadingNews, setLoadingNews] = useState(false);
-  const [errorNews, setErrorNews] = useState(null);
+  const [showHistory, setShowHistory] = useState(false);
+  const [selectedNews, setSelectedNews] = useState(null);
+  const [veilleData, setVeilleData] = useState({
+    latest: { weekId: '', week: '', news: [] },
+    history: [],
+    updatedAt: '',
+  });
+  const [isLoadingNews, setIsLoadingNews] = useState(true);
+  const [newsError, setNewsError] = useState('');
 
   useEffect(() => {
-    const fetchNews = async () => {
-      setLoadingNews(true);
+    let isMounted = true;
+
+    const loadNews = async () => {
       try {
-        const q = query(collection(db, 'actus'), orderBy('date', 'desc'), limit(4));
-        const snap = await getDocs(q);
-        if (!snap.empty) {
-          const items = snap.docs.map(doc => ({
-            id: doc.id,
-            title: doc.data().title || 'Sans titre',
-            summary: doc.data().summary || '',
-            date: doc.data().date || '',
-            link: doc.data().link || '#'
-          }));
-          setNews(items);
+        setIsLoadingNews(true);
+        setNewsError('');
+
+        const fetchJson = async (url) => {
+          const response = await fetch(url);
+          if (!response.ok) throw new Error(`Erreur HTTP ${response.status} sur ${url}`);
+          return response.json();
+        };
+
+        let payload;
+        try {
+          payload = await fetchJson(VEILLE_API_URL);
+        } catch {
+          payload = await fetchJson('/veille/historique_ia_robotique.json');
         }
-        setErrorNews(null);
-      } catch (err) {
-        console.warn('Actus Firestore non chargées, fallback local.', err);
-        setErrorNews("Impossible de récupérer les actus, affichage des données locales.");
+
+        const normalized = normalizeApiData(payload);
+        if (isMounted) setVeilleData(normalized);
+      } catch {
+        if (isMounted) {
+          setNewsError('Impossible de charger les actualités pour le moment.');
+        }
       } finally {
-        setLoadingNews(false);
+        if (isMounted) {
+          setIsLoadingNews(false);
+        }
       }
     };
-    fetchNews();
+
+    loadNews();
+    return () => {
+      isMounted = false;
+    };
   }, []);
+
+  const latestNews = Array.isArray(veilleData.latest.news) ? veilleData.latest.news : [];
+  const oldNews = (() => {
+    const flattened = (Array.isArray(veilleData.history) ? veilleData.history : [])
+      .flatMap((entry) => (Array.isArray(entry.news) ? entry.news : []))
+      .sort((a, b) => toTimestamp(b.date) - toTimestamp(a.date));
+
+    const dedup = new Set();
+    return flattened.filter((item) => {
+      const key = toNewsKey(item);
+      if (!key || dedup.has(key)) return false;
+      dedup.add(key);
+      return true;
+    });
+  })();
 
   const alternanceCards = [
     { id: 1, title: "Organigramme", icon: "1", img: "/veille/org-photo.png" },
@@ -85,20 +194,65 @@ const Veille = () => {
         {/* 1. ACTUALITES */}
         <section className="veille-section actus-section" id='actua'>
           <h1 id='titre' className='display-5 fw-bold text-white'>Actualités IA & Robots</h1>
-          {errorNews && <p className="text-warning small">{errorNews}</p>}
-          {loadingNews ? (
-            <p className="text-light">Chargement des actus...</p>
-          ) : (
-            <div className="actualite-grid">
-              {news.map((item) => (
-                <article key={item.id} className="actus-card">
-                  <div className="actus-meta">{item.date}</div>
-                  <h3>{item.title}</h3>
-                  <p>{item.summary}</p>
-                  <a href={item.link} target="_blank" rel="noreferrer" className="link-light fw-bold">Lire</a>
-                </article>
-              ))}
-            </div>
+
+          {isLoadingNews && <p className="text-light mt-4">Chargement des actualités...</p>}
+          {!isLoadingNews && newsError && <p className="text-warning fw-bold mt-4">{newsError}</p>}
+
+          {!isLoadingNews && !newsError && (
+            <>
+              <h3 className="actus-subtitle">Actualités récentes</h3>
+              <div className="actualite-grid">
+                {latestNews.map((item) => (
+                  <article key={`${item.link}-${item.date}`} className="actus-card">
+                    <div className="actus-meta">{formatDate(item.date)}</div>
+                    <div className="actus-meta">{item.source}</div>
+                    <p>{item.summary}</p>
+                    <button
+                      type="button"
+                      className="btn btn-outline-warning btn-sm fw-bold rounded-pill mt-2"
+                      onClick={() => setSelectedNews(item)}
+                    >
+                      Voir
+                    </button>
+                  </article>
+                ))}
+              </div>
+
+              <div className="mt-2">
+                <button
+                  type="button"
+                  className="btn btn-outline-warning fw-bold rounded-pill px-4"
+                  onClick={() => setShowHistory((prev) => !prev)}
+                  disabled={oldNews.length === 0}
+                >
+                  {showHistory ? 'Masquer historique' : 'Historique'}
+                </button>
+              </div>
+
+              {showHistory && (
+                <>
+                  <h3 className="actus-subtitle archives-title">Historique</h3>
+                  <div style={{ maxHeight: '400px', overflowY: 'auto', paddingRight: '0.3rem' }}>
+                    <div className="actualite-grid">
+                      {oldNews.map((item) => (
+                        <article key={`${item.link}-${item.date}`} className="actus-card">
+                          <div className="actus-meta">{formatDate(item.date)}</div>
+                          <div className="actus-meta">{item.source}</div>
+                          <p>{item.summary}</p>
+                          <button
+                            type="button"
+                            className="btn btn-outline-warning btn-sm fw-bold rounded-pill mt-2"
+                            onClick={() => setSelectedNews(item)}
+                          >
+                            Voir
+                          </button>
+                        </article>
+                      ))}
+                    </div>
+                  </div>
+                </>
+              )}
+            </>
           )}
         </section>
 
@@ -173,6 +327,56 @@ const Veille = () => {
         </section>
 
       </div>
+
+      {selectedNews && (
+        <div
+          onClick={() => setSelectedNews(null)}
+          style={{
+            position: 'fixed',
+            inset: 0,
+            background: 'rgba(0,0,0,0.7)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 3000,
+            padding: '1rem',
+          }}
+        >
+          <div
+            onClick={(event) => event.stopPropagation()}
+            style={{
+              width: 'min(680px, 100%)',
+              maxHeight: '85vh',
+              overflowY: 'auto',
+              background: '#111',
+              border: '1px solid #333',
+              borderRadius: '14px',
+              padding: '1.25rem',
+              color: '#fff',
+            }}
+          >
+            <button
+              type="button"
+              className="btn btn-outline-warning btn-sm fw-bold rounded-pill mb-3"
+              onClick={() => setSelectedNews(null)}
+            >
+              Fermer
+            </button>
+            <p className="actus-meta mb-1">{formatDate(selectedNews.date)}</p>
+            <p className="actus-meta mb-2">{selectedNews.source}</p>
+            <h2 className="text-warning">{selectedNews.title}</h2>
+            <p className="mb-3">{selectedNews.content}</p>
+            <a
+              href={selectedNews.link}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-warning btn-sm fw-bold rounded-pill"
+            >
+              Lire l’article complet
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

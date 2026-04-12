@@ -2,6 +2,13 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+## Veille technologique automatisee
+
+La premiere implementation (React + Firebase Functions + RSS + resume IA + email automatique) est documentee ici:
+
+- `docs/veille-setup.md`
+- `docs/veille-audit.md`
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh

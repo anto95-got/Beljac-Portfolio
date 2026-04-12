@@ -1,4 +1,7 @@
 {
+  "functions": {
+    "source": "functions"
+  },
   "hosting": {
     "public": "dist",
     "ignore": [
@@ -7,7 +10,24 @@
       "**/node_modules/**"
     ],
     "rewrites": [
-      { "source": "**", "destination": "/index.html" }
+      {
+        "source": "/api/veille/refresh",
+        "function": {
+          "functionId": "refreshVeilleNow",
+          "region": "europe-west1"
+        }
+      },
+      {
+        "source": "/api/veille",
+        "function": {
+          "functionId": "getVeille",
+          "region": "europe-west1"
+        }
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
