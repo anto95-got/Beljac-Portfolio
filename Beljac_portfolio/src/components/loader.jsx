@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 // Vérifie que les noms correspondent à tes fichiers
-import crownImg from '../assets/ajana_logo_basic.png'; 
+import crownImg from '../assets/ajana_logo_copie.svg';
 import lionImg from '../assets/lion_ajana_fond.png'; // La bonne image
 
 const Loader = ({ onComplete }) => {

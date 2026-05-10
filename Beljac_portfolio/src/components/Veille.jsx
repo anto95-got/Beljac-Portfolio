@@ -16,7 +16,7 @@ const toTimestamp = (value) => {
   return Number.isNaN(timestamp) ? 0 : timestamp;
 };
 
-const VEILLE_API_URL = import.meta.env.VITE_VEILLE_API_URL || '/api/veille';
+const VEILLE_DATA_URL = '/veille/historique_ia_robotique.json';
 
 const decodeEntities = (rawText) => {
   if (!rawText) return '';
@@ -37,21 +37,27 @@ const cleanText = (rawText) => {
     .trim();
 };
 
-const toNewsKey = (item) => `${item?.link || ''}|${item?.title || ''}`.trim().toLowerCase();
+const toNewsKey = (item) => `${item?.link || item?.url || ''}|${item?.title || ''}`.trim().toLowerCase();
 
 const normalizeNews = (item) => ({
   title: cleanText(item?.title || 'Titre inconnu'),
   summary: cleanText(item?.summary || 'Pas de résumé disponible.'),
   content: cleanText(item?.content || item?.summary || 'Voir l’article source.'),
   source: cleanText(item?.source || 'Source inconnue'),
-  link: cleanText(item?.link || '#'),
+  link: cleanText(item?.link || item?.url || '#'),
+  url: cleanText(item?.url || item?.link || '#'),
   date: cleanText(item?.date || ''),
+  aiSummary: cleanText(item?.aiSummary || ''),
+  whyImportant: cleanText(item?.whyImportant || ''),
 });
 
 const normalizeEntry = (entry) => ({
-  weekId: cleanText(entry?.weekId || ''),
-  week: cleanText(entry?.week || ''),
-  news: Array.isArray(entry?.news) ? entry.news.map((item) => normalizeNews(item)) : [],
+  weekId: cleanText(entry?.weekId || entry?.week || ''),
+  week: cleanText(entry?.week || entry?.weekId || ''),
+  article: entry?.article ? normalizeNews(entry.article) : null,
+  news: entry?.article
+    ? [normalizeNews(entry.article)]
+    : Array.isArray(entry?.news) ? entry.news.map((item) => normalizeNews(item)) : [],
 });
 
 const normalizeApiData = (payload) => {
@@ -92,7 +98,7 @@ const Veille = () => {
   const [showHistory, setShowHistory] = useState(false);
   const [selectedNews, setSelectedNews] = useState(null);
   const [veilleData, setVeilleData] = useState({
-    latest: { weekId: '', week: '', news: [] },
+    latest: { weekId: '', week: '', article: null, news: [] },
     history: [],
     updatedAt: '',
   });
@@ -113,12 +119,7 @@ const Veille = () => {
           return response.json();
         };
 
-        let payload;
-        try {
-          payload = await fetchJson(VEILLE_API_URL);
-        } catch {
-          payload = await fetchJson('/veille/historique_ia_robotique.json');
-        }
+        const payload = await fetchJson(VEILLE_DATA_URL);
 
         const normalized = normalizeApiData(payload);
         if (isMounted) setVeilleData(normalized);
@@ -139,10 +140,12 @@ const Veille = () => {
     };
   }, []);
 
-  const latestNews = Array.isArray(veilleData.latest.news) ? veilleData.latest.news : [];
+  const latestNews = Array.isArray(veilleData.latest.news) && veilleData.latest.news.length > 0
+    ? veilleData.latest.news
+    : veilleData.latest.article ? [veilleData.latest.article] : [];
   const oldNews = (() => {
     const flattened = (Array.isArray(veilleData.history) ? veilleData.history : [])
-      .flatMap((entry) => (Array.isArray(entry.news) ? entry.news : []))
+      .flatMap((entry) => (entry.article ? [entry.article] : Array.isArray(entry.news) ? entry.news : []))
       .sort((a, b) => toTimestamp(b.date) - toTimestamp(a.date));
 
     const dedup = new Set();
@@ -365,7 +368,8 @@ const Veille = () => {
             <p className="actus-meta mb-1">{formatDate(selectedNews.date)}</p>
             <p className="actus-meta mb-2">{selectedNews.source}</p>
             <h2 className="text-warning">{selectedNews.title}</h2>
-            <p className="mb-3">{selectedNews.content}</p>
+            <p className="mb-3">{selectedNews.aiSummary || selectedNews.content}</p>
+            {selectedNews.whyImportant && <p className="mb-3">{selectedNews.whyImportant}</p>}
             <a
               href={selectedNews.link}
               target="_blank"

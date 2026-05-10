@@ -1,557 +1,256 @@
-[
-  {
-    "week": "Semaine 1 - January 2026",
+{
+  "latest": {
+    "weekId": "2026-W19",
+    "week": "Semaine 19 - 2026",
     "news": [
       {
-        "title": "20260107 Hyundai Motor Group dévoile sa stratégie en matière de robotique pilotée par l’IA au CES 2026 et se positionne à l’avant-garde de l’ère de la robotique centrée sur l'humain",
-        "summary": "20260107 Hyundai Motor Group dévoile sa stratégie en matière de robotique pilotée par l’IA au CES 2026 et se positionne à l’avant-garde de l’ère de la robotique centrée sur l'humain",
-        "content": "20260107 Hyundai Motor Group dévoile sa stratégie en matière de robotique pilotée par l’IA au CES 2026 et se positionne à l’avant-garde de l’ère de la robotique centrée sur l'humain",
-        "source": "hyundai.news",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQmdSZU01dEQ5LW1YcExvR1FwY1FaQ1lVZzZBSFdvem9yc0wtcWNaV01EQXI0bmdlZ3VQaEUzbDlUUHl4S3g1YmNndzlEYkF0UjFrQ2NBbEhlZXE2cVpjY3k2Q0xMMmxhWjQzaWlDXzd3WndYWjQwakNMZjlaaFl0V1NiWk02T29qdjY3S2Jna19pd3VTQjNfdlpPeDE3a0NNVVMta1lCZ3AwV2owT2U2LW9PckJCMjlyUXg3T1d3?oc=5",
-        "date": "2026-01-07"
+        "title": "Un robot humanoïde produit chaque heure : Comment l’américain Figure AI veut se mesurer à ses concurrents chinois",
+        "summary": "Figure AI, une entreprise américaine, intensifie sa production de robots humanoïdes, visant un rythme d'un robot par heure. Cette stratégie vise à concurrencer les acteurs chinois sur le marché émergent de la robotique humanoïde.",
+        "content": "Figure AI, une entreprise américaine, intensifie sa production de robots humanoïdes, visant un rythme d'un robot par heure. Cette stratégie vise à concurrencer les acteurs chinois sur le marché émergent de la robotique humanoïde.",
+        "source": "L'Usine Digitale",
+        "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOa1U3V2wxQlNZYktFVWJ1ZHhlR3ZLX1VKWXp6ekppTUxrdHo4UlZhY3NUTEp2NkktRDF2VXBTQi1DZDVVdzVnZnpNRTBaUmJaTkRwZDl4RjRRT1dPeVZITGxIVzNGWEdybHF5VlVOTURMNFZIcnJqUUUtc1NuRDRmNWJGQ3ppRFVhLU5sMjBveVN2d0g2d1pCUHV1XzVlakxPTldrSHpYckl6bEItSnJCWWVjLVRfbFlJdnZsQ3pzTUM1R09jOEVHSHJtYTJwWk02cGc2ZFpDRDJOSkhWX0pQUGxaQXR3NWktU1gwOGVoWUFmOUQ3N245XzZGQVZhRXVPQk1vZTlzSkJEaTBxSXFkSjc4bWpXVkE0cTBwNEE3NmQzck9OUW9ucGdscENuTUM0NFE?oc=5",
+        "date": "2026-05-05",
+        "whyImportant": "Cette actualité montre l'accélération de la production de robots humanoïdes par des acteurs clés comme Figure AI. Elle souligne l'importance de l'industrialisation dans ce domaine et la compétition mondiale. Pour un BTS SIO, cela illustre les défis de la production de masse de technologies avancées."
       },
       {
-        "title": "Hyundai commande 30 000 robots humanoïdes Atlas dotés d'une batterie auto-remplaçable pour les usines automobiles américaines",
-        "summary": "Hyundai commande 30 000 robots humanoïdes Atlas dotés d'une batterie auto-remplaçable pour les usines automobiles américaines",
-        "content": "Hyundai commande 30 000 robots humanoïdes Atlas dotés d'une batterie auto-remplaçable pour les usines automobiles américaines",
-        "source": "Notebookcheck.fr",
-        "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOWkw2bnpVajRXdE5CY1JCTXhQbWJVWkJzaDJSSk9Qc2tEQ1ZBUFhyekltUk9ic0N3U28tU1puRFF6b1hwNkhCZ1gyc0VINi1YWnliSEZMekdYX0lYb0VFOEMzRXZJMS1BaXBRbXdJVHA3b0hIMEtXXy1UQzNfR2RnMFZEcGE5dHlNVm1XSDg3VWRwbEU4aDlWQkRydlRfZXVLVjdmdENfanJEbENwQVZKTjdZNjlDcFR1ZWE3MWVkS3dzV3luQWt3UEViYmdZdnE2SldjVDFFZWJtSkZDOEhWaXJ4dFdjdVB2cHBFMXlra1lrR1M4NlhlM2lkZkpRTVE?oc=5",
-        "date": "2026-01-07"
+        "title": "Hyundai presse Boston Dynamics de passer à la producton de masse de son robot humanoïde Atlas",
+        "summary": "Hyundai exhorte Boston Dynamics à accélérer la production de masse de son robot humanoïde Atlas. Cette pression indique une volonté d'industrialiser rapidement les avancées en robotique humanoïde.",
+        "content": "Hyundai exhorte Boston Dynamics à accélérer la production de masse de son robot humanoïde Atlas. Cette pression indique une volonté d'industrialiser rapidement les avancées en robotique humanoïde.",
+        "source": "kulturegeek.fr",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbVAzWjRpVHdyT0NKeU5ZTDdyZW5ycGhzNXdBVmtWZ2N1NUFaeVdJV3lRS21sVEktUjU2aXFRSFZTRlFxaTFUdHVILXB3OXRTVGtiNHJZMzhEdmZKMENYWnZKMnB4bHYwTWtwTG5BMng3TFJGQWh4MElQcVAzWm5HLVp2Z0xqd3dVU21uY0FMSWs1amVfem5RMVc2c3RJWjl3Yl9JcGFQY1c4ZlRQSkFJ?oc=5",
+        "date": "2026-05-04",
+        "whyImportant": "L'implication de Hyundai et Boston Dynamics, des leaders, est cruciale pour l'avenir des robots humanoïdes. Cela met en lumière le passage de la recherche à la production industrielle. C'est un signe fort de la maturité croissante de cette technologie pour des applications concrètes."
       },
       {
-        "title": "Hyundai s’illustre au CES… avec des robots",
-        "summary": "Hyundai s’illustre au CES… avec des robots",
-        "content": "Hyundai s’illustre au CES… avec des robots",
-        "source": "Le Guide de l'auto",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOakpaLUlJTU9uaFl3OFBaWDJObmo5ZzRJNjhNSTVQNWY3TG1iSVhDMEVUVzBJNFlyU0JrcGhzNWREYnNXTExOeUhCZW5XRS03bEd3M3Z4eldhYnJDbWpyemZyNllTOUJpR3ZNYjFkXzZjR192a0ZhTUtMQThCalFiS2N4dkhyMHltM1BTNUExaw?oc=5",
-        "date": "2026-01-07"
-      },
-      {
-        "title": "Unitree, 1X, Figure AI, Tesla : quatre robots qui pourraient changer la donne en 2026",
-        "summary": "Unitree, 1X, Figure AI, Tesla : quatre robots qui pourraient changer la donne en 2026",
-        "content": "Unitree, 1X, Figure AI, Tesla : quatre robots qui pourraient changer la donne en 2026",
-        "source": "La Tribune",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQVNybzNSUG0tbER1TmVTd056WDgzNi1zYkozc3JvWlQ5cXhhSWdKUnhOMzM3dlpSWUdBSzBabkhXMTBFNTVzMk9hYWh6SVQwVlFQZm9vMlhabnR2Y3REaVd0UmZFZVBiYi15NVpFdG1Xdm1XOEowTERsb08wMlJMZHlqV2pGMk1ndF90aU5VRFhxSFhlX29FVWlYTm55SUlVUHBRTW44ZzdXaVdhQVRQZjR0dVlvVWZFb05ydDRzYTJNUjAzUFU3ZXF6WkI4QQ?oc=5",
-        "date": "2026-01-07"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 2 - January 2026",
-    "news": [
-      {
-        "title": "Le robot humanoïde 1X Neo, conçu pour la maison, devient un autodidacte",
-        "summary": "Le robot humanoïde 1X Neo, conçu pour la maison, devient un autodidacte",
-        "content": "Le robot humanoïde 1X Neo, conçu pour la maison, devient un autodidacte",
-        "source": "Presse-citron",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcG0yWG1Xb0haaVNGWWdMSy1Sa1lwYkVlMnlVYlVRRnYyeW9GVXljMV9EdE1KcnJ5TUFQdjVILWdHVnl3dHloS05iUzNxRWN3Zk9XcTVpVEZWZnN2TlhnSC00S2FJX1BwdnhRQmphUkViTWR3bkZpaTFUVHB6ZF91Z09iR1NxQXB2cHEweF9ISU1URGpYUWQxQmQ0aVVta29YREE?oc=5",
-        "date": "2026-01-14"
-      },
-      {
-        "title": "L’humanoïde Atlas tente un backflip : ça ne se passe pas comme prévu",
-        "summary": "L’humanoïde Atlas tente un backflip : ça ne se passe pas comme prévu",
-        "content": "L’humanoïde Atlas tente un backflip : ça ne se passe pas comme prévu",
-        "source": "lebigdata.fr",
-        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUnBMQ2FHT29zbUphQ2k0MVY5cl9lVllWdlhoRTRWajFnU3Nua2VhZFpqZEJvdUxYVERIa0hEUXFtclE3QmZiSUs5REY5VmdvNm41aDVkRVNNdjNtSWpXRWQyN292RnI3MXdCMnR5Y09QRm1yTmhLRldyZmpxMzFhNGJXcHQwM1JfeG9WSXJFNUo0anc?oc=5",
-        "date": "2026-01-13"
-      },
-      {
-        "title": "IA, robotique & jumeaux numériques : Accélérer la fabrication de médicaments",
-        "summary": "IA, robotique & jumeaux numériques : Accélérer la fabrication de médicaments",
-        "content": "IA, robotique & jumeaux numériques : Accélérer la fabrication de médicaments",
-        "source": "Sanofi",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcVZDWE90VEdSTXJwQzZZc1p5SmotcHJ6TVktRkVJem5XN2NINEgxa0hkLWJmc0xIaTZ1TTdrWU1BSWEtdTBjZjNfMEhzbUZjMXhxMkx6Rnd3eUN0bE1iSkZudlJ4TWprbTRQWnJEM2p4WW85eEF2T2ljdE1HQm0wbkxTMGgzNlZXdlR5Y0dxRU5JQkxNUHczakUyR3pGT3FJS3Y1OURicDFPb190OTNyNDBtSlg0RHVCS3hVeEdWLTlDRHdCS0tB?oc=5",
-        "date": "2026-01-13"
-      },
-      {
-        "title": "Clubs de l'Éco de \"La Provence\" : en 2026, on se projette dans l'avenir",
-        "summary": "Clubs de l'Éco de \"La Provence\" : en 2026, on se projette dans l'avenir",
-        "content": "Clubs de l'Éco de \"La Provence\" : en 2026, on se projette dans l'avenir",
-        "source": "La Provence",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVWVoSXQxX3d6X1ZOczBsaVRDRldCSzAtM0lTSy1uaWk0QkNFaWUyeUxpR3dTdzFTT0NrMUVJcmhNUHpZOWNocEZjcTFNVmlGekxTeW9WVkV5WUUxVG84VmxPaWdQUGJDRGhUd1AyUl9qMUg4dzRQYXlvdHl1Nzk2U2JmT3JZcnpZTHlUQ3NyWF9Mak1uTzBla1JOQ29WX28yc1N3TlZXRl9IZWdPQjUweTA4aHgyOS1paHZ3YjBBaHZMVUk?oc=5",
-        "date": "2026-01-13"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 3 - January 2026",
-    "news": [
-      {
-        "title": "Atlas x Gemini : Le robot de Boston Dynamics reçoit enfin son « cerveau » IA avec Google",
-        "summary": "Atlas x Gemini : Le robot de Boston Dynamics reçoit enfin son « cerveau » IA avec Google",
-        "content": "Atlas x Gemini : Le robot de Boston Dynamics reçoit enfin son « cerveau » IA avec Google",
-        "source": "BlogNT",
-        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUVpmc0JoZTFqNXhqdWpzOURjZTc2WFJUNVZWcERzazd3NXZYNGEtN2wxZnBjazFQSHZVQ0VHc2xueGhpd0c4bFhKeHN3Z3l4QkNvMnlsV18xNkpqRDRQMjlIdEFkMERoZ0lGQUF5WVpHajBTZ28wTlBaRFZULWlsYnFHYVdNZmNRYXBZamc3eHhUWkU3WndqRGVOVDlqQlVvbFNLVi1QUFkyQQ?oc=5",
-        "date": "2026-01-21"
-      },
-      {
-        "title": "UBTECH, AGIBOT, UNITREE: les humanoïdes chinois face à Tesla, Figure AI et Agility Robotics",
-        "summary": "UBTECH, AGIBOT, UNITREE: les humanoïdes chinois face à Tesla, Figure AI et Agility Robotics",
-        "content": "UBTECH, AGIBOT, UNITREE: les humanoïdes chinois face à Tesla, Figure AI et Agility Robotics",
+        "title": "AUTOMATE SHOW 2026, la robotique industrielle entre dans l’ère de l’usine autonome",
+        "summary": "L'AUTOMATE SHOW 2026 met en évidence l'évolution de la robotique industrielle vers l'usine autonome. Cette transition marque une étape majeure dans l'intégration de l'IA et de l'autonomie dans les processus de fabrication.",
+        "content": "L'AUTOMATE SHOW 2026 met en évidence l'évolution de la robotique industrielle vers l'usine autonome. Cette transition marque une étape majeure dans l'intégration de l'IA et de l'autonomie dans les processus de fabrication.",
         "source": "frenchweb.fr",
-        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZ3ZDU0xjeHBDTjNjUGUwOEZhMTRIVm5yZ29HeDZiNUxGNDM3TF9mcnFEOGYySG83enVjZXpzLU0xenJzekpQTHNUR0hYN1Z6ZDBHQ091dmFCZmc4c0pyZXBvSmFlMXROdDFxN1Jnc2hjWGVPUkd6TXNweUIzdXRxQ0w3TGtkRDZGaDlsQzdvWHlWZU11RF9uY0hhQXAxV1ZQRnZwVWtHZENTQnNObHpCbnFFWkt1WWNFVFg4?oc=5",
-        "date": "2026-01-21"
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdkVXa0lqQ21CWHZVbkdJWi1YUHljbXlOOVBqZG4xaGdpRUV5cWpLeThsT2RHbzkwSzQ4VUlpYURsdFo0ZG0xa3p1X3FsNWdvQ3hIbkc3QmU1NERVM0lGN2lHUGVFaFl2QjRGc0d6ZHJLbzQzcmVGdlpjQzByTDU5MVVtRGFVOVFyUFgtWGdvd3ZYUlVsNl9zTzhyb0F6cE43NVhMeWlMUk9saFdkaFlNNg?oc=5",
+        "date": "2026-05-10",
+        "whyImportant": "Cette nouvelle est essentielle pour comprendre l'impact de la robotique et de l'IA sur l'industrie. L'usine autonome représente un objectif majeur, nécessitant des compétences en intégration de systèmes et en gestion de données. C'est un domaine clé pour les futurs professionnels du BTS SIO."
       },
       {
-        "title": "Cyrille Dalmont : « L’Europe ne doit pas passer à côté de la révolution technologique qui est en cours»",
-        "summary": "Cyrille Dalmont : « L’Europe ne doit pas passer à côté de la révolution technologique qui est en cours»",
-        "content": "Cyrille Dalmont : « L’Europe ne doit pas passer à côté de la révolution technologique qui est en cours»",
-        "source": "Le Figaro",
-        "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOMzNsUUYybDluRURoc1h1RmhPYTJoazZ4cUd5bld2eHhxYlVBV3lIMnA4Vmlzc1lYRXhlWXJfWVhjLURlQmliN1VWcmJCTkVsZEtTaU4xakJPalZ2Si14Z1RYQzFQb3lBMjNveE1NSlk0S0FNT1lmYXNvQVdJQTNnOEhpYW5SX0V4ZkFPQl9TNTRBQXBaQjNFQW5ENndDUk54bFpFTG1fV2pPOWxMZ0tnZjRKZE5Kdi1vdnpUeDA5S18wa2RQclV3SldtVnVVcmpDdzRVdmpBcVM?oc=5",
-        "date": "2026-01-21"
-      },
-      {
-        "title": "La maintenance comme infrastructure stratégique de l’industrie, FRACTTAL lève près de 30 millions d’euros",
-        "summary": "La maintenance comme infrastructure stratégique de l’industrie, FRACTTAL lève près de 30 millions d’euros",
-        "content": "La maintenance comme infrastructure stratégique de l’industrie, FRACTTAL lève près de 30 millions d’euros",
-        "source": "frenchweb.fr",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxONzNCSnpCNDl6dHFNUXI5OG4zVFM4VmtKWG9uUEI4bDBHcjdScVljMmU0Z3ZFTHdZa2xUU1pmVENxLVNWbEdQTS1PQTlCYVg4Qjc5dFVRNnQ1amo4VzloeTluSi15N2lpdmszWHcyeGFBREdZMkdneGMzSllTNU1pdUVRX0ZfRzJYNi0xeUhHV1JSdDZJNlRxS2R3WHdCYTNFVEdYR2tPOUZtWkxwcVZuTGFVRmxTc21KZ2xxQTBmWGVYZXJtbnpjODRmNmFIdG8?oc=5",
-        "date": "2026-01-21"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 4 - January 2026",
-    "news": [
-      {
-        "title": "Le nouveau robot de Figure AI apprend tout seul et pourrait bientôt faire tes corvées",
-        "summary": "Le nouveau robot de Figure AI apprend tout seul et pourrait bientôt faire tes corvées",
-        "content": "Le nouveau robot de Figure AI apprend tout seul et pourrait bientôt faire tes corvées",
-        "source": "Le Cri du Troll",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQ2o4VXJwMy0tSEhyWjBETUg2dmdQcUJrTllCLXJQaFhqbW9ibHpLRVZuTEd6WXJxODdfUGhXMjNNVUg4WUxKRndnWGU2NWlmdzNPNnl0MFdtQWZjRHpHeEJ6cGZQUGFKa1ZfWjhwZHNmbndsWjg5MEZIMWlhd0pxSlhXMXJkZmNoUWFDZFZrTnVhYmdmbVUwZGk5UnpUN0d5c19KVERCblg1eExvTW5YZ2ZR?oc=5",
-        "date": "2026-01-28"
-      },
-      {
-        "title": "Les robots humanoïdes de Figure AI deviennent incroyablement plus intelligents: Helix 02, leur nouveau cerveau, leur permet désormais de vider votre lave-vaisselle",
-        "summary": "Les robots humanoïdes de Figure AI deviennent incroyablement plus intelligents: Helix 02, leur nouveau cerveau, leur permet désormais de vider votre lave-vaisselle",
-        "content": "Les robots humanoïdes de Figure AI deviennent incroyablement plus intelligents: Helix 02, leur nouveau cerveau, leur permet désormais de vider votre lave-vaisselle",
-        "source": "BFM",
-        "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxONGNvMnNSN0VINUJWNXFfdkx6M2p5SWZHb19PVjBVTktpTXJIby1HS3ZiRzV1M1AtUlk1RnZqSEVWa2xoSndob3VhVkpCZWE0YzJmUVZEdFpYeGdKVFhSNVh6eWV5LTY1R1FXX2FPeUZfN3ZMejVRZzBka0hZQXIyMloxeHRZLUR3eExpd3dFdm1OX18zLUVaek92TUxoOHBqdzJMQmVweGZsNVduS3BMeUU1RlhiNWxDbUhBOWRaV2pndWhBTnNmYWNjcnM1SXNJVmoxaHZEb1dEeUZ1Vl83bEZmaWVuajhRLVpUODU3NEFldUxNYVlxRjZEZXhNLVlDTGo3eS1yUlgtOEhqOTJfVExtTWZHZllUZkJPVGFrVlBxTTlBcF9sX3M0cnhacVNrdW82akh0MzZJR3FRT1Z3Sg?oc=5",
-        "date": "2026-01-28"
-      },
-      {
-        "title": "Avec Helix 02, Figure AI revendique une rupture dans les capacités de ses robots humanoïdes, qui peuvent enchaîner des actions complexes de façon totalement autonome",
-        "summary": "Avec Helix 02, Figure AI revendique une rupture dans les capacités de ses robots humanoïdes, qui peuvent enchaîner des actions complexes de façon totalement autonome",
-        "content": "Avec Helix 02, Figure AI revendique une rupture dans les capacités de ses robots humanoïdes, qui peuvent enchaîner des actions complexes de façon totalement autonome",
+        "title": "Robotique : La start-up française Genesis AI sort un modèle de fondation conçu pour les tâches de manipulation complexes",
+        "summary": "La start-up française Genesis AI a développé un modèle de fondation en robotique, spécifiquement pour les tâches de manipulation complexes. Ce modèle vise à améliorer l'autonomie et la polyvalence des robots dans des environnements variés.",
+        "content": "La start-up française Genesis AI a développé un modèle de fondation en robotique, spécifiquement pour les tâches de manipulation complexes. Ce modèle vise à améliorer l'autonomie et la polyvalence des robots dans des environnements variés.",
         "source": "L'Usine Digitale",
-        "link": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxQTzNhcDJhcnRHX2tqOVVfQ1UwYmhYRUJkQldsTDNGNjJ0S2VOVi1NT3FiVlZHd3I0OVVUTkhZMS1LNHZHSVVTN0hUSjFYSUUxd3hObWZNSWxqRE5hZ1NrZkF5eUR5RDlSaTMyUkRWRGx4OUcyR3RlLVlVQmRQR0R5UUc5aFM5Slg4WndmQVZWaTNCaVNxRnJfZEU1by1zWXVXQ3h3M0xSU1MxT3Q1V1VIWFFMTzhHcFpNX1BEVjBmRDBlUHBGd1haODNjNTVyRmdCNUY5bmxZeEROOGR3RS1MaVBVZjZHNUM2c28taXp1RjJMZXJZd0RhZkJoZlZHQlZTN2lwWFg0MmhHMWU5d3pPaWlHY1IzNXBZdXkycHlVMTJhcXdxeVJqNGRhRGlvSkEwUURqZ21SbFMyN2ZpdTA2cTlqTzJXVmhhRzVadUcyZjdWVDFHR2owTTNpU2JmbVRmUEV1YUxfcFRObUR4REJ3dU9XeW8xVUJE?oc=5",
-        "date": "2026-01-28"
-      },
-      {
-        "title": "Figure AI dévoile Helix 02, une IA qui rapproche le robot humanoïde de l’autonomie totale",
-        "summary": "Figure AI dévoile Helix 02, une IA qui rapproche le robot humanoïde de l’autonomie totale",
-        "content": "Figure AI dévoile Helix 02, une IA qui rapproche le robot humanoïde de l’autonomie totale",
-        "source": "KultureGeek",
-        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZGcyNkpETG8yQllIU2prWTRaU2dlVGhtTHQ5ZGtPOXFLSDRPdEJfZ0t3VGYzZDZ5VmNVaWMyMHAyUUJnTlJSTThwVEFVSEFXVFBpVDdpanozVFI1bC1IeWtrOFQwLUZxWllVU3FxLXJEQTdfVXNxUmpVRW9vWDM5NlhLY2RzOGI0d2ZrXzFwZHlPRjBZa3g5Q2hPSDlpWVFlc1dlYzRRZjBHMVkt?oc=5",
-        "date": "2026-01-28"
+        "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNelN5dWxQRE9LNllJQ0VycmM0UWlvUjVxT0JNbjRkV2NJTE9tTGNpcG5IOFpyWER5czhfQUNwdnllV19lZUV3VjExU3dld1RfYXFPT1RHRTRlRVRiV1hLRXVlQ0REaVVzUWhCc3VPVUt5MU1xZVFXVjc5SW9ET0tzamJNeXBOZXNHM2hISGQwaFZsdHU3dTdqdS1PRUtzTFN0a1F0SmJOSVpIbUFyRFpUeWJMYlpyUFZCcEFRX19lNnNmQjJzcHhGOUw5Zm1RNHU3dWlnRTVfREhSbVZuNm1uVkZBYnh0MVlKVXBUc0xZcUFVcXpldWhzQVNaOXg2SkZlLTk1bndpSUtjbDF2OUstMWY2QzNpbk9lcEs1TDA0a0FjcmVoMzJpSUtWX09WclpUSnE5ZGxkQ2dYXzNW?oc=5",
+        "date": "2026-05-07",
+        "whyImportant": "Cette innovation est directement liée à la robotique contrôlée par IA et à la recherche. Elle montre comment l'IA permet aux robots d'effectuer des tâches plus fines et complexes. Pour un BTS SIO, cela illustre l'importance des algorithmes et des modèles d'IA dans le développement de robots plus intelligents."
       }
     ]
   },
-  {
-    "week": "Semaine 5 - January 2026",
-    "news": [
-      {
-        "title": "Ce robot chinois se prend pour le T-800 et marche 130 000 pas dans un froid polaire",
-        "summary": "Ce robot chinois se prend pour le T-800 et marche 130 000 pas dans un froid polaire",
-        "content": "Ce robot chinois se prend pour le T-800 et marche 130 000 pas dans un froid polaire",
-        "source": "Le Cri du Troll",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVzVCdU1SQ3VWX0FraV9zTnJueV9lcndOZnQtUDBsOTB3ZFRxQS1XOHdJbFNKcVBpXzFmYmZvcVE2YkxZVzdOTllwVzJwSElkeHA4UXlXeWozcFdzQk5fZ2ZBY0lYYjE4WDZFejI2ZkljQTJhcVVMcGNBQzA1aExGaDdHRzZqZ3pYdk1ieUg1eTVRTzdRU09iYmxINjlSb1ZpUHNBbEloZHJDSk5IdlYw?oc=5",
-        "date": "2026-02-04"
-      },
-      {
-        "title": "Le robot humanoïde de Xpeng perd l'équilibre lors de ses débuts publics",
-        "summary": "Le robot humanoïde de Xpeng perd l'équilibre lors de ses débuts publics",
-        "content": "Le robot humanoïde de Xpeng perd l'équilibre lors de ses débuts publics",
-        "source": "7sur7.be",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQenJJenVOQ2VuMnF3ZlJ3OTBjNWxtN3VRd3EwZ3hpYU5pbTR4bWVERDNqcWwxVnVuTDNwZ21rdFMtcWthMkVSdzNCRHJObW1FbVlHNVBpSERIVHl3ZWw1YlViTnNwNnhYcTBSNHlBekxMcGUtZV84bUFCSDdHdGwzdVYwOEY0d2JraHlzTmwxQmw2UFVlQ0RHVmcyaTMzTDVQS3BpSkYwd0R0Z2xwNWgxdlFPTUJxbHlF?oc=5",
-        "date": "2026-02-04"
-      },
-      {
-        "title": "30 millions d’euros sur six ans : L’État dessine les contours de son programme de recherche en robotique",
-        "summary": "30 millions d’euros sur six ans : L’État dessine les contours de son programme de recherche en robotique",
-        "content": "30 millions d’euros sur six ans : L’État dessine les contours de son programme de recherche en robotique",
-        "source": "L'Usine Digitale",
-        "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQMW02UjEzWFpkZmdlWmFpeGI5SnI1QzVkbmpkQjFldzJ4VzNnMkJMMDM0cXVOQ1NuSUNTSFdHQXVvTXVuOWZseG5wWEhqdW44WEtaazUtZlRCaEJNY2xZbzVuUXdabjdKbXVvOFhlTkpKUVl3UHhZNm00c1JmSlFac0Z5a2VtR3l2a1hQaGxsTkFxUHRNUWNLS0lmdC1jVGExWWM3VXdKZUI4OXNVWEJBaVFnc3RvRVZHNVpTMGFLcDVVdGNPblhLWXJ0QzJOZENIYkdMOG9ZN1JDeTRlWGV4Sk81Y2l1ZFZFOGdIdGZmUFVyNUVmWm9UVU1DLURvcEZGc09JeEtnSHFmaVZ5RThHbFlfZzRUZTFvMkFuU21BRW81amNy?oc=5",
-        "date": "2026-02-04"
-      },
-      {
-        "title": "Teinté d’intelligence artificielle, le PEPR Robotique prend son élan à Toulouse",
-        "summary": "Teinté d’intelligence artificielle, le PEPR Robotique prend son élan à Toulouse",
-        "content": "Teinté d’intelligence artificielle, le PEPR Robotique prend son élan à Toulouse",
-        "source": "L'Usine Nouvelle",
-        "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNN04xc09hWkNjTEs4aE03ZWJiQkFUQldTREo2bzFldU1TblU3ZG9EMTAzYVlJYzE5NHB6SHNDbmRCWWlCb0MtOHg2b191dmRkcXlQRHZVcmJzZUFiV2Vpb3pZMFJoRnZjTXRPYzZpRTdqZVNmWE5vLWRKRnFjQ2ppQ1kxa05jdFBwSmVBWHh6RU5vTWtJZGJrRkpYZ2NuM2NiMzc2NWhfSnJtOFQzWnBScGRNbEFaOGxHV1l6aXlBcHdaVWVjYVl5LUNCT0UyWE5DU3IzdEMxbTcxb0VGWVA0Sm5MTUctREMxcVYwOGl3eUUyMnpwczZ6cXZEWFhyRWFmZUlpdVlqQTlyVVFjQW5RYlp3dnZFSV9MR0E?oc=5",
-        "date": "2026-02-04"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 6 - February 2026",
-    "news": [
-      {
-        "title": "Robotique : Robert Playter, CEO de Boston Dynamics depuis 2019, quitte ses fonctions",
-        "summary": "Robotique : Robert Playter, CEO de Boston Dynamics depuis 2019, quitte ses fonctions",
-        "content": "Robotique : Robert Playter, CEO de Boston Dynamics depuis 2019, quitte ses fonctions",
-        "source": "L'Usine Digitale",
-        "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQem1WVmlwQ0lBX2tSZFg5ZUl1T3hJS1JZQVVjRnZCdmloa2tEejVadTA0VkJBMk9VeldiODFtUjVsa0l6NkpyalJDSVJMbVhlNnM0akN0aWJ0T3NONGlCSERWMk13RnhPMmtxU0pnZ3BXODhxN3A1MDFFZFFNb3FJNFk2dklRU2llMHV1NGpOX2xYeXBFVUZlS3UwVngyTDFoVnktem1OdnpIV3haQ0s5dW53clM4VlhUV1ZDcENYSHR2YkxWR0RRM2FGZ2NuOHBFYmZPblhGbi1YU2xEdnl4cGtwNFVpUDdyOHVoeHRJbkc5OGxsSElPYTRVLXM4RjhuYlhXTjY4X2xBQQ?oc=5",
-        "date": "2026-02-11"
-      },
-      {
-        "title": "Chez Hyundai, les ouvriers s’inquiètent de l’arrivée des robots humanoïdes",
-        "summary": "Chez Hyundai, les ouvriers s’inquiètent de l’arrivée des robots humanoïdes",
-        "content": "Chez Hyundai, les ouvriers s’inquiètent de l’arrivée des robots humanoïdes",
-        "source": "Autoplus",
-        "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbVV4akV2T29MRGR6ZUgzUkJpMEgtSmkySDN4cnBwZjY0Tl9PblpoY0k3Sy16NHE2SVlzNnlpcnd0YjloU2VhQ0tTNEJtN3ZiVXhRSFBINUZ3TXRrbDJUTjRzTVZQZnVrNzIydFFoa1dtSVhyWGg2cFlzb01GWmVIdVNxR2JITElJZ18xNU5aYlVSSy05ZlhkTS1nbWNzb2MxMndldXJ6TDBFdEw3b0V0NEx0Z1lqbm9Ia2c?oc=5",
-        "date": "2026-02-11"
-      },
-      {
-        "title": "En vidéo – Bientôt des humanoïdes dans nos maisons?",
-        "summary": "En vidéo – Bientôt des humanoïdes dans nos maisons?",
-        "content": "En vidéo – Bientôt des humanoïdes dans nos maisons?",
-        "source": "Le Temps",
-        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbjByenhNbjZVVmtwN1FKRjFiS0EwRXhRMWJpb1U4SXFjVEtwU3lWdnZEYWxGekd2anVfQTlHTGlfY2wxaDNhR1I0OXN3TVNmbWRYZFdONmRkRlB0Rjd4cFBodkh3UmFULVUwY2pOZ2VNa042cmhKdWRPNjdUX2hjbmRQUlVJWWJKRHhGNnNKdG1vZy1qSWh6OE13?oc=5",
-        "date": "2026-02-11"
-      },
-      {
-        "title": "Le robot humanoïde chinois Unitree vient de parcourir 130 000 pas par -50 °C",
-        "summary": "Le robot humanoïde chinois Unitree vient de parcourir 130 000 pas par -50 °C",
-        "content": "Le robot humanoïde chinois Unitree vient de parcourir 130 000 pas par -50 °C",
-        "source": "NeozOne",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNOU1RVmhjbzlxMjVaXzU0TWZjc2Y2dmxCcC1VTWRMRl9XLVM4cnRuNUJPWXVFTHBYVzF3QzUtbGFmdlRlQUtNbWVRS1dGN1EtajA0QjBGdEdVSDRnR196aGl2XzJGNzc4ZE1ZNTh4NFczRl8wc0RrOXFQYWVuQm5GTVVvbFFQTmNZYy1TOUxmbERsX1kzVmpnSWNRSHFEbEpNenBaVHJuck5zOHlGanlR?oc=5",
-        "date": "2026-02-11"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 7 - February 2026",
-    "news": [
-      {
-        "title": "TechnoVision 2026",
-        "summary": "TechnoVision 2026",
-        "content": "TechnoVision 2026",
-        "source": "Capgemini",
-        "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOWW5UbGtBTGJzOUF1bTJDSFhMZWUwTWszRnJRbmtBb29TYzl1ekh0RHVlYWpVTkVxcko0ajhpYWhRalk0UU1BT2cyN0JnQ2ozU1V1V3M3LVp0N2QzNVoxaWgtUGdTXzlDLUZYVnd5dEVHWWZpclFpMGlucGNwQmh3Nzd3?oc=5",
-        "date": "2026-02-18"
-      },
-      {
-        "title": "Unitree, le robot « licorne » chinois, éclipse Tesla lors du gala du Nouvel An lunaire",
-        "summary": "Unitree, le robot « licorne » chinois, éclipse Tesla lors du gala du Nouvel An lunaire",
-        "content": "Unitree, le robot « licorne » chinois, éclipse Tesla lors du gala du Nouvel An lunaire",
-        "source": "Vietnam.vn",
-        "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQU2ZOZDBXT21HaXVUS2pyQWEwZkdGNk8wcHJVSXVPcnl4OU93WTNGc0lKMVJyZXJySHE4cGRVcGw4UVVDcUJUQm40ZEgwTS1uQ25SWVV4aEtqQTJnNVVOM25US09Nbi05Sm1kWHhpU1l6NDNCSkpPY21nSnptTnA0OXB6b1FRaWxIeEV6ZDl5VQ?oc=5",
-        "date": "2026-02-18"
-      },
-      {
-        "title": "Investir : voici les entreprises qui peuvent tirer parti de la tendance des robots humanoïdes",
-        "summary": "Investir : voici les entreprises qui peuvent tirer parti de la tendance des robots humanoïdes",
-        "content": "Investir : voici les entreprises qui peuvent tirer parti de la tendance des robots humanoïdes",
-        "source": "Trends-Tendances",
-        "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNd2RoeUNKN3dRMUlIX2QzUXpNRzBPamZydjNnWlNta3BjTXNhTE16bTFxQTBMMjFSdkhDQURiQy05Nzdrd2lDZ2NDN01XVHd5VUxNOHo0TjdGdVNIQ2tDeWE1QVNIY09NX2pHUTZLYk80ZnEyMjN4a1Jkc1hOdlh5QTRscXJXZ0xGSGNCNHljWHZOU2Y4dnljR2tBUmR4Zw?oc=5",
-        "date": "2026-02-18"
-      },
-      {
-        "title": "Qui est Moya, ce robot humanoïde à l’apparence et la chaleur humaines ?",
-        "summary": "Qui est Moya, ce robot humanoïde à l’apparence et la chaleur humaines ?",
-        "content": "Qui est Moya, ce robot humanoïde à l’apparence et la chaleur humaines ?",
-        "source": "Le Point",
-        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSjAxZV9UaWdwLVFTQUFiVnJOVDFyc0dQYkx4VmpxZnM3akFTUDFRX2ZKeklVejc2N0lKQnA2WUhIN0NBNTFGY2NqRDVhNWRoY3VEQ3lpeVZwODd0TG1hZ2c4aVBIeEFaWUJYOVduSDkzR0Q1N2VCMUFuNE94N2E3UmdNSER0VENuVUEyOU55NlF0c1ZUSmN4R2NMelBCWTVKM3BJMDBobzNqVnJicUUtNk1nTlVRNWVIcHlONnktY01aS2xZTVRKZmFjYU5SY3NvdlE?oc=5",
-        "date": "2026-02-18"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 8 - February 2026",
-    "news": [
-      {
-        "title": "Unitree défie Boston Dynamics avec son robot quadrupède AS2, capable de transporter 15 kg pendant plus de deux heures",
-        "summary": "Unitree défie Boston Dynamics avec son robot quadrupède AS2, capable de transporter 15 kg pendant plus de deux heures",
-        "content": "Unitree défie Boston Dynamics avec son robot quadrupède AS2, capable de transporter 15 kg pendant plus de deux heures",
-        "source": "L'Usine Digitale",
-        "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxQek9OUXpvNng1LU1mZHl3enFXZWVRZjVSRElIdHBTY0lxcGh0bGJTd1NaSExkcmQ3c2k2dEprYU1tMTF3czB3b3BoM2stNnRIZEJjS28xa056QXZYU19qMHdoNlBDMjZDbFdMQlh3RG94NTdsNVg5dExkeC1zbGl6eE03Qm0zZnE5VjQ3Tm0wNnJpczlkRDV0NTdtdUt5cXNlOWQ2LVRLV0NRekFlQ3dHU2pCUmkyTE96OFVGVUVPSng5X0ZFbVE2dy1MaEZXa3JBZk5RNVg5OXFzalVzOVJUTTF5YmE4cGxuREVtQ3Mzb0kzQnpaZTNSUm8tWW9vaUpZSXg4U2l4RmdWd1JVanA1OUJucnV1YzhtZXNicHFwSDdIUjJlYVZCSHdPbkswUW9PLWR5VEF0ZFU2dw?oc=5",
-        "date": "2026-02-25"
-      },
-      {
-        "title": "Le robot chinois continue de danser avec grâce même lorsqu'on le pousse ou qu'on lui donne un coup de pied.",
-        "summary": "Le robot chinois continue de danser avec grâce même lorsqu'on le pousse ou qu'on lui donne un coup de pied.",
-        "content": "Le robot chinois continue de danser avec grâce même lorsqu'on le pousse ou qu'on lui donne un coup de pied.",
-        "source": "Vietnam.vn",
-        "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVVJuZ3E4U3hQX0NxMmxBcUlKOXF0NGE0MWpMWHVUYUZPd1V4Sk1BVXQxellya3dMb3hqbHk5eTA2d1ZKZjJka3ZIVDVXRXBrUmx5NEFXcFJDT0pRSGNmRjlMOTlXRUJmQ3FCcEFPYU9yelFyWnNNZVpuTzlHeTNOUDVpSF8?oc=5",
-        "date": "2026-02-25"
-      },
-      {
-        "title": "Photographie 3D : ce concours d'Angoulême met à l’honneur le format spatial d’Apple",
-        "summary": "Photographie 3D : ce concours d'Angoulême met à l’honneur le format spatial d’Apple",
-        "content": "Photographie 3D : ce concours d'Angoulême met à l’honneur le format spatial d’Apple",
-        "source": "Mac4Ever",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNLWFRU2FfRmpGb0l3T3hFczFsV0x1SHg5OUVFdjdMZUs0TDJEbzhZUFpaY1JjQTllLTQtbVpKcnFjRkVZcURYMXVpcWI3M1laYjN1UDBqS0VzZFBDWlJ5RktEdTh6aFhtemJkSGJyeVdiWl9qdlc5TWJQRmxPUkNWRFp4UDQzclZGRnB2MmZib1hFRGdEZ3hTR0xDcTRpX1hCMnNlanVBcno5eU5KVWliSWlRQUJ5MGhiTzhqUg?oc=5",
-        "date": "2026-02-24"
-      },
-      {
-        "title": "HONOR tease un robot humanoïde à la veille du MWC 2026",
-        "summary": "HONOR tease un robot humanoïde à la veille du MWC 2026",
-        "content": "HONOR tease un robot humanoïde à la veille du MWC 2026",
-        "source": "IGN France",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcExScGo1WG5nbFhIcUtFU1paUEhvVlZuTWlYU3A0QkRtYTB5STJoN1VQd1ZrNF9CNE92c254eUVNRW52T0VwbmhRZGRQWS0zdW55ZXZzR2RMSFZkSy1oVkNyYlFrV1Z5X1Zoc0dDSEp2cG04bXJHN0szakp2eDViQXNYS3A5dlRnLTVoODNFSmlKeWoz?oc=5",
-        "date": "2026-02-24"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 9 - February 2026",
-    "news": [
-      {
-        "title": "Un marché à 5 000 milliards : la guerre secrète des clones a commencé entre Hyundai et Tesla",
-        "summary": "Un marché à 5 000 milliards : la guerre secrète des clones a commencé entre Hyundai et Tesla",
-        "content": "Un marché à 5 000 milliards : la guerre secrète des clones a commencé entre Hyundai et Tesla",
-        "source": "Sciencepost",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMmZYM3c5X2JzSHlnUjJZOXROd0hwYi05U09hMjZCZUhRWVdSc1hSOGdCdG5TdTkyWERBOTRaTDhObHpFa0NmejN3MUt6THc3RkhQbVFnVWloaU1jS0lfUUVMOVJNcWFVallORTBvZFFpUnpuQ3lEakZaZFp4Z1lhc2xJWmxSZ1VmTGd5cVFqQktPREhKMUtnV2kwQUMzblRoZFhXLVhGQzZaMTM4Y0ZlRGtiV3c?oc=5",
-        "date": "2026-03-04"
-      },
-      {
-        "title": "La famille d’un homme que Gemini aurait poussé au suicide attaque Google",
-        "summary": "La famille d’un homme que Gemini aurait poussé au suicide attaque Google",
-        "content": "La famille d’un homme que Gemini aurait poussé au suicide attaque Google",
-        "source": "7sur7.be",
-        "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQm01TkdGZTc5WklnY3pxeXR6TVNxamNnSDcxdmZJcnViaGp5WUNkSU1TeUF4LXBVS1M3S3U4a2t0aVhNNDZZMm1fQVZYVEF0dWRpNmNiY2lzNGwwLTN1QWJzeVMtUVBFQndBM1EyTVA1LXJybVp3emNZR2xqa3oyV0hrQ1BuVXlDdEdVZWpUVlhkT2M2bEdEckw1Rzd6cWJUWnJ2NjdaSUxhdlU?oc=5",
-        "date": "2026-03-04"
-      },
-      {
-        "title": "BMW déploie pour la première fois une IA physique en Europe",
-        "summary": "BMW déploie pour la première fois une IA physique en Europe",
-        "content": "BMW déploie pour la première fois une IA physique en Europe",
-        "source": "Electroniques",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcjZoeld3RDdoZWlsM09xRHh0N0ZSRnMyOWRTNDBYMGgxRlRlT252V2pwci1lZlhUTnhYVmZmOWZpZW1PNjZGQkdHNGFYYWdvdVhaeGhyVzlkeHVteGR5bmFsb0czcGtoYmNXY3liYXJONFBBUFFXdTBrVTFfSXVfeE94YnJlZ25JazRYQzFlcnBWMXV1bXZoZ0FTT255N09LYjkw?oc=5",
-        "date": "2026-03-04"
-      },
-      {
-        "title": "MWC 2026 : Robot humanoïde, smartphone avec un bras articulé… Honor nourrit à son tour des ambitions dans la robotique",
-        "summary": "MWC 2026 : Robot humanoïde, smartphone avec un bras articulé… Honor nourrit à son tour des ambitions dans la robotique",
-        "content": "MWC 2026 : Robot humanoïde, smartphone avec un bras articulé… Honor nourrit à son tour des ambitions dans la robotique",
-        "source": "L'Usine Digitale",
-        "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxQODBCU2pqUVVTRTBJS1UwOUpqUmptcHkyYS13TjQ2ZDBxempsN2xraWVYallXTURsNmMwTFJ6MEYwUXBtTFRqajZJNW9ybnNxNGNCYXRSRWJXaHUyczRMUzRYRlE4SXlFY0FtczdzNGpWUElpMTZNOWItLWlOT3Vfa3dyaFl6WkR0dUhUZ1hRWHhMN19ZbFNqa1ZhSElSTWdsR0F0a1Z2cWxuRVpac1AyWXhsVXVkZ0VlazUwRWxLUl9pd1JIaEpVUmtuU2F0dU93MzR5bTlTRURCcTg2TXZDX2JOSUxJOTl5RkJhWV9zYWZpcUdPb0Yzbk8tSmxxVXJNVDA4Zkw4eExOeGlJZG9fa0poLUYyNDlwVGVYVVR4ZlVlYTU0eWluOUFqTWRGZVd5WmhKcVBkcw?oc=5",
-        "date": "2026-03-04"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 10 - March 2026",
-    "news": [
-      {
-        "title": "Les humanoïdes restent dans la course",
-        "summary": "Les humanoïdes restent dans la course",
-        "content": "Les humanoïdes restent dans la course",
-        "source": "Le Monde.fr",
-        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQS2E1QWlodFgySko0NTgxajRJR3AwajJ2UmVCSVJPc2N4MGkwb0pDUlQwQzJpS2pUbjVKcmhmdlMzQktMNVZtbUViSnRrYkFUZmExMGdVcS1NaUlYcVQxeTRWVlhTa0RySFlLU0hPcHdJTHAzNlF2QWdGMTZ5alBNcUdRWGJYMC04UWI2b1RpUkRER0RUWVZpY0M4RzJya1A5dzRhSEJnc0hCNGQxLWc?oc=5",
-        "date": "2026-03-11"
-      },
-      {
-        "title": "Le majordome d'acier est arrivé : la vidéo bluffante du robot Figure 03 qui range un salon tout seul",
-        "summary": "Le majordome d'acier est arrivé : la vidéo bluffante du robot Figure 03 qui range un salon tout seul",
-        "content": "Le majordome d'acier est arrivé : la vidéo bluffante du robot Figure 03 qui range un salon tout seul",
-        "source": "Sciencepost",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQc0RlQnQ1M2VhcEp3cS1fWWpVVXFXUnBFbWtxSHZWa0RiNkZ5Q3FqU2RCTmNFN1ZzNkRqYUoxTWtlS1hHaFZiOWJFZkthZzh4ZkhraXV2UWgtS2xmVUhrMlliY183ZWEtYldnM0pEX05GYnhudHNOOENMalZybXYyOWxBZWhXMmUtV0ZtazU3bnVEYmpFdmE4THdQTkkycnBxWUd2VXI4N0JRVmJuei14Z2Jyb1dvNk81dHF0ZVVB?oc=5",
-        "date": "2026-03-11"
-      },
-      {
-        "title": "BMW teste le robot humanoïde Aeon d’Hexagon dans une usine allemande pour l’assemblage de batteries et la production de composants",
-        "summary": "BMW teste le robot humanoïde Aeon d’Hexagon dans une usine allemande pour l’assemblage de batteries et la production de composants",
-        "content": "BMW teste le robot humanoïde Aeon d’Hexagon dans une usine allemande pour l’assemblage de batteries et la production de composants",
-        "source": "L'Usine Digitale",
-        "link": "https://news.google.com/rss/articles/CBMiygJBVV95cUxNeV9EM0xXdTRnaFoyMEllT3ZSdzRlRk5EY01pOFREOXlqOWNVNWxCSTZOaHd1NU14UlhiVjZsU2NIOEpNTUVOc25DYm9lUjZkb29ldENXeV9yTFp4M0RiRl9XVU5Rd3RlOC1RZXFMRzlXMlk5akhXZVEzQ2pMQTQxcHBjZTZkNmtieTl3WHdCSVQ1OEZVWlhfUl9MRm9aOXR1cjNsQkxfOEk2Y3ZsTExlYlFDUHdsdDhiaVRrWmJiWk5ZZ2l3bklGallxZ3lWVWpGWS13MTBiT2hvam5mLWJVNTFQamE1NFotOUFMaUFpRVZnMkpueklWcEtrLXRNQXVkelZvVGNNQnZMR3d3N3J5cGlUZ3A2UVZFUlhYSTlxbWgtTW12Nkk2aEpZMVlWS2VyVHl1MnctSHJrc21uZ0FhLTJhY3lHRF8tSHc?oc=5",
-        "date": "2026-03-11"
-      },
-      {
-        "title": "BMW expérimente des robots humanoïdes dans ses usines",
-        "summary": "BMW expérimente des robots humanoïdes dans ses usines",
-        "content": "BMW expérimente des robots humanoïdes dans ses usines",
-        "source": "Le Matin.ma",
-        "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxONm9vbGh2ODBfUTl2TXJTcXZmMDQ2NmhmaHFsVjI3eFp5QlRCOTVqbjk5SHlxMGpTUHNmMmU0b0ltTXNscTdoNWxYaXZTbDlqS1UteFhmVzUtZmxnQnl1RXR6a2REM0lDVllOWDgyUnBLaEt5aEtJMWwzTFZ5X2FzVFFXZ3lMZ3B6SkJXTmNpckVuNXUy0gGaAUFVX3lxTE9HcFBLajdWTnJSekU5Y25xcThjeUpCS3lUMWExSldBN2E3U3dicVBnNEhmY1U2TVQzd3g1RVc1cjFlM1dqRlBXVV9KdzdCd0labzdrTFg4TmJxRl95YWhkMkFyWFhZVEFBZTNQaVdtbmNWcWVMU244aWg1Y0ZtamtIanQ3TklGWE1yV3FpVGlyUDRiU0w5SnJraXc?oc=5",
-        "date": "2026-03-11"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 11 - March 2026",
-    "news": [
-      {
-        "title": "Les centres de données confient désormais leur sécurité à des chiens-robots",
-        "summary": "Les centres de données confient désormais leur sécurité à des chiens-robots",
-        "content": "Les centres de données confient désormais leur sécurité à des chiens-robots",
-        "source": "Slate.fr",
-        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaWFsZ0s3U3ZTRFkwWlREUmoxMm1nUGhXQklvN24xYk5lWERCdWR0dExnRnJra2pwUnhSVTdUd3pHZ18zandDdnJ4YUVyNUtVOWc1T0Zob193bDdFWEF6RjMwbFhlZF90enlMaG9iUGpqMWhEVHg3ZkhYMGNyZlNXcFRCLUpURk5fYlFaUmc5MXpEWnZfWHdsNXhZQlAzbnJKUXU3bHJUQlpYeHFLN1lYNmdSZ0llWWJCY3g5anp0ZDl6aEHSAcgBQVVfeXFMTzVpck8tR2NCazZvQ0NqRWJrRG5FaU9IRDFfNWk4MjRwOEt0N19scnpXZGFLODJ0eWk5RDdKY01yNmJHT1g4RjRzZG5HX1JGQVdGOGpBcExSTlhTY3UwazdpS0wwR01NaXNXVEx0R2F4SUg2V24wdnBlSzRFb2xSMVlvUzV0OHgtR2tJZDVWMmNVMjdfZmUtVkltc0N4M0pMczZBRENId2NXLU5GLVkxSHZlQlR4TnZtb0Z2QnNTam83X01yekU0aDY?oc=5",
-        "date": "2026-03-18"
-      },
-      {
-        "title": "Un robot humanoïde qui soulève des pneus : on vous dit tout sur cet exosquelette, en phase de test sur un site Renault",
-        "summary": "Un robot humanoïde qui soulève des pneus : on vous dit tout sur cet exosquelette, en phase de test sur un site Renault",
-        "content": "Un robot humanoïde qui soulève des pneus : on vous dit tout sur cet exosquelette, en phase de test sur un site Renault",
-        "source": "France 3 Régions",
-        "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQblljWjRWS1dJYWt1NnpYelNRS1M3TGFNdG5obEMzZUswbHY0a1JVcXdwWHVLcngtbFVCc1lYQU9LdE9Kdkw1SGNRT1lKNXQ1NDgxRFZnb01sandmSmZBN0tfWlhNazBTVXJiX2JFQkxMcGFGLTlhSXN0cFN5eVdTaEtVUjVJWG5mV0ZSVVpjS0N4cUN4blZmRzk2NkJBbWpFZUh5NW9XaDZYU21XM3RfR1ZRZEVoeThhNEhzSDYtTXQxVlN2Y19sLURSMTRkLXZZV2hOS1dQNF9lMTUyZGFPVXVjdjFkU09pSGgwbE5pMzFzS2RlYVcxYzltZ0g3TUtYc0ZGRnhRajg1LUdYbGZianBiek1Odm1tcUZRRGxMbEM?oc=5",
-        "date": "2026-03-18"
-      },
-      {
-        "title": "Une femme importunée par un robot humanoïde à Macao, la police intervient",
-        "summary": "Une femme importunée par un robot humanoïde à Macao, la police intervient",
-        "content": "Une femme importunée par un robot humanoïde à Macao, la police intervient",
-        "source": "Le Parisien",
-        "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPbnFmTTVMRjcxd0ZxeGtzZTRCTEU5SnpUOG1EZ2tkX1ZzY2dIa25iUVJhaVZuV18xSXM5Tm9LQ0dnNFFCbEQ1OWJ1Rjh5TkowMnhmaGJOcjhhR3lld3BiY013dHJWQnBRcktBQWpwby04VVhzSm8tdUVfeHk2dnI2bHpfamxnWmtWYy1KN1NQZ0JiU2prUnprSGhKLWZPQlhHREFfeXBRR3Z2Y0F0bzg3RFRiTjdiQnZSeUFNZTN5cE9xeXFkOEQzNHdpR08wc2w4SGYwOHB3bVhCRUNFQ3BRQzlTS1Q?oc=5",
-        "date": "2026-03-18"
-      },
-      {
-        "title": "Un robot humanoïde cause une énorme frayeur à une femme, la vidéo devient virale",
-        "summary": "Un robot humanoïde cause une énorme frayeur à une femme, la vidéo devient virale",
-        "content": "Un robot humanoïde cause une énorme frayeur à une femme, la vidéo devient virale",
-        "source": "20 Minutes",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQS1ndktwNkVheEJyb2xNWVE0RGl5cXhYZlhPMi1HU1A0U1plR0psNEdnTFpMUWJ5LXE3NktuRmxKM3h3aDludHpScDlUamhvenVzWlQwcXg4aEh6UVEyWTNSWGRTNkhPWDVCSlJjWHFnb2U4RklkVDNObnc0ckJ3YWNoYVFQRnRWbzlPVEtmMi1MQXlpN3gtMXRCZTdZdFJpT3NSbEhRWG1GWGZ4a09xOXRfQU8zTV9Vc290NkZtYw?oc=5",
-        "date": "2026-03-18"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 12 - March 2026",
-    "news": [
-      {
-        "title": "De smartphone à géant industriel : Xiaomi change d’échelle",
-        "summary": "De smartphone à géant industriel : Xiaomi change d’échelle",
-        "content": "De smartphone à géant industriel : Xiaomi change d’échelle",
-        "source": "Servicesmobiles.fr",
-        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUmJrZWhaalN4dXNLc2RfNHZpVjNlZzFMRUhMVjNVUXhtM0k1M3l3OGRLZlVtN2pDZWlCS3IyeGlFWWxNcktyQ2lZNTNlb3J1Wk9RemF4em94T1BtQ0J4bnVzT0ppT2ZjQURXRjg0VGpVaU02Y2pvM2lOSUlyTmpDbk91Y2puOXZZNjBSQnJSWkJBdVRrRUplMg?oc=5",
-        "date": "2026-03-25"
-      },
-      {
-        "title": "Amazon fait un grand pas vers les robots humanoïdes avec le rachat de Fauna Robotics",
-        "summary": "Amazon fait un grand pas vers les robots humanoïdes avec le rachat de Fauna Robotics",
-        "content": "Amazon fait un grand pas vers les robots humanoïdes avec le rachat de Fauna Robotics",
-        "source": "Business AM",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQLW90QXdyU2xYVDhYZUlXODNESTk0N0c2b3dKMk5SdUpOUi1YY2pKSGF2MWMxUFBUUTExNk5WR1VLRTZvYnNXX2FXSjJXdXM3VWRGNEdFNzB0X080Z0U2MzlUVFNvTDJYMlpYOUdfVG9jRGhrWEo3bXBLdDMyNmdqWUtkcGw1Y28zRXNDRXMxS1NPT1RjOERqcjU4UUhHTWlsYlUydUZWclNhV3JXdnhv?oc=5",
-        "date": "2026-03-25"
-      },
-      {
-        "title": "Amazon s'offre une start-up qui développe des robots... à taille d'enfant",
-        "summary": "Amazon s'offre une start-up qui développe des robots... à taille d'enfant",
-        "content": "Amazon s'offre une start-up qui développe des robots... à taille d'enfant",
-        "source": "Clubic",
-        "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTHU1aDVUNEFBdTlMak5NR2tSU2d5bEVwZTgxQ3pKbzlMSTM3RGlsc0h4Z0NMOHFWNVlhYjRUQlA4RGhvekpPZXdqeEhZbWFfSEdXN3V6amZKVFhrMUs2X0t3NFJpeFR1WW9Ka3NnSW9KQ3dzQ1VSME5ZVUxEOE9OY20xX1ZYOUhETlNsc0JtRWdHbEdMTFV2TXBycVI5bWVfRVVQSE9wNk9tdDVNdW1sNll6Zkg3Zw?oc=5",
-        "date": "2026-03-25"
-      },
-      {
-        "title": "Selon Melania Trump, l’éducation des enfants devrait être confiée à des robots humanoïdes",
-        "summary": "Selon Melania Trump, l’éducation des enfants devrait être confiée à des robots humanoïdes",
-        "content": "Selon Melania Trump, l’éducation des enfants devrait être confiée à des robots humanoïdes",
-        "source": "MSN",
-        "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNcHlDVG9HeWczcHNTS1lGdDViQmRPU2w1RHIxNGhZQkNmS1pNVUFCNUh5cUNSbEJPXzA5UVdPMVFzX25ueTZBMHFoTjZnZWFTMTNEMVRrbnY5RUdkRXF0MlZMSzJKc2wtLTVhZ1Z0N2VHS08xellYUk12X0dMdkxVaVZuVEM5QnVteEsyMDhELUlhZ3A5ZVpCWUk0YzUtR1JxVnN3MjJSb1N2VXEwdmxoSVVuajZJQmd0eHpEOTZKbEdTTHdOWm9tbUJpcHNFMmpaRmVaYS0wYUhpeEZsWElONm1VY1lyMW1jdF9tY19hRTVvaUFzcWIwaDU5bw?oc=5",
-        "date": "2026-03-25"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 13 - March 2026",
-    "news": [
-      {
-        "title": "Plongez dans Black Mirror Experience : l’aventure VR où vous devenez le personnage principal",
-        "summary": "Plongez dans Black Mirror Experience : l’aventure VR où vous devenez le personnage principal",
-        "content": "Plongez dans Black Mirror Experience : l’aventure VR où vous devenez le personnage principal",
-        "source": "Presse-citron",
-        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMV9sQnl3MXp3aW93eWRPd0w2MGZpU09WcFZNLWdHVkVCb1A3WEhJMDFKeTFEdEVqV2lUSkNrdW90Y0xHRlc3cjlqNlV2VV9nQTlkTklXSWU1S0Vablk4Qm1ReEQ5QlZVd3J1SVFGVzN0enAxUWFHVlhmcnpXdmsxWE9DcWlURU5vN3JJUnBWc1RiYzgxY3d1YmhDcUxZcE5ZTjRYNFR6MnpRWTRoWnlB?oc=5",
-        "date": "2026-04-01"
-      },
-      {
-        "title": "L'usine de robots de Foshan : un robot toutes les 30 minutes – La nouvelle méga-usine chinoise",
-        "summary": "L'usine de robots de Foshan : un robot toutes les 30 minutes – La nouvelle méga-usine chinoise",
-        "content": "L'usine de robots de Foshan : un robot toutes les 30 minutes – La nouvelle méga-usine chinoise",
-        "source": "Xpert.Digital - Konrad Wolfenstein",
-        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBxOE5vdDl2dzNBTEk0YlBJbzZfSXR1UVE0OVROaXlpUmdUdENNTWVqUWJ0aURzblkzNUJqd2xDQjNyMkxmeUhEUUZCODJNdTdMb0NjM3BITkR6UUNG?oc=5",
-        "date": "2026-04-01"
-      },
-      {
-        "title": "4 actions en Bourse pour investir dans le secteur de la santé en 2026",
-        "summary": "4 actions en Bourse pour investir dans le secteur de la santé en 2026",
-        "content": "4 actions en Bourse pour investir dans le secteur de la santé en 2026",
-        "source": "Cafédelabourse",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE50aGd5UnZrYkhnMDNXcjNqekM4MVJRMWRoVFl2eXJMam5oaU40OTNrVGNQVFVPQzQ4S1pDeUFjRTFOMGp6UkQ2X0RGRlV4OVplU2hmMGljaDZmWE1qcTVkbVZFLURFNnYzYWJVZGxJZnc?oc=5",
-        "date": "2026-04-01"
-      },
-      {
-        "title": "Hyundai Motor dévoile la campagne « Next Starts Now » (Le futur commence maintenant) destinée à mettre en avant la robotique au cours de la Coupe du Monde de la FIFA 2026™",
-        "summary": "Hyundai Motor dévoile la campagne « Next Starts Now » (Le futur commence maintenant) destinée à mettre en avant la robotique au cours de la Coupe du Monde de la FIFA 2026™",
-        "content": "Hyundai Motor dévoile la campagne « Next Starts Now » (Le futur commence maintenant) destinée à mettre en avant la robotique au cours de la Coupe du Monde de la FIFA 2026™",
-        "source": "Yahoo Finance France",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSGVOQTNQdzNCODRuYU5QWnFDUkN1U0F1dGU0VHhGQnJRaEUtR1R5U0QtZDFEdW9Sa0JfWEZNdTFhZ0dVQzAwcUNCeEFTSHNoNENvc3RreHdWV1RGYVVqcFZ0NGhZbWJfUzQtV2JlTVJqVHhsSEFYbGk5V05xczl0eVY0ejJnS3RiSXBXZzl1WmNPTGtqWG9kQ05fbw?oc=5",
-        "date": "2026-04-01"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 14 - April 2026",
-    "news": [
-      {
-        "title": "Elon Musk admet un retard sur l'un de ses produits phares…",
-        "summary": "Elon Musk admet un retard sur l'un de ses produits phares…",
-        "content": "Elon Musk admet un retard sur l'un de ses produits phares…",
-        "source": "jeuxvideo.com",
-        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPYllmdk1qZHRRd2lXazRqNndpVEwzbndzaGVhQWdjOUJ6ODZCNkRjVEtaQTdUck1rRGgzRmRpTTk2c0VhNnJGb0lzVlRsaHdHZnFpbHUwVTRvR2lOT1B6WEFRZ1BMZzBNSG9VRFZxVXB2UFRBYWJWRmFKYTBSTGNQb0ktNl9YQmNVdC1fV0RNOHdBc3VBdkVmRExKWVd4b0djbWc?oc=5",
-        "date": "2026-04-08"
-      },
-      {
-        "title": "Realbotix Corp livre un robot humanoïde équipé du système Vinci à Ericsson",
-        "summary": "Realbotix Corp livre un robot humanoïde équipé du système Vinci à Ericsson",
-        "content": "Realbotix Corp livre un robot humanoïde équipé du système Vinci à Ericsson",
-        "source": "Zonebourse Suisse",
-        "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQcnh3X3lseEl5emZwT0lEY19NMHVmV1R0SzliRWZPaENjb1puMEdtYUZwNGlDQnl1Yl9udlN3WmxTUm1XR2JtZ1lTZ3lGVGVaZG42Y3ZVcTJWMFZzSkdyUTIwM3RQbWkyaWt5d0lDTHpidkljVnVyZmV4N1VrdkVJQWVRMF8wM0VhdkI0M1BEb0pUZEE3R2lWTDAyeGFfRFlRU2JrZ3ZKeV9uV3FMQUptdzZXODd3a0ZFMWIwM20weXVwQUFOdXRMRlpUQjRhUk0?oc=5",
-        "date": "2026-04-08"
-      },
-      {
-        "title": "Sur les terrains extrêmes de Mars, le chien robot change la donne",
-        "summary": "Sur les terrains extrêmes de Mars, le chien robot change la donne",
-        "content": "Sur les terrains extrêmes de Mars, le chien robot change la donne",
-        "source": "objetconnecte.com",
-        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNX3JmTVpiUmF0WVJWWXBFVF9DQ0JKTVBxTERwQUVpRzhVcGc1dmUwSG9YRDladjQxcTV5RXRibm5VUkdPdFUwQlBJb3JNQU42Nm84aVRaTmdjbjZTNTdJYkI5NnkwZlJvck45enN4YXAwWVRXYlpqSW5GekJHdEYzQjg2dUxGR3hfNWZmeTdURXRYdG9oc0ZVODRXcw?oc=5",
-        "date": "2026-04-08"
-      },
-      {
-        "title": "Hyundai dévoile sa campagne « Next Starts Now »",
-        "summary": "Hyundai dévoile sa campagne « Next Starts Now »",
-        "content": "Hyundai dévoile sa campagne « Next Starts Now »",
-        "source": "hyundai.news",
-        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWktqWmFwY2xUempzNWF3TXQtNVU0R184TkJ4cTh6QTFtcDdZRGIwNEpYR0V6QWxaSTBhNmlVV1ZkaGx1Rk9TcXlPeWx2aHVrWmZSLTJ4T0hXRW9QeHBEUl9CM2tEcmtrMmJFUnllMDNsVU5qaVpnOGNqRXNuUWFPNURsQkZiR092OG5xNXpDOEE5WEppaWhSNjRqakVxaVhnR2d6Zkd6Zw?oc=5",
-        "date": "2026-04-08"
-      }
-    ]
-  },
-  {
-    "week": "Semaine 15 - April 2026",
-    "news": [
-      {
-        "title": "La petite Kia économique arrivera en 2027",
-        "summary": "La petite Kia économique arrivera en 2027",
-        "content": "La petite Kia économique arrivera en 2027",
-        "source": "Motor1.com France",
-        "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9pc1cyR25EZ3NocjJRbHhrR21peTFKTnlycTE3UDdza0FQZHBMTml3TDdWQUlYRkJEU3dlaEQwMExNaHpyay1vR2Z2RTYxYXNfVE5UQ3FvTDZkWlh6WlRpZ0VVcV9OdDVxNl9jekltMmJCVFJHSVZV?oc=5",
-        "date": "2026-04-12"
-      },
-      {
-        "title": "Le robot humanoïde Unitree R1 débarque en Europe à moins de 5 000 euros",
-        "summary": "Le robot humanoïde Unitree R1 débarque en Europe à moins de 5 000 euros",
-        "content": "Le robot humanoïde Unitree R1 débarque en Europe à moins de 5 000 euros",
-        "source": "Le Journal du Web",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNYXprREJiclNYZnNWOWFyeTM1Y2J2QklpWmktVy1XTmJRQ19sWU5SS0x3c0pVYkFxdG5VdmZEa0hmQjV1d0FLOHgxSEdRZFlianM1Ym83eDB5ZHRjZEZRN0F5Z0stbGVSVHlSb2RPZ2k2YWVwZ2J0dHUwQUwwZThqdXlvYXRmU2VqcGlabjhyZG02cXRoaFRpTzhTMzNoQXRuZW84?oc=5",
-        "date": "2026-04-12"
-      },
-      {
-        "title": "Des experts de premier plan en intelligence artificielle et en robotique rejoindraient l'industrie technologique chinoise.",
-        "summary": "Des experts de premier plan en intelligence artificielle et en robotique rejoindraient l'industrie technologique chinoise.",
-        "content": "Des experts de premier plan en intelligence artificielle et en robotique rejoindraient l'industrie technologique chinoise.",
-        "source": "Vietnam.vn",
-        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNa09lanhTU0hRclp4a2RhYXJzbVZULVF6VG5YRXlPeUE0bnhKWHBKb1ZhNG45SWRoM285OHFJTkxtS1hTeGxQX3RTQ2JnMldzQ2hteWdhLUwydUgwZEJpVG5BX0s2N3R4ZjMzbjlqR0xod2NMcjREQ3ZZaVZGbnB4d1kydDhXSGJZMHFGZjZpZHFzYzlTWnBFSmJHVDRUN3NSdkQ3cURB?oc=5",
-        "date": "2026-04-12"
-      },
-      {
-        "title": "Voici le premier robot humanoïde que vous pouvez commander sur AliExpress comme un iPhone",
-        "summary": "Voici le premier robot humanoïde que vous pouvez commander sur AliExpress comme un iPhone",
-        "content": "Voici le premier robot humanoïde que vous pouvez commander sur AliExpress comme un iPhone",
-        "source": "Le Cri du Troll",
-        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPakRfRHlTTUZKNGdRaFFaaTlBNldZT0FnTi1PVDgtaWYwRU1HLWQyTGJvWnlLQ0Y3aEN1SmNNdkJQdmdsS3QyV29qeVl2MnRtdjVRX1JhcXpFMFlsZmtSLU9QT1JIRGt3NUVwYldNVnowZFB6VUNIYldCUzBjanhHOEVXTWlNTkpiang4WThFazNjaWppOVV1RlFvaDhGTWdLSHVrX0JXM291cDRZeklvLWQ0SFRzUVE?oc=5",
-        "date": "2026-04-11"
-      }
-    ]
-  }
-]
+  "history": [
+    {
+      "weekId": "2026-W18",
+      "week": "Semaine 18 - 2026",
+      "news": [
+        {
+          "title": "Robotique : À l’aéroport de Tokyo, Japan Airlines mise sur les robots humanoïdes de Unitree pour charger les bagages et le fret",
+          "summary": "Japan Airlines déploie des robots humanoïdes de Unitree à l'aéroport de Tokyo pour automatiser le chargement des bagages et du fret. Cette initiative vise à améliorer l'efficacité opérationnelle et à réduire la charge de travail humaine dans un environnement logistique exigeant.",
+          "content": "Japan Airlines déploie des robots humanoïdes de Unitree à l'aéroport de Tokyo pour automatiser le chargement des bagages et du fret. Cette initiative vise à améliorer l'efficacité opérationnelle et à réduire la charge de travail humaine dans un environnement logistique exigeant.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQRFpZQjZWTklXbWM1RDJsTzl0SzI4cHJmazM4bVVaekVhTlhESTlHZHQ1Q19kNUdVanY2TURJR3FDV2NxRHE3RHB4SXRlaGw4U3prMzhrampYRlotWlgxN2w4TVdLRHdSNmtiSDdmMHlpMlluTTRQLTlvemRGcVBMa1l5WGlGTHBYZ09vUEtMMTFKMU1ub3JzSGM3bGdETE54MGRVWXBzWGNZaFo1dWM3ZTNocnNBZFJoeVN4OHNwWTJ0cEZkTnVhZDRLZDg4elZTaTFuaVVwMThyR01lOHl5eVZfX2ZfVnowMkt0QmhiX2dFLVJ2aTNFN25YZFJ4ZjVYVk56Um0yV1JMZHo4RWlsMEw2RF9SR2lmZHFFLU1pV0o0X3dzVk5qUldxWnZXeTU2cVBrQTVLc3pDMnQ5bnU0QXVSdw?oc=5",
+          "date": "2026-04-28",
+          "whyImportant": "Cet article montre une application concrète des robots humanoïdes dans l'industrie du transport aérien. Il illustre comment la robotique peut optimiser les processus logistiques et la gestion des flux de marchandises. Pour un BTS SIO, cela met en lumière l'intégration de systèmes robotiques complexes dans des infrastructures critiques. C'est un exemple pertinent de l'automatisation intelligente."
+        },
+        {
+          "title": "“L’intelligence artificielle va transformer l’industrie automobile” : BMW réunit 300 millions de dollars pour soutenir les start-up d’IA et de robotique",
+          "summary": "BMW investit 300 millions de dollars pour soutenir des start-up spécialisées dans l'IA et la robotique, soulignant la transformation imminente de l'industrie automobile. Ce financement vise à intégrer des technologies avancées pour optimiser la production et les véhicules.",
+          "content": "BMW investit 300 millions de dollars pour soutenir des start-up spécialisées dans l'IA et la robotique, soulignant la transformation imminente de l'industrie automobile. Ce financement vise à intégrer des technologies avancées pour optimiser la production et les véhicules.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxNSzlGSmVvck9mamtKT0FDOTQwWlZzWmpISEdnVElRcmhSaEhWWG9pc2o5M0Q4YmdDemxWM3A2NnAtMXR3SERUR1pZQmtYS3c5dVRVV1RzN2U3ekR1ZlRKNzFTQ3dlazBMTjVTRU11QU5sdjZOVnJPOUpqWEFNZnBVWUh5Q0VxSFJPN1pjTUJDQTdoT1hZS0ZnMGdXX1YyM3FSVEdzSFAteG1MaFdtd0d2T085OGdaX3BVWlM1ZDFYNnNNQi1QQ2wxT1IwWkF5dWs3ZUxDS2VXQUhYWmNYLWswMjQwSUNISWJnZS1CMzM3elFrWVBkanVaYjBWSm9MekJWcTVwYkpWcUw4elZXSndEODhNS3ZndGRIMjhQMy1kdjZMaVpKR0hXZC1QSHdnWDBIc2tYS1Nlb0phNjhDTnlVeFM0a0t0aDRDc2xQM0tsdmwwUkk?oc=5",
+          "date": "2026-04-30",
+          "whyImportant": "L'investissement de BMW démontre l'importance stratégique de l'IA et de la robotique pour les grands groupes industriels. Cela indique une forte demande future pour les compétences en développement et intégration de ces technologies. Pour un BTS SIO, c'est un signal clair des opportunités de carrière dans l'automatisation et les systèmes intelligents. L'industrie automobile est un secteur clé pour l'innovation technologique."
+        },
+        {
+          "title": "Robots industriels : Sereact, la start-up allemande qui défie les américains dans les modèles d’IA pour la robotique, lève 110 millions de dollars",
+          "summary": "La start-up allemande Sereact a levé 110 millions de dollars pour développer des modèles d'IA avancés dédiés à la robotique industrielle. Elle se positionne comme un acteur majeur face aux concurrents américains dans ce domaine technologique.",
+          "content": "La start-up allemande Sereact a levé 110 millions de dollars pour développer des modèles d'IA avancés dédiés à la robotique industrielle. Elle se positionne comme un acteur majeur face aux concurrents américains dans ce domaine technologique.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxNTjN2WmtzSXR3Zy1tNFZvdFU4Y3lOVGpReVNqNlRrdzBiVy05bUEwamhWVzdrMnZhZVRTclc4d2h0RUwzV19SMElWNFdLd3Jfazh3U1MtdjhVYVJtTXdIeGFOMkF2QVFWNTNrZ0M5bmstWERZTzc1Z293bWVBRXZGV0YxdGZqd0xKTVpXX3hpQ2xvWjZhTUMxZm8yQVdoM3lCWjZDV3BDZFRLZ1AwVUgyVHhUWGFOcURXdFBvYXVCM2JYRndUQnprUmZQeTAzY3B5SWVMVURsVmxMNUVtakNrWS0xZFJuOUFOOTVJM0xJeENWU1RtcTE4MWZjdndXQ2lJOE11bGtyX2M0UDdpOGZpUmhmN2x0NUczTHNxQW9ELUpzNm9qWmFfRW5XekVvNmRHdklpd3ROTW9CYmZlLXhuMHMxQUZSbzR2cUFrWDVZYUthY2NZZWZ3cWdTZw?oc=5",
+          "date": "2026-04-28",
+          "whyImportant": "Cet article met en lumière l'importance croissante des modèles d'IA spécifiques pour les robots industriels. Il montre que l'Europe est également un acteur clé dans l'innovation robotique. Pour un BTS SIO, cela souligne la nécessité de comprendre l'intégration de l'IA dans les systèmes de production. C'est un exemple de l'évolution des logiciels qui pilotent les robots."
+        },
+        {
+          "title": "L'américain Figure sait désormais produire un robot humanoide toutes les 60 minutes",
+          "summary": "Figure AI a atteint une cadence de production impressionnante, capable de fabriquer un robot humanoïde toutes les 60 minutes. Cette accélération marque une étape majeure vers la commercialisation et le déploiement à grande échelle de ces robots.",
+          "content": "Figure AI a atteint une cadence de production impressionnante, capable de fabriquer un robot humanoïde toutes les 60 minutes. Cette accélération marque une étape majeure vers la commercialisation et le déploiement à grande échelle de ces robots.",
+          "source": "Génération NT",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPN0lxWFZ6Z0tuQnQ2M0Uxc0thMHJSZWh6VGg4LWI1MVRqNXJaNThvbW8zRHJ5eWZscFJ5S1AxN0dod1FVbkJqa2RFeTJabzhoOXc2alFrMTVoX21tOWV4dnFrUy1wZHMwZmtRWktTRXNyU1FZQUJ2OGI4TjRISlZKek1fcnNrb0ZKZGU1NllyeW5tbm1PcXNOMVN3SUlLdDjSAaQBQVVfeXFMUDh2aDhXUlE0RFhOVThSS04xeHV5c1REalZXakVpSnIwOEwtbGR4SWZ4VkplUTJsdHpORDRMbm5YMzRnOC1uUzhGanQ4b2ozR3hodzI3cDdmS0dkRnpGYkRlckc1M3UwY01VODNFOTlFQkpfbl8yY1M0Y3JIcU9fVjF2S3RmNEJ5eVdaYkJwQVlWRjNadTJtS1k0cHRWSTBFWThHOEM?oc=5",
+          "date": "2026-05-03",
+          "whyImportant": "La capacité de Figure AI à produire des robots humanoïdes à une telle vitesse est un indicateur fort de leur industrialisation. Cela signifie que ces robots pourraient bientôt être largement disponibles pour diverses applications. Pour un BTS SIO, c'est crucial car cela ouvre des perspectives d'intégration de ces machines dans de nombreux secteurs. C'est une avancée significative pour l'adoption massive des robots humanoïdes."
+        }
+      ]
+    },
+    {
+      "weekId": "2026-W17",
+      "week": "Semaine 17 - 2026",
+      "news": [
+        {
+          "title": "Robotique humanoïde : Siemens teste avec succès l’HMND 01 Alpha de la start-up britannique Humanoid dans une usine allemande",
+          "summary": "Siemens a testé avec succès le robot humanoïde HMND 01 Alpha de la start-up Humanoid dans une de ses usines en Allemagne. Cette collaboration marque une étape importante pour l'intégration des robots humanoïdes dans les environnements industriels.",
+          "content": "Siemens a testé avec succès le robot humanoïde HMND 01 Alpha de la start-up Humanoid dans une de ses usines en Allemagne. Cette collaboration marque une étape importante pour l'intégration des robots humanoïdes dans les environnements industriels.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxOLVFybmNUM05Cd3FuWlQ4TlFKMXEyaWk3UUlNQUVSeUo1NWJwUzZGOC1qWG1EUzkzVTFHbzV1elMwZ0xPSDVmaEpRTmJFYmwxa0I2cTQtTXgyc0tvcVEwYmJWdmQtZG1pVFIyZXdwbzFDQmItdk51QklqY2RiYkVuQUJWTDhqWHpkX0d3c3hHbFY1RWtoZlJZOUtLd0Q4cVp4MXlnbWIwUlVUUDM1dEZzUnFQVTN2TTNpX3FiNC14WGlGajU3V2Jva3NoZ1B6YzUwRHBiMmFoRXdNWGxMX1BGNzdHUU5MMUt1eXk4cUZISkdPQW5ydnl2Z3BrQ0hJdk5yajh5QjhkYjBCNW12TmZEclRTV0ZyMmszd25WUFpzeDlOTUxsTWR6SW9lYXNiT2xwRmRDRThSTGtYQXlmWVFVeA?oc=5",
+          "date": "2026-04-20",
+          "whyImportant": "Ce test montre l'intérêt des grandes entreprises pour les robots humanoïdes. Cela prouve que ces robots peuvent être utiles dans l'industrie. C'est une avancée pour l'automatisation des tâches complexes en usine."
+        },
+        {
+          "title": "Unitree R1 : le robot humanoïde à moins de 5 000 euros disponible sur AliExpress, voilà ce qu'il sait vraiment faire",
+          "summary": "Le robot humanoïde Unitree R1 est désormais disponible sur AliExpress pour moins de 5 000 euros, rendant cette technologie plus accessible. L'article détaille les capacités réelles de ce robot à un prix compétitif.",
+          "content": "Le robot humanoïde Unitree R1 est désormais disponible sur AliExpress pour moins de 5 000 euros, rendant cette technologie plus accessible. L'article détaille les capacités réelles de ce robot à un prix compétitif.",
+          "source": "Journal du Geek",
+          "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxONHZnV0dFVlhlMHFjVWJpUm5MOEFoV0loazVCb1AyR2g3WkVkYXJQSHVHX3BwN1RLU00xZ1pyY3RPMlNHNENvampnUWc3czc1SjdGYTU0Z3NmUmVFNzlTODZrTmtkNzBPVkkxRUl2bHBOWkZOYmpkbkdseXE0aHp2VmVXYkdaVEhWV3dBVEVMLVpZREQyZ3hWMGlCSmhYX1hGSnE4OGVmTHFwbFFVc3dLUmlQMi1ScTZqSkttbVdLR2F3bFczLUdYMVo1bFNPNjBHWm9vV05qZEZpZkI0NVpqalFua0l0NGVyYlE?oc=5",
+          "date": "2026-04-22",
+          "whyImportant": "La disponibilité du Unitree R1 à bas prix rend les robots humanoïdes plus accessibles. Cela ouvre de nouvelles possibilités pour la recherche et le développement personnel. C'est un signe de la démocratisation de la robotique avancée."
+        },
+        {
+          "title": "Cinq systèmes robotiques, huit modèles d’IA… Le chinois AgiBot avance à un rythme effréné et veut multiplier son chiffre d’affaires par 10 en deux ans",
+          "summary": "La société chinoise AgiBot développe rapidement cinq systèmes robotiques et huit modèles d'IA, visant une croissance exponentielle de son chiffre d'affaires. Cette entreprise illustre l'accélération de l'innovation dans la robotique contrôlée par l'intelligence artificielle.",
+          "content": "La société chinoise AgiBot développe rapidement cinq systèmes robotiques et huit modèles d'IA, visant une croissance exponentielle de son chiffre d'affaires. Cette entreprise illustre l'accélération de l'innovation dans la robotique contrôlée par l'intelligence artificielle.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxOUXUzWjdEVDdVN3Jlb0tQajBaOUZ3UWdXdmhxX3VNUzZqUGt3QzZCMXQybnpZcUxBTmpDZHVSeFZrT0N4Mm00UEdFT1VBaUNzakpEcVdpQ3QzTFFHSy0tLXlPVGoyTVUwaldLNnUzVmpXcHc5NVI3bVFHb3pMNTNSeklPOGgwZFlkUHNBdEMxQ0FKVVd3b1Vfd0ZrRnlsM0pENUdGMVBPUWhBbTF0VklKRGFnM0Z4aDk0bTJqRDVBY21tNFpXcWVxM1hwWmtwa2hnam1QUGpFbUZVLUYwTXNENmRKOUZfNmtBa0NKV09sbGl5YmpVTWp4NTJiVE1yS04xY1B1aFhuTGIwR25JdEJXYW5YZ1ZZYkZTM0lBbmdsRmkzTFE1clZGTzdidFA1RTJ5VWg3TTBmaGhWaks2NlAwMlB6RUh0MHJxUmRSMTRiTlBMZWNNOFN4djZpQTFRbmhuMVE?oc=5",
+          "date": "2026-04-21",
+          "whyImportant": "AgiBot montre comment l'IA est au cœur du développement robotique moderne. Leur croissance rapide indique un marché dynamique et des avancées technologiques majeures. C'est un exemple de l'intégration poussée entre IA et systèmes robotiques."
+        },
+        {
+          "title": "Course de semi-marathon à Pékin: un robot humanoïde bat le record humain",
+          "summary": "Un robot humanoïde a battu le record humain lors d'un semi-marathon à Pékin, complétant la course en un temps impressionnant. Cette performance souligne les progrès significatifs en matière de mobilité et d'autonomie des robots humanoïdes.",
+          "content": "Un robot humanoïde a battu le record humain lors d'un semi-marathon à Pékin, complétant la course en un temps impressionnant. Cette performance souligne les progrès significatifs en matière de mobilité et d'autonomie des robots humanoïdes.",
+          "source": "Enerzine",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRm1UNnRwaWdiZWFOSmtzeG9OaUlhTGRQbXZJT3dQTTBaYmVVQ3JOOUdmWmlBR0t6Si1VdnhYQ0dZMjliVXJmMEsxSjI0cEgxRm13TEIxTEtKRnFYc0hwV0d4Tk83X3lVMk51ejJoNlpmdXl3cHdLM2pyWXBUSFh1YWZSVkU2SzRrT2FoYzNXbnFzV29zbFhzTVlDaDVRZTFFY2g3c2RMb1BwWVFZWFF0aQ?oc=5",
+          "date": "2026-04-22",
+          "whyImportant": "Battre un record humain en semi-marathon est une prouesse technique majeure. Cela démontre les capacités physiques et l'autonomie croissante des robots. C'est une étape importante pour la recherche en robotique bipède et la navigation autonome."
+        }
+      ]
+    },
+    {
+      "weekId": "2026-W16",
+      "week": "Semaine 16 - 2026",
+      "news": [
+        {
+          "title": "Robotique humanoïde : AgiBot déploie ses robots G2 dans une usine chinoise de fabrication de produits électroniques",
+          "summary": "AgiBot déploie ses robots humanoïdes G2 dans une usine chinoise de fabrication de produits électroniques. Cette intégration marque une avancée significative dans l'automatisation industrielle par des robots bipèdes.",
+          "content": "AgiBot déploie ses robots humanoïdes G2 dans une usine chinoise de fabrication de produits électroniques. Cette intégration marque une avancée significative dans l'automatisation industrielle par des robots bipèdes.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxQTWVodXBWeVhpZ1BTRHNQQU4tZVJaQmJCUk5MekF6MGRIMm5wbEhhbjhPaTRaVzg4d0g3UUFTVEhEWTVXZVpSY2RoaklkNllLTzVZT0tQUHpzTGhFcy1ET21uOTNPQXJ6Q0dwV1ZqSmdsZ1ZRR1JHaVpXSkh1MjJpOFVaekU2VnA2M19WbEFpQkoyUTJDRzZ6TXoxWi1BSnNlZVRaNVRuWE5uOE9wejBib2VqM3pXMU9CdllfUVktSlpobXotbDhycmFBa19mc3FaYi1vRjNmUlAtUDVOOG9DR3E3ZVJtU0labXNKeHgzRHZ5eW9uQU1DbG9DbGJDbkhEVUl6MWczckdCYkNaMVI3MnFSRm1YWGpsbTRkbTZKbkItR2VUVEhqa05XS1RZNV9FNldsaG5R?oc=5",
+          "date": "2026-04-15",
+          "whyImportant": "Cet article est crucial car il illustre l'application concrète des robots humanoïdes dans l'industrie manufacturière. Pour un BTS SIO, cela montre comment l'IA et la robotique transforment les chaînes de production. C'est un exemple direct de l'automatisation des tâches répétitives et complexes."
+        },
+        {
+          "title": "Robotique humanoïde : Siemens teste avec succès l’HMND 01 Alpha de la start-up britannique Humanoid dans une usine allemande",
+          "summary": "Siemens teste avec succès le robot humanoïde HMND 01 Alpha de la start-up britannique Humanoid dans une de ses usines allemandes. Ce test valide le potentiel d'intégration de robots bipèdes dans des environnements industriels existants.",
+          "content": "Siemens teste avec succès le robot humanoïde HMND 01 Alpha de la start-up britannique Humanoid dans une de ses usines allemandes. Ce test valide le potentiel d'intégration de robots bipèdes dans des environnements industriels existants.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxOLVFybmNUM05Cd3FuWlQ4TlFKMXEyaWk3UUlNQUVSeUo1NWJwUzZGOC1qWG1EUzkzVTFHbzV1elMwZ0xPSDVmaEpRTmJFYmwxa0I2cTQtTXgyc0tvcVEwYmJWdmQtZG1pVFIyZXdwbzFDQmItdk51QklqY2RiYkVuQUJWTDhqWHpkX0d3c3hHbFY1RWtoZlJZOUtLd0Q4cVp4MXlnbWIwUlVUUDM1dEZzUnFQVTN2TTNpX3FiNC14WGlGajU3V2Jva3NoZ1B6YzUwRHBiMmFoRXdNWGxMX1BGNzdHUU5MMUt1eXk4cUZISkdPQW5ydnl2Z3BrQ0hJdk5yajh5QjhkYjBCNW12TmZEclRTV0ZyMmszd25WUFpzeDlOTUxsTWR6SW9lYXNiT2xwRmRDRThSTGtYQXlmWVFVeA?oc=5",
+          "date": "2026-04-20",
+          "whyImportant": "L'implication d'un géant industriel comme Siemens dans le test de robots humanoïdes est très significative. Cela prouve l'intérêt majeur de l'industrie pour ces technologies. Pour un BTS SIO, cela met en lumière les défis et opportunités liés à l'intégration de systèmes robotiques avancés dans des infrastructures industrielles."
+        },
+        {
+          "title": "Les robots bientôt capables de comprendre des mesures d’instruments ? Comment Google veut rendre les machines plus autonomes avec Gemini Robotics-ER 1.6",
+          "summary": "Google développe Gemini Robotics-ER 1.6 pour permettre aux robots de comprendre et d'interpréter les mesures d'instruments, augmentant ainsi leur autonomie. Cette avancée vise à rendre les machines plus intelligentes et capables de prendre des décisions complexes.",
+          "content": "Google développe Gemini Robotics-ER 1.6 pour permettre aux robots de comprendre et d'interpréter les mesures d'instruments, augmentant ainsi leur autonomie. Cette avancée vise à rendre les machines plus intelligentes et capables de prendre des décisions complexes.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxOZENSaGtmaHhrbjNRbkxxZGYydlhmTTliMWNFb19UcU00VmpyR3FjTWVpOFJfUXN0RTY2UndVbjBsYi1waklfNVRlZ2dIUU1MUFRkWnBuYlZLbHFBb3ZHRE1ScHdsNURxVGE2bGdqT2QyaHVxWTNicWNIY2s5QWxmQXdIRGVJR3FTVnllcUJ6Mm95VGRiUG5nbk8weDcwdlRKOU9YTEFfdDVkQ3NJZDl2VUhHNmwwYnZsRG5wcTlJajJYODFsbGN5TDVvcEpZOXRXMmRlalhsN2JWNEc2U1p6THVUYWVxd0l4MmJRUGdaMkNBMnJPcE9lbHR3WWwzV3lhNTN0ZkI0S3RBY1RKSXk3d1hqYUV0SmlZcU5HMnUxTWxnVHhrMl95SlZWQ09IbTFPYW9NU0hNRUZSUndRSWhodGk4SGs3M2JjMWxJVFNMM0Vqb3lGX0lldDMxQVBOUHZlazl4dQ?oc=5",
+          "date": "2026-04-15",
+          "whyImportant": "Cet article est essentiel car il aborde directement l'aspect \"IA\" et \"autonomie\" des robots, des piliers de la veille technologique. Pour un BTS SIO, comprendre comment l'IA de Google permet aux robots d'interagir avec leur environnement est fondamental. Cela ouvre la voie à des systèmes robotiques plus adaptatifs et moins dépendants de l'intervention humaine."
+        },
+        {
+          "title": "10 millions de robots humanoïdes par an en 2035 : Une adoption massive va avoir lieu dans l’industrie, d’après Roland Berger",
+          "summary": "Le cabinet Roland Berger prévoit une adoption massive des robots humanoïdes dans l'industrie, avec une production annuelle atteignant 10 millions d'unités d'ici 2035. Cette projection souligne l'impact transformateur de ces technologies sur le secteur manufacturier mondial.",
+          "content": "Le cabinet Roland Berger prévoit une adoption massive des robots humanoïdes dans l'industrie, avec une production annuelle atteignant 10 millions d'unités d'ici 2035. Cette projection souligne l'impact transformateur de ces technologies sur le secteur manufacturier mondial.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxPTzRtLTJHUk95M0t2dHJKNkRzV0pDZ3hPRDZxbllIVlpydGYtY0tXNDhPVE5uSk5iUVBLMWYyNE5Ra1hMUEJfeVRRQklRUmVIdG93aHJlSnBjSkZaeUlkckdndVJaYVAtcDFiaVRVUDNpeGlYVm1obnM4R2plMkw1eFU2LWlmRjQ3VEw0MmhTRFl6OXRaZWpkVUl1UWJYRnNYS19KYTgxcHFJYVlZTlhpVk5WX1VKdlpjSW9BQ1A1SHc1R25QUkVkOE9hM1dfbGUzdjhFSFVjYl9oZGZiX1h6T2JYRWVjNDJJZFZRS1dCRTZGM19yalV1Z1RHZlVFc3FhejN4TzBtODJBbjdGYk5kSlZQbWtXeG9hNFBEQ0N1eVc3ZEVGbFRVSG9RWDRiZkszaTVuWGFtYS1Qem1O?oc=5",
+          "date": "2026-04-16",
+          "whyImportant": "Cette prévision est très importante pour un portfolio BTS SIO car elle donne une perspective à long terme sur l'évolution du marché. Elle met en évidence l'ampleur de la révolution robotique à venir et les besoins futurs en compétences techniques. Cela montre que l'investissement dans la robotique et l'IA est une tendance durable et majeure."
+        }
+      ]
+    },
+    {
+      "weekId": "2026-W15",
+      "week": "Semaine 15 - 2026",
+      "news": [
+        {
+          "title": "Unitree, AgiBot, UBTech… En Chine, la production de robots humanoïdes devrait presque doubler en 2026",
+          "summary": "La Chine prévoit de presque doubler sa production de robots humanoïdes d'ici 2026, avec des acteurs majeurs comme Unitree, AgiBot et UBTech en tête. Cette croissance rapide indique une accélération significative de l'industrialisation de la robotique humanoïde dans le pays.",
+          "content": "La Chine prévoit de presque doubler sa production de robots humanoïdes d'ici 2026, avec des acteurs majeurs comme Unitree, AgiBot et UBTech en tête. Cette croissance rapide indique une accélération significative de l'industrialisation de la robotique humanoïde dans le pays.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQYTJFUXFMUUVpUmJBX3RmazRlcmlqczNrV04yWTM4b1FHMkF3OGVzbWVXbWtJeUhYV1FBRXpJWVV1MFBqVXRBYVQ4YWl3am9RVEVRYmVHUFBkTjAwRDRqVzY5RWxQdFg1cXc2UlJXX1RlcjkyMzBSUWtWZ3hyOVg1czRYbXN4MHkyT0JseUhOM3lGMGJZME5FQndlVlBaeTZVVjhFSlBqWkNXa2RLejlmSkx5bHZ0UDlTek96Q1BxREY4Nk9mUmRUMV9hVGIxelh0WmdDVTgwTVBFSzdSRXV6YnZiLVFPRnNfTzhoOVI3ZzJrN1BjMWpIRW81T28yMFFVNF9ZT01hUEVfMzVrRmttWHJ2aXlZVUpRUFh0NmlZdzU?oc=5",
+          "date": "2026-04-13",
+          "whyImportant": "Cette nouvelle montre l'ampleur de l'investissement chinois dans les robots humanoïdes. Elle souligne une tendance forte vers la production de masse. Pour un BTS SIO, cela indique de futurs besoins en compétences techniques. Les systèmes d'information seront essentiels pour gérer cette production."
+        },
+        {
+          "title": "Un robot fabriqué toutes les 30 minutes : la Chine inaugure une ligne de production automatisée de robots humanoïdes",
+          "summary": "La Chine a inauguré une ligne de production automatisée capable de fabriquer un robot humanoïde toutes les 30 minutes. Cette initiative marque une étape cruciale vers la production de masse de ces machines.",
+          "content": "La Chine a inauguré une ligne de production automatisée capable de fabriquer un robot humanoïde toutes les 30 minutes. Cette initiative marque une étape cruciale vers la production de masse de ces machines.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxQd3dLVklBQkFBYkpaa3dDTHF1ZUZRT1ZwTXpyOUpUaUZyMDZLZXMwaWp4RjE5RkFOTk1CRkl0SGwxblc2NTVGTDQzdWluakF5NGMxNnNhb21SSHZ0WDRrNDJ0ZGZuQ2xqQVdXUEFXMDJUeTBHV05PWjB3eUJXSm1zdVBOQXZrVFdnTVp0TTh3bzBMdklyeUotQnp3Vkp1QmFIUUJQbFN1cWxleWhXNlN5S2l3ZDZFeDVYbGVRaE5naGwySzdjTXRGZGtRSFNxYUhlczNuVjhwSWdiWkRBRFFtdEllQXNycFNBLXgwNEh0ajBZM25yZmNpTDRYSE1vMm04c3gzMUJnYXdZUDJrdWlWeDdYcFFUM05jajNiUjh0MlNpd0ctNkxBM01EcGROTkpDTXpwVVZDZw?oc=5",
+          "date": "2026-04-07",
+          "whyImportant": "C'est une preuve concrète de l'industrialisation des robots humanoïdes. Cela signifie que les robots ne sont plus seulement des prototypes. La production à grande échelle va créer de nouveaux défis techniques. Les compétences en gestion de production et en automatisation seront très demandées."
+        },
+        {
+          "title": "\"Peut-être une bascule pour l'humanité\" : Unitree, un robot humanoïde domestique à moins de 5.000 euros bientôt sur AliExpress",
+          "summary": "Unitree s'apprête à lancer un robot humanoïde domestique à moins de 5 000 euros sur AliExpress, rendant cette technologie accessible au grand public. Ce prix abordable pourrait marquer un tournant pour l'adoption des robots humanoïdes dans les foyers.",
+          "content": "Unitree s'apprête à lancer un robot humanoïde domestique à moins de 5 000 euros sur AliExpress, rendant cette technologie accessible au grand public. Ce prix abordable pourrait marquer un tournant pour l'adoption des robots humanoïdes dans les foyers.",
+          "source": "RTL.fr",
+          "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPWUt1WllDR29ibmVwR1ByeVhsOVJ5UEhQY3pZcUtZRGZkbDIxZG55NEVFQmx2bHR1dXZJWDFtdzBXYjBqYmpZYXNSSnQ4ZC16UlQxckVxdU5BZVJDSEJuM29fc1MwZWhkQ1hSY3dqSWRCZFNFeUFRNTFRdk9yMWJNUmt3N1dCbkJZWXl2bEo4TUM2V3Q4bWJ2QlZjRUJiYWxOYm0xcTZ4UEpIOEhVc0JBMzZCR1JLRUY3SzVIMXJjVnp1UGJvdGdyeVJLc3c2RTRUY1QxYmk4Mm1HcmJ2RUx5ZDFoUkwtdGhDZkNXZk9NbFBJWkE4ZnRVVEVTNDZPRjQ?oc=5",
+          "date": "2026-04-13",
+          "whyImportant": "L'arrivée de robots humanoïdes abordables change la donne. Ils pourraient bientôt être courants dans nos maisons. Cela ouvre des opportunités pour le développement d'applications logicielles. Les étudiants en SIO pourront travailler sur ces nouvelles interfaces."
+        },
+        {
+          "title": "Avec son projet Kobe, Amazon mise sur l’IA et la robotique pour transformer l’hypermarché en hub logistique optimisé à l’extrême",
+          "summary": "Amazon lance le projet Kobe, intégrant l'IA et la robotique avancée pour transformer ses hypermarchés en hubs logistiques ultra-optimisés. Cette initiative vise à améliorer l'efficacité de la chaîne d'approvisionnement grâce à des systèmes autonomes.",
+          "content": "Amazon lance le projet Kobe, intégrant l'IA et la robotique avancée pour transformer ses hypermarchés en hubs logistiques ultra-optimisés. Cette initiative vise à améliorer l'efficacité de la chaîne d'approvisionnement grâce à des systèmes autonomes.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNWWVvM1FSYkVDVnR1c0syYV9YY3hYUjlVa2o4bHpFYnVveVU3aUJZVVdIZzhjNVh4bVY2SnNPYlRyaWhPMldMUjdSUWVUMXVtcjMteDZFV1ROaGtHLWFvbXlmeUpFalYyS0tTdVBEZnhMc1FNRzdGUl91Z2I0N0xkelVwekNzSmpXVkhFeFZuSkVIX3NUNS1IN3YwX2FTa3hFc1B4YjRhZHVnU2VycFZNZldWX2hnTk00NHp5U3Fma3hnLVBRMGtxaHZoQVF6aU5Ha0NzQ3o2ZzlfcDhTcUdDQU5yVmNYbUctZ2l4RS1FVTRUajlINElxdk1lUzNmWnQtbkotUHFBWkdoRUtfOHE4ZmJmWHhqR0RNaHR0QnU2M3NtcjNwdVdXSA?oc=5",
+          "date": "2026-04-07",
+          "whyImportant": "Ce projet montre comment l'IA et la robotique transforment l'industrie logistique. Amazon est un acteur majeur, et ses innovations influencent le marché. Les systèmes d'information sont au cœur de ces optimisations. C'est un domaine clé pour les futurs professionnels du SIO."
+        }
+      ]
+    },
+    {
+      "weekId": "2026-W14",
+      "week": "Semaine 14 - 2026",
+      "news": [
+        {
+          "title": "“Des dispositifs portables à bas coût” : Generalist sort un modèle d’IA pour la robotique entraîné sur 500 000 heures de données réelles",
+          "summary": "Generalist a lancé un modèle d'IA pour la robotique, entraîné sur 500 000 heures de données réelles, visant des dispositifs portables à bas coût. Cette innovation majeure permet d'améliorer l'autonomie et l'efficacité des robots grâce à un apprentissage intensif.",
+          "content": "Generalist a lancé un modèle d'IA pour la robotique, entraîné sur 500 000 heures de données réelles, visant des dispositifs portables à bas coût. Cette innovation majeure permet d'améliorer l'autonomie et l'efficacité des robots grâce à un apprentissage intensif.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMizgJBVV95cUxNR25mWTNrNUJXMUdpMUd5Ui1tWnYzN0ozY2R2dEE1dmF0cjBYZ0lmbUdTcE4zTmhtd3kzWmhhM20yQm5HUG1saTJjMGlaeVFVZjlvVW9FeFk3dU0xcDk5QVVLSmhPWTdrTGRMVTBTMXBjeE9QeklqQ2JNZldMWmlVZm42WFFWQmpFLWFab0RJdTlBUG0tVkQwQXpFUnlxSFBHRTlIck04Y3NBQWw1anhUU3VxS1lVcUNJMWxESGEyNTh3aWlmelpHalBRZjZQSy1hOHVKZnRkdnF0bUsyNjc5LTU0QTR6MVV4RTVSaEU4V3d4TWZVOTJETWg3bENmMzJNSk0yQzl3aUdTYnN4dkR4czZEZ0t3M25vbndHX3E1MXRiNmpudmhRT1czT1BHUzVNYUtHd1Z1aUVueHpkYVdRdVVzZU53TjFfeVZ3dDNn?oc=5",
+          "date": "2026-04-04",
+          "whyImportant": "Pour un BTS SIO, cette actualité est cruciale car elle met en lumière l'importance de l'IA et du Big Data dans le développement robotique. Elle montre comment l'entraînement sur de vastes ensembles de données réelles est essentiel pour créer des robots plus intelligents et autonomes. Cela ouvre des perspectives pour des applications industrielles et logistiques, où l'intégration de l'IA est une compétence clé."
+        },
+        {
+          "title": "Tesla : la vidéo du robot humanoïde Optimus intrigue et fascine la Toile",
+          "summary": "La vidéo du robot humanoïde Tesla Optimus a suscité un vif intérêt et une grande fascination sur internet. Ce robot, développé par Tesla, continue de progresser et d'attirer l'attention sur les avancées de la robotique humanoïde.",
+          "content": "La vidéo du robot humanoïde Tesla Optimus a suscité un vif intérêt et une grande fascination sur internet. Ce robot, développé par Tesla, continue de progresser et d'attirer l'attention sur les avancées de la robotique humanoïde.",
+          "source": "Le Tribunal du Net",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQa2k5ZHh1TVd4RHk4Y2hpdHo4Mkc4NE14ei0zc05HWWNEc3c1NDMzQm5haEZIZ1pwbmFqQ1Q0aFd1M2pXTTJpa1JzQlVNWG5BbEx0ZDBReWptQXlCMm1tcF9sVDA0N2g5dFplcXVER28zdnZtQ214N3VNMUJYNUloUVllTVdwcTF6dVBoa0dYV0pxaDIwQ1dYaWtKMXhfdG1xS3Bj?oc=5",
+          "date": "2026-03-30",
+          "whyImportant": "Tesla Optimus est un exemple emblématique de l'ambition des géants technologiques dans la robotique humanoïde. Pour un BTS SIO, suivre son développement est important pour comprendre les défis techniques et les applications potentielles de ces robots. Cela illustre également l'intégration de l'IA dans des systèmes complexes pour des tâches variées, un domaine en pleine expansion."
+        },
+        {
+          "title": "Robotique humanoïde : Avec 10 000 exemplaires déjà produits, AgiBot montre ses muscles face à la concurrence chinoise",
+          "summary": "AgiBot a déjà produit 10 000 exemplaires de ses robots humanoïdes, démontrant une capacité de production industrielle significative. Cette entreprise se positionne comme un acteur majeur face à la concurrence croissante des fabricants chinois.",
+          "content": "AgiBot a déjà produit 10 000 exemplaires de ses robots humanoïdes, démontrant une capacité de production industrielle significative. Cette entreprise se positionne comme un acteur majeur face à la concurrence croissante des fabricants chinois.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxON0tubUNBTE9CZDlKd0JUcklONW5iOU5ZcTJtSkVhbWFIYUFZT3hHSUJQdGMwZGlYMTlHSGNIVlBVeUxfS3JmaUNJRk5oQ3RkcjRjeWFXelJyQWlMaXFTbFNRZU8tQlZmZHZPWHhrdDdMOUZpU0lrbEVvVFJkR1lKSW9ERkg3VUs2akIzZGViZlZjRTYzM3JZMFRYQktiMGtmUXRGYXplM0dDWU56c2sydUR3eldZYkZVLWlDUzBMTTYwcEM0VWt5Wkx0RHRBRUVmOWVrNFZjNUMxM2swckEwZ21YWmk1U19PeFh0dTNHNnBKa1NhWk56N3VDRzdsWHhvUng0UWp5UjExWjJob1VmS09LdDV4MGdOVXpadUsyclpvQ19FbUd1RVRxYVJHakJTR1hGYjZDRQ?oc=5",
+          "date": "2026-03-30",
+          "whyImportant": "Cette nouvelle est pertinente pour un BTS SIO car elle montre la transition des robots humanoïdes vers la production de masse et l'industrialisation. Elle souligne l'importance de la compétitivité et de la capacité de fabrication dans le secteur de la robotique. Comprendre ces dynamiques est essentiel pour appréhender le marché et les opportunités d'emploi dans l'industrie."
+        },
+        {
+          "title": "Le robot humanoïde HMND 01, construit au Royaume-Uni, prouve qu'il est capable de gérer la logistique d'un véritable entrepôt",
+          "summary": "Le robot humanoïde HMND 01, conçu au Royaume-Uni, a prouvé ses capacités à gérer efficacement la logistique dans un entrepôt réel. Cette démonstration valide le potentiel des robots humanoïdes pour des tâches industrielles concrètes.",
+          "content": "Le robot humanoïde HMND 01, conçu au Royaume-Uni, a prouvé ses capacités à gérer efficacement la logistique dans un entrepôt réel. Cette démonstration valide le potentiel des robots humanoïdes pour des tâches industrielles concrètes.",
+          "source": "notebookcheck.biz",
+          "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQLTdzM2Q2YmFzZ0I4dDBFMzRreVlLaFVWUXV6TjZDdzlSUDJuQktNUVprWnpvSVp4NHBuNUluWXd4N05RY2tJeVFUdEQtelBCU3RmZklNODlSZm9sM2QwZ19DV0dTcmc4WGtfRGJqVFNfLUNOTjMxZnpHdkFTZnh4VkZGS2tGVUNmMXI2OGJRaU1jWmpvR3VDdU9YSXJneE8xcUpRRWVtOHdKQXdKejRkQ3VVX3lRNGF6UUpmUHJzTHN4YU4wc2VsNWdOc1hEUUsxUnh5dFBzTTBfSkdXMjhhUlI1dVdkODFxRHZsLUZFd2c2V2RpbkVESV81X0w?oc=5",
+          "date": "2026-03-31",
+          "whyImportant": "Cette actualité est très pertinente pour un BTS SIO car elle illustre une application directe et concrète des robots humanoïdes dans l'industrie, spécifiquement la logistique. Elle met en évidence comment ces technologies peuvent optimiser les processus d'entrepôt et améliorer l'efficacité opérationnelle. C'est un exemple clair des compétences techniques requises pour déployer et maintenir de tels systèmes."
+        }
+      ]
+    }
+  ]
+}

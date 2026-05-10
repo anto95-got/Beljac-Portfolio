@@ -19,6 +19,7 @@ const MAX_ARTICLES_PER_FEED = 12;
 const WEEKLY_SCHEDULE = "0 8 * * 1"; // Lundi 08:00 Europe/Paris
 
 const REFRESH_TOKEN = defineSecret("VEILLE_REFRESH_TOKEN");
+const OPENAI_API_KEY = defineSecret("OPENAI_API_KEY");
 
 const RSS_FEEDS = [
   "https://news.google.com/rss/search?q=robot+humanoide+IA&hl=fr&gl=FR&ceid=FR:fr",
@@ -97,42 +98,71 @@ const getWeekId = (date = new Date()) => {
   return `${year}-W${String(week).padStart(2, "0")}`;
 };
 
-const getWeekLabel = (date = new Date()) => {
-  const { week, year } = getIsoWeekInfo(date);
-  return `Semaine ${week} - ${year}`;
+const buildWhyImportant = (article = {}) => {
+  const title = cleanText(article.title || "");
+  const source = cleanText(article.source || "cette source");
+
+  return [
+    "Cette actualité est importante pour la veille robots IA car elle montre une avancée concrète dans l'intelligence artificielle appliquée à la robotique.",
+    `Elle permet de suivre l'évolution du secteur à travers ${source}, avec un sujet directement lié aux robots autonomes ou humanoïdes.`,
+    title
+      ? `Le sujet "${title}" aide à comprendre les impacts technologiques, industriels ou sociaux de ces machines.`
+      : "Elle aide à comprendre les impacts technologiques, industriels ou sociaux de ces machines.",
+  ].join(" ");
 };
 
-const normalizeNewsItem = (item = {}) => ({
-  title: cleanText(item.title || "Titre inconnu", item.source || ""),
-  summary: cleanText(item.summary || "Pas de résumé disponible.", item.source || ""),
-  content: cleanText(item.content || item.summary || "Voir l’article source.", item.source || ""),
-  source: cleanText(item.source || "Source inconnue"),
-  link: cleanText(item.link || "#"),
-  date: toDateOnly(item.date || new Date().toISOString()),
-});
+const buildFallbackAiSummary = (article = {}) => cleanText(
+  article.summary || article.content || article.title || "Pas de résumé disponible.",
+  article.source || "",
+);
 
-const toNewsKey = (item) => `${item.link || ""}|${item.title || ""}`.trim().toLowerCase();
+const normalizeNewsItem = (item = {}) => {
+  const link = cleanText(item.link || item.url || "#");
+  const normalized = {
+    title: cleanText(item.title || "Titre inconnu", item.source || ""),
+    summary: cleanText(item.summary || "Pas de résumé disponible.", item.source || ""),
+    content: cleanText(item.content || item.summary || "Voir l’article source.", item.source || ""),
+    source: cleanText(item.source || "Source inconnue"),
+    link,
+    url: cleanText(item.url || link),
+    date: toDateOnly(item.date || new Date().toISOString()),
+    aiSummary: cleanText(item.aiSummary || ""),
+    whyImportant: cleanText(item.whyImportant || ""),
+  };
+
+  return {
+    ...normalized,
+    aiSummary: normalized.aiSummary || buildFallbackAiSummary(normalized),
+    whyImportant: normalized.whyImportant || buildWhyImportant(normalized),
+  };
+};
+
+const toNewsKey = (item) => `${item.url || item.link || ""}|${item.title || ""}`.trim().toLowerCase();
+
+const normalizeEntryNews = (entry = {}) => {
+  if (Array.isArray(entry.news)) return entry.news.map((item) => normalizeNewsItem(item));
+  if (entry.article) return [normalizeNewsItem(entry.article)];
+  return [];
+};
 
 const normalizeVeilleData = (rawData) => {
   const safeData = rawData && typeof rawData === "object" ? rawData : {};
-  const latestNews = Array.isArray(safeData?.latest?.news)
-    ? safeData.latest.news.map((item) => normalizeNewsItem(item))
-    : [];
+  const latestNews = normalizeEntryNews(safeData.latest || {});
 
   const history = Array.isArray(safeData.history)
     ? safeData.history
       .map((entry) => ({
-        weekId: cleanText(entry?.weekId || ""),
-        week: cleanText(entry?.week || ""),
-        news: Array.isArray(entry?.news) ? entry.news.map((item) => normalizeNewsItem(item)) : [],
+        weekId: cleanText(entry?.weekId || entry?.week || ""),
+        week: cleanText(entry?.week || entry?.weekId || ""),
+        news: normalizeEntryNews(entry),
       }))
       .filter((entry) => entry.news.length > 0)
     : [];
 
   return {
     latest: {
-      weekId: cleanText(safeData?.latest?.weekId || ""),
-      week: cleanText(safeData?.latest?.week || ""),
+      weekId: cleanText(safeData?.latest?.weekId || safeData?.latest?.week || ""),
+      week: cleanText(safeData?.latest?.week || safeData?.latest?.weekId || ""),
       news: latestNews,
     },
     history,
@@ -213,17 +243,117 @@ const dedupeHistoryByWeekId = (history) => {
   const result = [];
 
   for (const entry of history) {
-    const weekId = cleanText(entry?.weekId || "");
+    const weekId = cleanText(entry?.weekId || entry?.week || "");
     if (!weekId || seenWeek.has(weekId)) continue;
     seenWeek.add(weekId);
     result.push({
       weekId,
       week: cleanText(entry?.week || weekId),
-      news: Array.isArray(entry?.news) ? entry.news.map((item) => normalizeNewsItem(item)) : [],
+      news: normalizeEntryNews(entry),
     });
   }
 
   return result.filter((entry) => entry.news.length > 0);
+};
+
+const parseOpenAiJson = (payload) => {
+  const outputText = payload?.output_text || payload?.output
+    ?.flatMap((item) => item?.content || [])
+    ?.map((content) => content?.text || "")
+    ?.join("")
+    ?.trim();
+
+  if (!outputText) return null;
+  return JSON.parse(outputText);
+};
+
+async function enrichWithAI(article) {
+  const fallback = {
+    aiSummary: buildFallbackAiSummary(article),
+    whyImportant: buildWhyImportant(article),
+  };
+
+  let apiKey = "";
+  try {
+    apiKey = OPENAI_API_KEY.value();
+  } catch {
+    return fallback;
+  }
+
+  if (!apiKey) return fallback;
+
+  try {
+    const response = await fetch("https://api.openai.com/v1/responses", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: "gpt-4.1-mini",
+        instructions: [
+          "Tu enrichis des articles pour une veille technologique BTS SIO.",
+          "Réponds uniquement en JSON valide.",
+          "Le sujet de la veille est: robots IA, robots humanoïdes et robotique contrôlée par intelligence artificielle.",
+          "Utilise un français simple, clair et factuel.",
+        ].join(" "),
+        input: [
+          `Titre: ${article.title}`,
+          `Source: ${article.source}`,
+          `Date: ${article.date}`,
+          `Résumé RSS: ${article.summary}`,
+          `Contenu RSS: ${article.content}`,
+          "Génère aiSummary en 2 à 3 phrases.",
+          "Génère whyImportant en 2 à 4 phrases simples.",
+        ].join("\n"),
+        text: {
+          format: {
+            type: "json_schema",
+            name: "veille_article_enrichment",
+            strict: true,
+            schema: {
+              type: "object",
+              additionalProperties: false,
+              properties: {
+                aiSummary: { type: "string" },
+                whyImportant: { type: "string" },
+              },
+              required: ["aiSummary", "whyImportant"],
+            },
+          },
+        },
+        max_output_tokens: 350,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`OpenAI HTTP ${response.status}`);
+    }
+
+    const parsed = parseOpenAiJson(await response.json());
+    return {
+      aiSummary: cleanText(parsed?.aiSummary || fallback.aiSummary),
+      whyImportant: cleanText(parsed?.whyImportant || fallback.whyImportant),
+    };
+  } catch (error) {
+    logger.error("AI enrichment failed", {
+      article: article.title,
+      error: String(error),
+    });
+    return fallback;
+  }
+}
+
+const enrichArticlesWithAI = async (articles) => Promise.all(
+  articles.map(async (article) => ({
+    ...article,
+    ...(await enrichWithAI(article)),
+  })),
+);
+
+const getWeekLabel = (date = new Date()) => {
+  const { week, year } = getIsoWeekInfo(date);
+  return `Semaine ${week} - ${year}`;
 };
 
 const refreshVeilleData = async ({ force = false, reason = "manual" } = {}) => {
@@ -240,7 +370,7 @@ const refreshVeilleData = async ({ force = false, reason = "manual" } = {}) => {
     };
   }
 
-  const news = await fetchWeeklyArticles();
+  const news = await enrichArticlesWithAI(await fetchWeeklyArticles());
   if (news.length === 0 && current.latest.news.length > 0) {
     return {
       updated: false,
@@ -330,7 +460,7 @@ exports.refreshVeilleNow = onRequest(
   {
     region: REGION,
     cors: true,
-    secrets: [REFRESH_TOKEN],
+    secrets: [REFRESH_TOKEN, OPENAI_API_KEY],
   },
   async (req, res) => {
     if (!["GET", "POST"].includes(req.method)) {
@@ -373,6 +503,7 @@ exports.refreshVeilleWeekly = onSchedule(
     timeZone: "Europe/Paris",
     retryCount: 1,
     maxRetrySeconds: 300,
+    secrets: [OPENAI_API_KEY],
   },
   async () => {
     await refreshVeilleData({ force: false, reason: "weekly_schedule" });
