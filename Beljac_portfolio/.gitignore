@@ -10,6 +10,28 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+
+# Python cache / local tooling
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.venv/
+venv/
+env/
+
+# PyInstaller build artifacts
+/build/
+/*.spec
+/AutoVeille
+/AutoVeille*
+/AutoVeille.exe
+
+# Local runtime output
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
 *.local
 .env
 .env.*

@@ -1,47 +1,89 @@
 {
   "latest": {
-    "weekId": "2026-W19",
-    "week": "Semaine 19 - 2026",
+    "weekId": "2026-W20",
+    "week": "Semaine 20 - 2026",
     "news": [
       {
-        "title": "Un robot humanoïde produit chaque heure : Comment l’américain Figure AI veut se mesurer à ses concurrents chinois",
-        "summary": "Figure AI, une entreprise américaine, intensifie sa production de robots humanoïdes, visant un rythme d'un robot par heure. Cette stratégie vise à concurrencer les acteurs chinois sur le marché émergent de la robotique humanoïde.",
-        "content": "Figure AI, une entreprise américaine, intensifie sa production de robots humanoïdes, visant un rythme d'un robot par heure. Cette stratégie vise à concurrencer les acteurs chinois sur le marché émergent de la robotique humanoïde.",
+        "title": "Neura Robotics, l'allemand qui défie Figure AI et Unitree dans la robotique humanoïde",
+        "summary": "Neura Robotics, une entreprise allemande, se positionne comme un concurrent majeur face à Figure AI et Unitree sur le marché des robots humanoïdes. Elle vise à innover et à s'imposer dans ce secteur en pleine expansion.",
+        "content": "Neura Robotics, une entreprise allemande, se positionne comme un concurrent majeur face à Figure AI et Unitree sur le marché des robots humanoïdes. Elle vise à innover et à s'imposer dans ce secteur en pleine expansion.",
         "source": "L'Usine Digitale",
-        "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOa1U3V2wxQlNZYktFVWJ1ZHhlR3ZLX1VKWXp6ekppTUxrdHo4UlZhY3NUTEp2NkktRDF2VXBTQi1DZDVVdzVnZnpNRTBaUmJaTkRwZDl4RjRRT1dPeVZITGxIVzNGWEdybHF5VlVOTURMNFZIcnJqUUUtc1NuRDRmNWJGQ3ppRFVhLU5sMjBveVN2d0g2d1pCUHV1XzVlakxPTldrSHpYckl6bEItSnJCWWVjLVRfbFlJdnZsQ3pzTUM1R09jOEVHSHJtYTJwWk02cGc2ZFpDRDJOSkhWX0pQUGxaQXR3NWktU1gwOGVoWUFmOUQ3N245XzZGQVZhRXVPQk1vZTlzSkJEaTBxSXFkSjc4bWpXVkE0cTBwNEE3NmQzck9OUW9ucGdscENuTUM0NFE?oc=5",
-        "date": "2026-05-05",
-        "whyImportant": "Cette actualité montre l'accélération de la production de robots humanoïdes par des acteurs clés comme Figure AI. Elle souligne l'importance de l'industrialisation dans ce domaine et la compétition mondiale. Pour un BTS SIO, cela illustre les défis de la production de masse de technologies avancées."
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZXhiWFVkaTFxaFdjWHo5blBTY1pmVEE0UHpsMG5tMVZEdUdHX2tZWTZQQTNPQl93YlVLS0ZjNzUyZGZCa004dkJrdGJFdW1YZ0Z0SWVua1puWVpSR3ZLdGoxai1qbVlheHhQVzhfZENyZ1Q3OWJXdG1vN3JPZHNzbVZrcTlsbzluU3VHaVJ6MDBQdVlERE1XX2VrOWNTNkRtck12LW1RMS1pQUxaMEROWDZRYktlN0JQSzRkTkJva2xkTlg2MElhaC1PVQ?oc=5",
+        "date": "2025-06-25",
+        "whyImportant": "Cet article montre l'émergence de nouveaux acteurs européens dans la robotique humanoïde. Il souligne la compétition intense et l'innovation constante dans ce domaine. Pour un BTS SIO, cela illustre les opportunités de carrière et les défis technologiques."
+      },
+      {
+        "title": "Avec Helix 02, Figure AI revendique une rupture dans les capacités de ses robots humanoïdes, qui peuvent enchaîner des actions complexes de façon totalement autonome",
+        "summary": "Figure AI annonce une avancée significative avec son robot humanoïde Helix 02, capable d'exécuter des séquences d'actions complexes de manière entièrement autonome. Cette innovation marque une étape importante vers des robots plus intelligents et indépendants.",
+        "content": "Figure AI annonce une avancée significative avec son robot humanoïde Helix 02, capable d'exécuter des séquences d'actions complexes de manière entièrement autonome. Cette innovation marque une étape importante vers des robots plus intelligents et indépendants.",
+        "source": "L'Usine Digitale",
+        "link": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxQTzNhcDJhcnRHX2tqOVVfQ1UwYmhYRUJkQldsTDNGNjJ0S2VOVi1NT3FiVlZHd3I0OVVUTkhZMS1LNHZHSVVTN0hUSjFYSUUxd3hObWZNSWxqRE5hZ1NrZkF5eUR5RDlSaTMyUkRWRGx4OUcyR3RlLVlVQmRQR0R5UUc5aFM5Slg4WndmQVZWaTNCaVNxRnJfZEU1by1zWXVXQ3h3M0xSU1MxT3Q1V1VIWFFMTzhHcFpNX1BEVjBmRDBlUHBGd1haODNjNTVyRmdCNUY5bmxZeEROOGR3RS1MaVBVZjZHNUM2c28taXp1RjJMZXJZd0RhZkJoZlZHQlZTN2lwWFg0MmhHMWU5d3pPaWlHY1IzNXBZdXkycHlVMTJhcXdxeVJqNGRhRGlvSkEwUURqZ21SbFMyN2ZpdTA2cTlqTzJXVmhhRzVadUcyZjdWVDFHR2owTTNpU2JmbVRmUEV1YUxfcFRObUR4REJ3dU9XeW8xVUJE?oc=5",
+        "date": "2026-01-28",
+        "whyImportant": "L'autonomie est une priorité clé en robotique et IA, directement liée aux compétences en BTS SIO. La capacité à enchaîner des actions complexes ouvre de vastes applications industrielles. Cela démontre l'intégration de l'IA pour des comportements robotiques sophistiqués."
       },
       {
         "title": "Hyundai presse Boston Dynamics de passer à la producton de masse de son robot humanoïde Atlas",
-        "summary": "Hyundai exhorte Boston Dynamics à accélérer la production de masse de son robot humanoïde Atlas. Cette pression indique une volonté d'industrialiser rapidement les avancées en robotique humanoïde.",
-        "content": "Hyundai exhorte Boston Dynamics à accélérer la production de masse de son robot humanoïde Atlas. Cette pression indique une volonté d'industrialiser rapidement les avancées en robotique humanoïde.",
+        "summary": "Hyundai exhorte Boston Dynamics à accélérer la production de masse de son robot humanoïde Atlas. Cette pression indique une forte demande industrielle et une volonté de déployer ces technologies à grande échelle.",
+        "content": "Hyundai exhorte Boston Dynamics à accélérer la production de masse de son robot humanoïde Atlas. Cette pression indique une forte demande industrielle et une volonté de déployer ces technologies à grande échelle.",
         "source": "kulturegeek.fr",
         "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbVAzWjRpVHdyT0NKeU5ZTDdyZW5ycGhzNXdBVmtWZ2N1NUFaeVdJV3lRS21sVEktUjU2aXFRSFZTRlFxaTFUdHVILXB3OXRTVGtiNHJZMzhEdmZKMENYWnZKMnB4bHYwTWtwTG5BMng3TFJGQWh4MElQcVAzWm5HLVp2Z0xqd3dVU21uY0FMSWs1amVfem5RMVc2c3RJWjl3Yl9JcGFQY1c4ZlRQSkFJ?oc=5",
         "date": "2026-05-04",
-        "whyImportant": "L'implication de Hyundai et Boston Dynamics, des leaders, est cruciale pour l'avenir des robots humanoïdes. Cela met en lumière le passage de la recherche à la production industrielle. C'est un signe fort de la maturité croissante de cette technologie pour des applications concrètes."
+        "whyImportant": "L'implication de Hyundai, un géant de l'industrie, avec Boston Dynamics est très pertinente. Cela montre la transition des prototypes de recherche vers la production industrielle de robots humanoïdes. C'est un signe clair de l'intégration future de ces robots dans divers secteurs."
       },
       {
-        "title": "AUTOMATE SHOW 2026, la robotique industrielle entre dans l’ère de l’usine autonome",
-        "summary": "L'AUTOMATE SHOW 2026 met en évidence l'évolution de la robotique industrielle vers l'usine autonome. Cette transition marque une étape majeure dans l'intégration de l'IA et de l'autonomie dans les processus de fabrication.",
-        "content": "L'AUTOMATE SHOW 2026 met en évidence l'évolution de la robotique industrielle vers l'usine autonome. Cette transition marque une étape majeure dans l'intégration de l'IA et de l'autonomie dans les processus de fabrication.",
-        "source": "frenchweb.fr",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdkVXa0lqQ21CWHZVbkdJWi1YUHljbXlOOVBqZG4xaGdpRUV5cWpLeThsT2RHbzkwSzQ4VUlpYURsdFo0ZG0xa3p1X3FsNWdvQ3hIbkc3QmU1NERVM0lGN2lHUGVFaFl2QjRGc0d6ZHJLbzQzcmVGdlpjQzByTDU5MVVtRGFVOVFyUFgtWGdvd3ZYUlVsNl9zTzhyb0F6cE43NVhMeWlMUk9saFdkaFlNNg?oc=5",
-        "date": "2026-05-10",
-        "whyImportant": "Cette nouvelle est essentielle pour comprendre l'impact de la robotique et de l'IA sur l'industrie. L'usine autonome représente un objectif majeur, nécessitant des compétences en intégration de systèmes et en gestion de données. C'est un domaine clé pour les futurs professionnels du BTS SIO."
-      },
-      {
-        "title": "Robotique : La start-up française Genesis AI sort un modèle de fondation conçu pour les tâches de manipulation complexes",
-        "summary": "La start-up française Genesis AI a développé un modèle de fondation en robotique, spécifiquement pour les tâches de manipulation complexes. Ce modèle vise à améliorer l'autonomie et la polyvalence des robots dans des environnements variés.",
-        "content": "La start-up française Genesis AI a développé un modèle de fondation en robotique, spécifiquement pour les tâches de manipulation complexes. Ce modèle vise à améliorer l'autonomie et la polyvalence des robots dans des environnements variés.",
+        "title": "Robotique : À l’aéroport de Tokyo, Japan Airlines mise sur les robots humanoïdes de Unitree pour charger les bagages et le fret",
+        "summary": "Japan Airlines expérimente l'utilisation de robots humanoïdes de Unitree pour la manutention des bagages et du fret à l'aéroport de Tokyo. Cette initiative vise à optimiser les opérations logistiques aéroportuaires.",
+        "content": "Japan Airlines expérimente l'utilisation de robots humanoïdes de Unitree pour la manutention des bagages et du fret à l'aéroport de Tokyo. Cette initiative vise à optimiser les opérations logistiques aéroportuaires.",
         "source": "L'Usine Digitale",
-        "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNelN5dWxQRE9LNllJQ0VycmM0UWlvUjVxT0JNbjRkV2NJTE9tTGNpcG5IOFpyWER5czhfQUNwdnllV19lZUV3VjExU3dld1RfYXFPT1RHRTRlRVRiV1hLRXVlQ0REaVVzUWhCc3VPVUt5MU1xZVFXVjc5SW9ET0tzamJNeXBOZXNHM2hISGQwaFZsdHU3dTdqdS1PRUtzTFN0a1F0SmJOSVpIbUFyRFpUeWJMYlpyUFZCcEFRX19lNnNmQjJzcHhGOUw5Zm1RNHU3dWlnRTVfREhSbVZuNm1uVkZBYnh0MVlKVXBUc0xZcUFVcXpldWhzQVNaOXg2SkZlLTk1bndpSUtjbDF2OUstMWY2QzNpbk9lcEs1TDA0a0FjcmVoMzJpSUtWX09WclpUSnE5ZGxkQ2dYXzNW?oc=5",
-        "date": "2026-05-07",
-        "whyImportant": "Cette innovation est directement liée à la robotique contrôlée par IA et à la recherche. Elle montre comment l'IA permet aux robots d'effectuer des tâches plus fines et complexes. Pour un BTS SIO, cela illustre l'importance des algorithmes et des modèles d'IA dans le développement de robots plus intelligents."
+        "link": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQRFpZQjZWTklXbWM1RDJsTzl0SzI4cHJmazM4bVVaekVhTlhESTlHZHQ1Q19kNUdVanY2TURJR3FDV2NxRHE3RHB4SXRlaGw4U3prMzhrampYRlotWlgxN2w4TVdLRHdSNmtiSDdmMHlpMlluTTRQLTlvemRGcVBMa1l5WGlGTHBYZ09vUEtMMTFKMU1ub3JzSGM3bGdETE54MGRVWXBzWGNZaFo1dWM3ZTNocnNBZFJoeVN4OHNwWTJ0cEZkTnVhZDRLZDg4elZTaTFuaVVwMThyR01lOHl5eVZfX2ZfVnowMkt0QmhiX2dFLVJ2aTNFN25YZFJ4ZjVYVk56Um0yV1JMZHo4RWlsMEw2RF9SR2lmZHFFLU1pV0o0X3dzVk5qUldxWnZXeTU2cVBrQTVLc3pDMnQ5bnU0QXVSdw?oc=5",
+        "date": "2026-04-28",
+        "whyImportant": "C'est un exemple concret de l'application des robots humanoïdes dans l'industrie. L'utilisation en aéroport pour le fret montre une intégration pratique et immédiate. Cela illustre comment la robotique peut transformer des secteurs traditionnels comme la logistique."
       }
     ]
   },
   "history": [
+    {
+      "weekId": "2026-W19",
+      "week": "Semaine 19 - 2026",
+      "news": [
+        {
+          "title": "Un robot humanoïde produit chaque heure : Comment l’américain Figure AI veut se mesurer à ses concurrents chinois",
+          "summary": "Figure AI, une entreprise américaine, intensifie sa production de robots humanoïdes, visant un rythme d'un robot par heure. Cette stratégie vise à concurrencer les acteurs chinois sur le marché émergent de la robotique humanoïde.",
+          "content": "Figure AI, une entreprise américaine, intensifie sa production de robots humanoïdes, visant un rythme d'un robot par heure. Cette stratégie vise à concurrencer les acteurs chinois sur le marché émergent de la robotique humanoïde.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOa1U3V2wxQlNZYktFVWJ1ZHhlR3ZLX1VKWXp6ekppTUxrdHo4UlZhY3NUTEp2NkktRDF2VXBTQi1DZDVVdzVnZnpNRTBaUmJaTkRwZDl4RjRRT1dPeVZITGxIVzNGWEdybHF5VlVOTURMNFZIcnJqUUUtc1NuRDRmNWJGQ3ppRFVhLU5sMjBveVN2d0g2d1pCUHV1XzVlakxPTldrSHpYckl6bEItSnJCWWVjLVRfbFlJdnZsQ3pzTUM1R09jOEVHSHJtYTJwWk02cGc2ZFpDRDJOSkhWX0pQUGxaQXR3NWktU1gwOGVoWUFmOUQ3N245XzZGQVZhRXVPQk1vZTlzSkJEaTBxSXFkSjc4bWpXVkE0cTBwNEE3NmQzck9OUW9ucGdscENuTUM0NFE?oc=5",
+          "date": "2026-05-05",
+          "whyImportant": "Cette actualité montre l'accélération de la production de robots humanoïdes par des acteurs clés comme Figure AI. Elle souligne l'importance de l'industrialisation dans ce domaine et la compétition mondiale. Pour un BTS SIO, cela illustre les défis de la production de masse de technologies avancées."
+        },
+        {
+          "title": "Hyundai presse Boston Dynamics de passer à la producton de masse de son robot humanoïde Atlas",
+          "summary": "Hyundai exhorte Boston Dynamics à accélérer la production de masse de son robot humanoïde Atlas. Cette pression indique une volonté d'industrialiser rapidement les avancées en robotique humanoïde.",
+          "content": "Hyundai exhorte Boston Dynamics à accélérer la production de masse de son robot humanoïde Atlas. Cette pression indique une volonté d'industrialiser rapidement les avancées en robotique humanoïde.",
+          "source": "kulturegeek.fr",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbVAzWjRpVHdyT0NKeU5ZTDdyZW5ycGhzNXdBVmtWZ2N1NUFaeVdJV3lRS21sVEktUjU2aXFRSFZTRlFxaTFUdHVILXB3OXRTVGtiNHJZMzhEdmZKMENYWnZKMnB4bHYwTWtwTG5BMng3TFJGQWh4MElQcVAzWm5HLVp2Z0xqd3dVU21uY0FMSWs1amVfem5RMVc2c3RJWjl3Yl9JcGFQY1c4ZlRQSkFJ?oc=5",
+          "date": "2026-05-04",
+          "whyImportant": "L'implication de Hyundai et Boston Dynamics, des leaders, est cruciale pour l'avenir des robots humanoïdes. Cela met en lumière le passage de la recherche à la production industrielle. C'est un signe fort de la maturité croissante de cette technologie pour des applications concrètes."
+        },
+        {
+          "title": "AUTOMATE SHOW 2026, la robotique industrielle entre dans l’ère de l’usine autonome",
+          "summary": "L'AUTOMATE SHOW 2026 met en évidence l'évolution de la robotique industrielle vers l'usine autonome. Cette transition marque une étape majeure dans l'intégration de l'IA et de l'autonomie dans les processus de fabrication.",
+          "content": "L'AUTOMATE SHOW 2026 met en évidence l'évolution de la robotique industrielle vers l'usine autonome. Cette transition marque une étape majeure dans l'intégration de l'IA et de l'autonomie dans les processus de fabrication.",
+          "source": "frenchweb.fr",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdkVXa0lqQ21CWHZVbkdJWi1YUHljbXlOOVBqZG4xaGdpRUV5cWpLeThsT2RHbzkwSzQ4VUlpYURsdFo0ZG0xa3p1X3FsNWdvQ3hIbkc3QmU1NERVM0lGN2lHUGVFaFl2QjRGc0d6ZHJLbzQzcmVGdlpjQzByTDU5MVVtRGFVOVFyUFgtWGdvd3ZYUlVsNl9zTzhyb0F6cE43NVhMeWlMUk9saFdkaFlNNg?oc=5",
+          "date": "2026-05-10",
+          "whyImportant": "Cette nouvelle est essentielle pour comprendre l'impact de la robotique et de l'IA sur l'industrie. L'usine autonome représente un objectif majeur, nécessitant des compétences en intégration de systèmes et en gestion de données. C'est un domaine clé pour les futurs professionnels du BTS SIO."
+        },
+        {
+          "title": "Robotique : La start-up française Genesis AI sort un modèle de fondation conçu pour les tâches de manipulation complexes",
+          "summary": "La start-up française Genesis AI a développé un modèle de fondation en robotique, spécifiquement pour les tâches de manipulation complexes. Ce modèle vise à améliorer l'autonomie et la polyvalence des robots dans des environnements variés.",
+          "content": "La start-up française Genesis AI a développé un modèle de fondation en robotique, spécifiquement pour les tâches de manipulation complexes. Ce modèle vise à améliorer l'autonomie et la polyvalence des robots dans des environnements variés.",
+          "source": "L'Usine Digitale",
+          "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNelN5dWxQRE9LNllJQ0VycmM0UWlvUjVxT0JNbjRkV2NJTE9tTGNpcG5IOFpyWER5czhfQUNwdnllV19lZUV3VjExU3dld1RfYXFPT1RHRTRlRVRiV1hLRXVlQ0REaVVzUWhCc3VPVUt5MU1xZVFXVjc5SW9ET0tzamJNeXBOZXNHM2hISGQwaFZsdHU3dTdqdS1PRUtzTFN0a1F0SmJOSVpIbUFyRFpUeWJMYlpyUFZCcEFRX19lNnNmQjJzcHhGOUw5Zm1RNHU3dWlnRTVfREhSbVZuNm1uVkZBYnh0MVlKVXBUc0xZcUFVcXpldWhzQVNaOXg2SkZlLTk1bndpSUtjbDF2OUstMWY2QzNpbk9lcEs1TDA0a0FjcmVoMzJpSUtWX09WclpUSnE5ZGxkQ2dYXzNW?oc=5",
+          "date": "2026-05-07",
+          "whyImportant": "Cette innovation est directement liée à la robotique contrôlée par IA et à la recherche. Elle montre comment l'IA permet aux robots d'effectuer des tâches plus fines et complexes. Pour un BTS SIO, cela illustre l'importance des algorithmes et des modèles d'IA dans le développement de robots plus intelligents."
+        }
+      ]
+    },
     {
       "weekId": "2026-W18",
       "week": "Semaine 18 - 2026",
